@@ -8,26 +8,23 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-#OpenMP
-find_package(OpenMP)
-if (OPENMP_FOUND)
-    set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
-    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+# Boost
+find_package(Boost REQUIRED)
+if (Boost_FOUND)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${Boost_C_FLAGS}")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Boost_CXX_FLAGS}")
+    include_directories(${Boost_INCLUDE_DIRS})
 else()
-    message(FATAL_ERROR "no OpenMP supprot")
+    message(FATAL_ERROR "Boost dynamic-bitset is required")
 endif()
 
-#Boost
-# windows
-set(BOOST_ROOT G:/MinGW-w64/boost_1_73_0)
-# macOS
-#set(BOOST_ROOT /usr/local/Cellar/boost/1.74.0/)
-find_package(BOOST)
-if(Boost_FOUND)
-    #message(Boost_INCLUDE_DIRS "${Boost_INCLUDE_DIRS}")
-    #message(Boost_LIBRARY_DIRS "${Boost_LIBRARY_DIRS}")
-    include_directories(${Boost_INCLUDE_DIRS})
-    link_directories(${Boost_LIBRARY_DIRS})
+# OpenMP
+find_package(OpenMP REQUIRED)
+if (OPENMP_FOUND)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+else()
+    message(FATAL_ERROR "OpenMP is required")
 endif()
 
 #Python
