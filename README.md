@@ -52,8 +52,9 @@ For the optimal parameters of each algorithm on all experimental datasets, see t
 ```shell
 $ git clone https://github.com/Lsyhprum/WEAVESS.git
 $ cd WEAVESS/
+$ conan install . --output-folder=build --build=missing
 $ mkdir build && cd build/
-$ cmake ..
+$ cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
 $ make -j
 ```
 
