@@ -1,0 +1,77 @@
+base data len : 1000000
+base data dim : 128
+query data len : 10000
+query data dim : 128
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__
+base data len : 1000000
+base data dim : 128
+query data len : 10000
+query data dim : 128
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:100 
+=====================
+__SEARCH__
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 13
+search time: 1.76775
+DistCount: 2058955
+HopCount: 169381
+10 NN accuracy: 0.58046
+SEARCH_L : 21
+search time: 2.12452
+DistCount: 2917619
+HopCount: 244484
+10 NN accuracy: 0.68551
+SEARCH_L : 34
+search time: 2.71946
+DistCount: 4268615
+HopCount: 366111
+10 NN accuracy: 0.78252
+SEARCH_L : 55
+search time: 3.58402
+DistCount: 6409179
+HopCount: 566607
+10 NN accuracy: 0.86239
+SEARCH_L : 89
+search time: 5.04069
+DistCount: 9812961
+HopCount: 900026
+10 NN accuracy: 0.92054
+SEARCH_L : 144
+search time: 7.38049
+DistCount: 15102349
+HopCount: 1446032
+10 NN accuracy: 0.95949
+SEARCH_L : 233
+search time: 11.0009
+DistCount: 23202696
+HopCount: 2334106
+10 NN accuracy: 0.98179
+SEARCH_L : 377
+search time: 16.7605
+DistCount: 35496647
+HopCount: 3772889
+10 NN accuracy: 0.99191
+SEARCH_L : 610
+search time: 25.9354
+DistCount: 53993323
+HopCount: 6102095
+10 NN accuracy: 0.99676
+SEARCH_L : 987
+search time: 40.4004
+DistCount: 81670540
+HopCount: 9871572
+10 NN accuracy: 0.99847
+__SEARCH FINISH__

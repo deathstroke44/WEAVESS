@@ -3,6 +3,8 @@
 //
 #include <weavess/builder.h>
 #include <iostream>
+using namespace std;
+string absolute_path = "/data/kabir/similarity-search/dataset/";
 
 void KDRG(std::string base_path, std::string query_path, std::string ground_path) {
     std::string graph = "basin.graph";
@@ -166,16 +168,16 @@ void SPTAG_BKT(std::string base_path, std::string query_path, std::string ground
     //std::cout << "Time cost: " << builder->GetBuildTime().count() << std::endl;
 }
 
-void HCNNG(std::string base_path, std::string query_path, std::string ground_path) {
+void HCNNG(std::string base_path, std::string query_path, std::string ground_path, unsigned K = 20) {
     std::string graph = "hcnng.graph";
 
     weavess::Parameters parameters;
-    parameters.set<unsigned>("minsize_cl", 1000);
+    parameters.set<unsigned>("minsize_cl", 100);
     parameters.set<unsigned>("num_cl", 20);
 
     parameters.set<unsigned>("nTrees", 10);
     parameters.set<unsigned>("mLevel", 4);
-    parameters.set<unsigned>("K", 10);
+    parameters.set<unsigned>("K", K);
 
     auto *builder = new weavess::IndexBuilder(8);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
@@ -185,30 +187,18 @@ void HCNNG(std::string base_path, std::string query_path, std::string ground_pat
     auto *builder2 = new weavess::IndexBuilder(8);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> load_graph(weavess::INDEX_HCNNG, &graph[0])
-            -> search(weavess::SEARCH_ENTRY_KDT, weavess::ROUTER_GUIDE, weavess::TYPE::L_SEARCH_ASCEND);
+            -> search(weavess::SEARCH_ENTRY_KDT, weavess::ROUTER_GUIDE, weavess::TYPE::L_SEARCH_ASCEND, K);
 
     //std::cout << "Time cost: " << builder->GetBuildTime().count() << std::endl;
 }
 
 int main(int argc, char** argv) {
-//    std::string base_path = R"(G:\ANNS\dataset\n100000\random_base_n100000_d32_c10_s5.fvecs)";
-//    std::string query_path = R"(G:\ANNS\dataset\n100000\random_query_n1000_d32_c10_s5.fvecs)";
-//    std::string ground_path = R"(G:\ANNS\dataset\n100000\random_ground_truth_n1000_d32_c10_s5.ivecs)";
+	
+    std::string base_path = "sift/sift_base.fvecs";
+    std::string query_path = "sift/sift_query.fvecs";
+    std::string ground_path = "sift/sift_groundtruth.ivecs";
 
-    std::string base_path = R"(G:\ANNS\dataset\siftsmall\siftsmall_base.fvecs)";
-    std::string query_path = R"(G:\ANNS\dataset\siftsmall\siftsmall_query.fvecs)";
-    std::string ground_path = R"(G:\ANNS\dataset\siftsmall\siftsmall_groundtruth.ivecs)";
-
-//    std::string base_path = R"(G:\ANNS\dataset\sift1M\sift_base.fvecs)";
-//    std::string query_path = R"(G:\ANNS\dataset\sift1M\sift_query.fvecs)";
-//    std::string ground_path = R"(G:\ANNS\dataset\sift1M\sift_groundtruth.ivecs)";
-
-    KDRG(base_path, query_path, ground_path);
-
-    //ONNG(base_path, query_path, ground_path);
-    //PANNG(base_path, query_path, ground_path);
-
-    //HCNNG(base_path, query_path, ground_path);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, 100);
 
     return 0;
 }

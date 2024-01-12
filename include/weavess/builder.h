@@ -29,7 +29,7 @@ namespace weavess {
 
         IndexBuilder *refine(TYPE type, bool debug);
 
-        IndexBuilder *search(TYPE entry_type, TYPE route_type, TYPE L_type);
+        IndexBuilder *search(TYPE entry_type, TYPE route_type, TYPE L_type, unsigned K = 20);
 
         IndexBuilder *print_index_info(TYPE type);
 

@@ -8,6 +8,8 @@
 //#include "weavess/matplotlibcpp.h"
 
 //namespace plt = matplotlibcpp;
+using namespace std::chrono;
+
 
 namespace weavess {
 
@@ -105,7 +107,8 @@ namespace weavess {
 
         e = std::chrono::high_resolution_clock::now();
 
-        std::cout << "__INIT FINISH__" << std::endl;
+        duration<double> time_span = duration_cast<duration<double>>(e - s);
+        std::cout << "__INIT FINISH__: " << time_span.count() << std::endl;
 
         return this;
     }
@@ -184,10 +187,8 @@ namespace weavess {
      * @param route_type
      * @return
      */
-    IndexBuilder *IndexBuilder::search(TYPE entry_type, TYPE route_type, TYPE L_type) {
+    IndexBuilder *IndexBuilder::search(TYPE entry_type, TYPE route_type, TYPE L_type, unsigned K = 20) {
         std::cout << "__SEARCH__" << std::endl;
-
-        unsigned K = 10;
 
         final_index_->getParam().set<unsigned>("K_search", K);
 
@@ -402,14 +403,16 @@ namespace weavess {
                 std::cout << "HopCount: " << final_index_->getHopCount() << std::endl;
                 final_index_->resetDistCount();
                 final_index_->resetHopCount();
-                int cnt = 0;
+                int cnt = 0, cnt1=0;
                 for (unsigned i = 0; i < final_index_->getGroundLen(); i++) {
                     if (res[i].size() == 0) continue;
                     for (unsigned j = 0; j < K; j++) {
                         unsigned k = 0;
                         for (; k < K; k++) {
-                            if (res[i][j] == final_index_->getGroundData()[i * final_index_->getGroundDim() + k])
+                            if (res[i][j] == final_index_->getGroundData()[i * final_index_->getGroundDim() + k]) {
+                                cnt1++;
                                 break;
+                            }
                         }
                         if (k == K)
                             cnt++;
@@ -427,7 +430,39 @@ namespace weavess {
 
                 float acc = 1 - (float) cnt / (final_index_->getGroundLen() * K);
                 std::cout << K << " NN accuracy: " << acc << std::endl;
-            }
+                float recall = (float) cnt1 / (final_index_->getGroundLen() * K);
+                std::cout << K << " NN recall: " << recall << std::endl;
+                const int nq = final_index_->getGroundLen();
+                double map_at = 0.0;
+                for (int p_idx=0; p_idx<nq; p_idx++) {
+                    double ap = 0;
+                    for (int r=1; r<=K; r++) {
+                        bool isR_kExact = false;
+                        for (int j=0; j<K; j++) {
+                            if (res[p_idx][r]==final_index_->getGroundData()[p_idx * final_index_->getGroundDim() + j]) {
+                                isR_kExact = true;
+                                break;
+                            }
+                        }
+                        if (isR_kExact) {
+                            int ct = 0;
+                            for (int j=0; j<r; j++) {
+                                for (int jj=0; jj<r; jj++) {
+                                    if (res[p_idx][j] == final_index_->getGroundData()[p_idx * final_index_->getGroundDim() + jj]){
+                                        ct++;
+                                        break;
+                                    }
+                                }
+                            }
+                            ap += (double)ct/r;
+                        }
+                    }
+                    map_at += ap / K;
+                }
+                map_at /= nq;
+                std::cout << K << " NN map@: " << map_at << std::endl;
+
+                            }
         } else if (L_type == L_SEARCH_ASSIGN) {
 
             unsigned L = final_index_->getParam().get<unsigned>("L_search");
