@@ -187,8 +187,8 @@ namespace weavess {
      * @param route_type
      * @return
      */
-    IndexBuilder *IndexBuilder::search(TYPE entry_type, TYPE route_type, TYPE L_type, unsigned K = 20) {
-        std::cout << "__SEARCH__" << std::endl;
+    IndexBuilder *IndexBuilder::search(TYPE entry_type, TYPE route_type, TYPE L_type, unsigned K) {
+        std::cout << "__SEARCH__" <<K<< std::endl;
 
         final_index_->getParam().set<unsigned>("K_search", K);
 
@@ -353,12 +353,11 @@ namespace weavess {
             }
             std::cout << "L_min: " << L_min << std::endl;
         }else if (L_type == L_SEARCH_ASCEND) {
-            unsigned L_st = 5;
-            unsigned L_st2 = 8;
-            for (unsigned i = 0; i < 10; i++) {
-                unsigned L = L_st + L_st2;
-                L_st = L_st2;
-                L_st2 = L;
+            // unsigned L_st = 5;
+            // unsigned L_st2 = 8;
+            unsigned L = K;
+            for (unsigned i = 0; i < 20; i++) {
+                L += 50;
                 std::cout << "SEARCH_L : " << L << std::endl;
                 if (L < K) {
                     std::cout << "search_L cannot be smaller than search_K! " << std::endl;
@@ -1347,3 +1346,4 @@ namespace weavess {
 
 
 }
+

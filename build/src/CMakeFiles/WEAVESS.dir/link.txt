@@ -1,0 +1,2 @@
+/usr/bin/ar qc libWEAVESS.a CMakeFiles/WEAVESS.dir/builder.cpp.o CMakeFiles/WEAVESS.dir/component_candidate.cpp.o CMakeFiles/WEAVESS.dir/component_conn.cpp.o CMakeFiles/WEAVESS.dir/component_entry.cpp.o CMakeFiles/WEAVESS.dir/component_init.cpp.o CMakeFiles/WEAVESS.dir/component_load.cpp.o CMakeFiles/WEAVESS.dir/component_prune.cpp.o CMakeFiles/WEAVESS.dir/component_refine.cpp.o CMakeFiles/WEAVESS.dir/component_route.cpp.o CMakeFiles/WEAVESS.dir/component_search_entry.cpp.o
+/usr/bin/ranlib libWEAVESS.a

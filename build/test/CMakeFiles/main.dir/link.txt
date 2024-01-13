@@ -1,0 +1,1 @@
+/usr/bin/c++ -m64  -fopenmp -m64 -rdynamic CMakeFiles/main.dir/main.cpp.o -o main  ../src/libWEAVESS.a 

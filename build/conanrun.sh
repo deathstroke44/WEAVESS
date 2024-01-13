@@ -1,0 +1,1 @@
+. "/data/kabir/similarity-search/models/WEAVESS/build/conanrunenv-release-x86_64.sh"

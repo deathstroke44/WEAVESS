@@ -1,0 +1,10 @@
+/data/kabir/similarity-search/models/WEAVESS/build/CMakeFiles/edit_cache.dir
+/data/kabir/similarity-search/models/WEAVESS/build/CMakeFiles/rebuild_cache.dir
+/data/kabir/similarity-search/models/WEAVESS/build/src/CMakeFiles/WEAVESS.dir
+/data/kabir/similarity-search/models/WEAVESS/build/src/CMakeFiles/WEAVESS_s.dir
+/data/kabir/similarity-search/models/WEAVESS/build/src/CMakeFiles/edit_cache.dir
+/data/kabir/similarity-search/models/WEAVESS/build/src/CMakeFiles/rebuild_cache.dir
+/data/kabir/similarity-search/models/WEAVESS/build/test/CMakeFiles/main.dir
+/data/kabir/similarity-search/models/WEAVESS/build/test/CMakeFiles/algo_test.dir
+/data/kabir/similarity-search/models/WEAVESS/build/test/CMakeFiles/edit_cache.dir
+/data/kabir/similarity-search/models/WEAVESS/build/test/CMakeFiles/rebuild_cache.dir
