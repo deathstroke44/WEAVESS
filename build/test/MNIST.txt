@@ -1,0 +1,168 @@
+Graph name: MNISThcnng.graph
+base data len : 69000
+base data dim : 784
+query data len : 200
+query data dim : 784
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:20 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 296.343
+base data len : 69000
+base data dim : 784
+query data len : 200
+query data dim : 784
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:20 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.120532
+DistCount: 104230
+HopCount: 14074
+20 NN accuracy: 0.987
+20 NN recall: 0.987
+20 NN map@: 0.930692
+SEARCH_L : 120
+search time: 0.199684
+DistCount: 162349
+HopCount: 24045
+20 NN accuracy: 0.99625
+20 NN recall: 0.99625
+20 NN map@: 0.943434
+SEARCH_L : 170
+search time: 0.292266
+DistCount: 215504
+HopCount: 34016
+20 NN accuracy: 0.99775
+20 NN recall: 0.99775
+20 NN map@: 0.94536
+SEARCH_L : 220
+search time: 0.332223
+DistCount: 266535
+HopCount: 44014
+20 NN accuracy: 0.9985
+20 NN recall: 0.9985
+20 NN map@: 0.946411
+SEARCH_L : 270
+search time: 0.365337
+DistCount: 315460
+HopCount: 54032
+20 NN accuracy: 0.99875
+20 NN recall: 0.99875
+20 NN map@: 0.952161
+SEARCH_L : 320
+search time: 0.421521
+DistCount: 363301
+HopCount: 64024
+20 NN accuracy: 0.999
+20 NN recall: 0.999
+20 NN map@: 0.952673
+SEARCH_L : 370
+search time: 0.53738
+DistCount: 408782
+HopCount: 74017
+20 NN accuracy: 0.999
+20 NN recall: 0.999
+20 NN map@: 0.952411
+SEARCH_L : 420
+search time: 0.543561
+DistCount: 453870
+HopCount: 84011
+20 NN accuracy: 0.999
+20 NN recall: 0.999
+20 NN map@: 0.952161
+SEARCH_L : 470
+search time: 0.582796
+DistCount: 498188
+HopCount: 94026
+20 NN accuracy: 0.999
+20 NN recall: 0.999
+20 NN map@: 0.951911
+SEARCH_L : 520
+search time: 0.717914
+DistCount: 541545
+HopCount: 104013
+20 NN accuracy: 0.999
+20 NN recall: 0.999
+20 NN map@: 0.951911
+SEARCH_L : 570
+search time: 0.696845
+DistCount: 584557
+HopCount: 114015
+20 NN accuracy: 0.999
+20 NN recall: 0.999
+20 NN map@: 0.951911
+SEARCH_L : 620
+search time: 0.826073
+DistCount: 627064
+HopCount: 124018
+20 NN accuracy: 0.99925
+20 NN recall: 0.99925
+20 NN map@: 0.952423
+SEARCH_L : 670
+search time: 0.797781
+DistCount: 668752
+HopCount: 134027
+20 NN accuracy: 0.99925
+20 NN recall: 0.99925
+20 NN map@: 0.952423
+SEARCH_L : 720
+search time: 0.9265
+DistCount: 710037
+HopCount: 144009
+20 NN accuracy: 0.99925
+20 NN recall: 0.99925
+20 NN map@: 0.952173
+SEARCH_L : 770
+search time: 0.8976
+DistCount: 751072
+HopCount: 154015
+20 NN accuracy: 0.99925
+20 NN recall: 0.99925
+20 NN map@: 0.952173
+SEARCH_L : 820
+search time: 1.02505
+DistCount: 791841
+HopCount: 164012
+20 NN accuracy: 0.9995
+20 NN recall: 0.9995
+20 NN map@: 0.95303
+SEARCH_L : 870
+search time: 1.06474
+DistCount: 831528
+HopCount: 174024
+20 NN accuracy: 0.99975
+20 NN recall: 0.99975
+20 NN map@: 0.953876
+SEARCH_L : 920
+search time: 1.08755
+DistCount: 871482
+HopCount: 184025
+20 NN accuracy: 0.99975
+20 NN recall: 0.99975
+20 NN map@: 0.953876
+SEARCH_L : 970
+search time: 1.17824
+DistCount: 911348
+HopCount: 194020
+20 NN accuracy: 0.99975
+20 NN recall: 0.99975
+20 NN map@: 0.953876
+SEARCH_L : 1020
+search time: 1.22374
+DistCount: 951062
+HopCount: 204024
+20 NN accuracy: 0.99975
+20 NN recall: 0.99975
+20 NN map@: 0.953876
+__SEARCH FINISH__
