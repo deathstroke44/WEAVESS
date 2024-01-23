@@ -200,6 +200,8 @@ int testSift1m() {
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -214,6 +216,8 @@ int testGist1m() {
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -228,6 +232,8 @@ int testGlove() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -242,6 +248,8 @@ int testimageNet() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -256,6 +264,8 @@ int testnotre() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -270,6 +280,8 @@ int testukbench() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -284,6 +296,8 @@ int testCrawl() {
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -298,6 +312,8 @@ int testAudio() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -312,6 +328,8 @@ int testCifar() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -326,6 +344,8 @@ int testEnron() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -341,6 +361,8 @@ int testmillionSong() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -355,6 +377,8 @@ int testMnist() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;
 }
@@ -369,6 +393,8 @@ int testNuswide() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -384,6 +410,8 @@ int testSun() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -398,6 +426,8 @@ int testDeep() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -413,6 +443,8 @@ int testTrevi() {
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -428,6 +460,8 @@ int testUqv() {
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -443,6 +477,8 @@ int testNyTimes() {
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
@@ -457,6 +493,8 @@ int testLastFm() {
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
     return 0;  
 }
