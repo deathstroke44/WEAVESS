@@ -12,13 +12,13 @@ void KDRG(std::string base_path, std::string query_path, std::string ground_path
     parameters.set<unsigned>("S", 50);
     parameters.set<unsigned>("R_refine", 10);
 
-    auto* builder= new weavess::IndexBuilder(8);
+    auto* builder= new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_KNNG, true)
             -> refine(weavess::REFINE_KDRG, true)
             -> save_graph(weavess::INDEX_KGRAPH, &graph[0]);
 
-    auto *builder2 = new weavess::IndexBuilder(8);
+    auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> load_graph(weavess::INDEX_KGRAPH, &graph[0])
             -> search(weavess::SEARCH_ENTRY_RAND, weavess::ROUTER_GREEDY, weavess::TYPE::L_SEARCH_ASCEND);
@@ -39,13 +39,13 @@ void EFANNA(std::string base_path, std::string query_path, std::string ground_pa
     parameters.set<unsigned>("S", 10);
     parameters.set<unsigned>("R", 100);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_KDT, true)
             -> refine(weavess::REFINE_EFANNA, true)
             -> save_graph(weavess::INDEX_EFANNA, &graph[0]);
 
-    auto *builder2 = new weavess::IndexBuilder(8);
+    auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> load_graph(weavess::INDEX_EFANNA, &graph[0])
             -> search(weavess::SEARCH_ENTRY_KDT, weavess::ROUTER_GREEDY, weavess::TYPE::L_SEARCH_ASCEND);
@@ -59,7 +59,7 @@ void NSW(std::string base_path, std::string query_path, std::string ground_path)
     parameters.set<unsigned>("ef_construction", 50);        //L
     parameters.set<unsigned>("n_threads_", 1);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_NSW)
             -> search(weavess::SEARCH_ENTRY_NONE, weavess::ROUTER_NSW, weavess::TYPE::L_SEARCH_ASCEND);
@@ -76,13 +76,13 @@ void PANNG(std::string base_path, std::string query_path, std::string ground_pat
     parameters.set<unsigned>("n_threads_", 1);
     //parameters.set<unsigned>("batchSizeForCreation", 200);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_ANNG)
             -> refine(weavess::REFINE_PANNG, false)
             -> save_graph(weavess::INDEX_PANNG, &graph_file[0]);
 
-    auto *builder2 = new weavess::IndexBuilder(8);
+    auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> load_graph(weavess::INDEX_PANNG, &graph_file[0])
             -> search(weavess::SEARCH_ENTRY_VPT, weavess::ROUTER_NGT, weavess::TYPE::L_SEARCH_ASCEND);
@@ -103,14 +103,14 @@ void ONNG(std::string base_path, std::string query_path, std::string ground_path
     parameters.set<unsigned>("numOfQueries", 200);
     parameters.set<unsigned>("numOfResultantObjects", 20);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_ANNG, true)
             -> refine(weavess::REFINE_ONNG, true)
             -> refine(weavess::REFINE_PANNG, true)
             -> load_graph(weavess::INDEX_ONNG, &graph_file[0]);
 
-    auto *builder2 = new weavess::IndexBuilder(8);
+    auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
              -> save_graph(weavess::INDEX_ONNG, &graph_file[0])
             -> search(weavess::SEARCH_ENTRY_VPT, weavess::ROUTER_NGT, weavess::TYPE::L_SEARCH_SET_RECALL);
@@ -129,7 +129,7 @@ void SPTAG_KDT(std::string base_path, std::string query_path, std::string ground
     parameters.set<unsigned>("CEF", 500);
     parameters.set<unsigned>("numOfThreads", 10);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_SPTAG_KDT)
             -> refine(weavess::REFINE_SPTAG_KDT, false)
@@ -154,13 +154,13 @@ void SPTAG_BKT(std::string base_path, std::string query_path, std::string ground
     parameters.set<unsigned>("CEF", 500);
     parameters.set<unsigned>("numOfThreads", 10);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_SPTAG_BKT)
             -> refine(weavess::REFINE_SPTAG_BKT, false)
             -> save_graph(weavess::INDEX_SPTAG_BKT, &graph[0]);
 
-    auto *builder2 = new weavess::IndexBuilder(8);
+    auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> load_graph(weavess::INDEX_SPTAG_BKT, &graph[0])
             -> search(weavess::SEARCH_ENTRY_NONE, weavess::ROUTER_SPTAG_BKT, weavess::TYPE::L_SEARCH_ASCEND);
@@ -168,22 +168,22 @@ void SPTAG_BKT(std::string base_path, std::string query_path, std::string ground
     //std::cout << "Time cost: " << builder->GetBuildTime().count() << std::endl;
 }
 
-void HCNNG(std::string base_path, std::string query_path, std::string ground_path, unsigned K = 20, std::string graph = "hcnng.graph") {
+void HCNNG(std::string base_path, std::string query_path, std::string ground_path, unsigned K = 20, std::string graph = "hcnng.graph", int minsize_cl=100, int num_cl=20, int nTrees=10, int mLevel=4) {
     cout<<"Graph name: "<<graph<<endl;
     weavess::Parameters parameters;
-    parameters.set<unsigned>("minsize_cl", 100);
-    parameters.set<unsigned>("num_cl", 20);
+    parameters.set<unsigned>("minsize_cl", minsize_cl);
+    parameters.set<unsigned>("num_cl", num_cl);
 
-    parameters.set<unsigned>("nTrees", 10);
-    parameters.set<unsigned>("mLevel", 4);
+    parameters.set<unsigned>("nTrees", nTrees);
+    parameters.set<unsigned>("mLevel", mLevel);
     parameters.set<unsigned>("K", K);
 
-    auto *builder = new weavess::IndexBuilder(8);
+    auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_HCNNG)
             -> save_graph(weavess::INDEX_HCNNG, &graph[0]);
 
-    auto *builder2 = new weavess::IndexBuilder(8);
+    auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> load_graph(weavess::INDEX_HCNNG, &graph[0])
             -> search(weavess::SEARCH_ENTRY_KDT, weavess::ROUTER_GUIDE, weavess::TYPE::L_SEARCH_ASCEND, K);
@@ -196,7 +196,7 @@ int testSift1m() {
     std::string base_path = "sift/sift_base.fvecs";
     std::string query_path = "sift/sift_query.fvecs";
     std::string ground_path = "sift/sift_groundtruth.ivecs";
-    std::string graph = "sift1mhcnng.graph";
+    std::string graph = "../../graphs/sift1mhcnng.graph";
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -210,7 +210,7 @@ int testGist1m() {
     std::string base_path = "gist/gist_base.fvecs";
     std::string query_path = "gist/gist_query.fvecs";
     std::string ground_path = "gist/gist_groundtruth.ivecs";
-    std::string graph = "gist1mhcnng.graph";
+    std::string graph = "../../graphs/gist1mhcnng.graph";
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -224,7 +224,7 @@ int testGlove() {
     std::string base_path = "glove/base.fvecs";
     std::string query_path = "glove/query.fvecs";
     std::string ground_path = "glove/groundtruth.ivecs";
-    std::string graph = "glovehcnng.graph";
+    std::string graph = "../../graphs/glovehcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -238,7 +238,7 @@ int testimageNet() {
     std::string base_path = "imageNet/base.fvecs";
     std::string query_path = "imageNet/query.fvecs";
     std::string ground_path = "imageNet/groundtruth.ivecs";
-    std::string graph = "imageNethcnng.graph";
+    std::string graph = "../../graphs/imageNethcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -252,7 +252,7 @@ int testnotre() {
     std::string base_path = "notre/base.fvecs";
     std::string query_path = "notre/query.fvecs";
     std::string ground_path = "notre/groundtruth.ivecs";
-    std::string graph = "notrehcnng.graph";
+    std::string graph = "../../graphs/notrehcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -266,7 +266,7 @@ int testukbench() {
     std::string base_path = "ukbench/base.fvecs";
     std::string query_path = "ukbench/query.fvecs";
     std::string ground_path = "ukbench/groundtruth.ivecs";
-    std::string graph = "ukbenchhcnng.graph";
+    std::string graph = "../../graphs/ukbenchhcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -280,7 +280,7 @@ int testCrawl() {
     std::string base_path = "crawl/base.fvecs";
     std::string query_path = "crawl/query.fvecs";
     std::string ground_path = "crawl/groundtruth.ivecs";
-    std::string graph = "crawlhcnng.graph";
+    std::string graph = "../../graphs/crawlhcnng.graph";
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -294,7 +294,7 @@ int testAudio() {
     std::string base_path = "audio/audio_base.fvecs";
     std::string query_path = "audio/audio_query.fvecs";
     std::string ground_path = "audio/audio_groundtruth.ivecs";
-    std::string graph = "audiohcnng.graph";
+    std::string graph = "../../graphs/audiohcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -308,7 +308,7 @@ int testCifar() {
     std::string base_path = "cifar/base.fvecs";
     std::string query_path = "cifar/query.fvecs";
     std::string ground_path = "cifar/groundtruth.ivecs";
-    std::string graph = "cifarhcnng.graph";
+    std::string graph = "../../graphs/cifarhcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -322,7 +322,7 @@ int testEnron() {
     std::string base_path = "enron/base.fvecs";
     std::string query_path = "enron/query.fvecs";
     std::string ground_path = "enron/groundtruth.ivecs";
-    std::string graph = "enronhcnng.graph";
+    std::string graph = "../../graphs/enronhcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -337,7 +337,7 @@ int testmillionSong() {
     std::string base_path = "millionSong/base.fvecs";
     std::string query_path = "millionSong/query.fvecs";
     std::string ground_path = "millionSong/groundtruth.ivecs";
-    std::string graph = "millionSonghcnng.graph";
+    std::string graph = "../../graphs/millionSonghcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -351,7 +351,7 @@ int testMnist() {
     std::string base_path = "MNIST/base.fvecs";
     std::string query_path = "MNIST/query.fvecs";
     std::string ground_path = "MNIST/groundtruth.ivecs";
-    std::string graph = "MNISThcnng.graph";
+    std::string graph = "../../graphs/MNISThcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -365,7 +365,7 @@ int testNuswide() {
     std::string base_path = "nuswide/base.fvecs";
     std::string query_path = "nuswide/query.fvecs";
     std::string ground_path = "nuswide/groundtruth.ivecs";
-    std::string graph = "nuswidehcnng.graph";
+    std::string graph = "../../graphs/nuswidehcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -380,7 +380,7 @@ int testSun() {
     std::string base_path = "sun/base.fvecs";
     std::string query_path = "sun/query.fvecs";
     std::string ground_path = "sun/groundtruth.ivecs";
-    std::string graph = "sunhcnng.graph";
+    std::string graph = "../../graphs/sunhcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -394,7 +394,7 @@ int testDeep() {
     std::string base_path = "deep/base.fvecs";
     std::string query_path = "deep/query.fvecs";
     std::string ground_path = "deep/groundtruth.ivecs";
-    std::string graph = "deephcnng.graph";
+    std::string graph = "../../graphs/deephcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -409,7 +409,7 @@ int testTrevi() {
     std::string base_path = "trevi/base.fvecs";
     std::string query_path = "trevi/query.fvecs";
     std::string ground_path = "trevi/groundtruth.ivecs";
-    std::string graph = "trevihcnng.graph";
+    std::string graph = "../../graphs/trevihcnng.graph";
     int K = 20;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -424,7 +424,7 @@ int testUqv() {
     std::string base_path = "uqv/base.fvecs";
     std::string query_path = "uqv/query.fvecs";
     std::string ground_path = "uqv/groundtruth.ivecs";
-    std::string graph = "uqvhcnng.graph";
+    std::string graph = "../../graphs/uqvhcnng.graph";
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -439,7 +439,7 @@ int testNyTimes() {
     std::string base_path = "nytimes/base.fvecs";
     std::string query_path = "nytimes/query.fvecs";
     std::string ground_path = "nytimes/groundtruth.ivecs";
-    std::string graph = "nytimeshcnng.graph";
+    std::string graph = "../../graphs/nytimeshcnng.graph";
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
@@ -453,7 +453,7 @@ int testLastFm() {
     std::string base_path = "lastfm/base.fvecs";
     std::string query_path = "lastfm/query.fvecs";
     std::string ground_path = "lastfm/groundtruth.ivecs";
-    std::string graph = "lastfmhcnng.graph";
+    std::string graph = "../../graphs/lastfmhcnng.graph";
     int K = 100;
 
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
