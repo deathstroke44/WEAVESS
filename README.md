@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # A Comprehensive Survey and Experimental Comparison of Graph-based Approximate Nearest Neighbor Search
 
 ## Introduction
@@ -109,3 +110,6 @@ Please cite our work in your publications if it helps your research:
 ## Acknowledgements
 
 Thanks to everyone who provided references for this project. Special thanks to Dr. [Weijie Zhao](https://scholar.google.com/citations?user=c-gzOhwAAAAJ&hl=zh-CN&oi=sra), Dr. [Mingjie Li](https://scholar.google.com/citations?user=MoLSu5cAAAAJ&hl=zh-CN&oi=sra), and Dr. [Cong Fu](https://scholar.google.com/citations?user=Gvp9ErEAAAAJ&hl=zh-CN&oi=sra) for their assistance in the necessary implementation of this project.
+=======
+# WEAVESS
+>>>>>>> eb5861b71409a52c009296f6543ec1ec5eb38071
