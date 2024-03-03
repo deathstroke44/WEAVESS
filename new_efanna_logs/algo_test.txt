@@ -1,0 +1,1 @@
+Graph name: ../../graphs/./algo_test.graph
