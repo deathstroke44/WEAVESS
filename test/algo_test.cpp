@@ -516,8 +516,9 @@ int testGenericHCNNG(string dataset, int K) {
 
 int main(int argc, char* argv[]) {
 	
-    for (int i=0;i<argc;i+=2) {
-        testGenericHCNNG(argv[i], atoi(argv[i+1]));
+    for (int i=1;i<argc;i+=2) {
+        string dataset=argv[i];
+        testGenericHCNNG(dataset, atoi(argv[i+1]));
         // if (strcmp(argv[i],"sift1m") == 0) {
         //         cout<<"Sift1m test"<<endl;
         //         testSift1m();
