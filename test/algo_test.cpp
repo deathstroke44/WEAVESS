@@ -3,6 +3,8 @@
 //
 #include <weavess/builder.h>
 #include <iostream>
+#include<bits/stdc++.h>
+#include<string>
 using namespace std;
 string absolute_path = "/data/kabir/similarity-search/dataset/";
 
@@ -191,313 +193,6 @@ void HCNNG(std::string base_path, std::string query_path, std::string ground_pat
     //std::cout << "Time cost: " << builder->GetBuildTime().count() << std::endl;
 }
 
-int testSift1m() {
-    freopen("sift1m.txt","a+",stdout);
-    std::string base_path = "sift/sift_base.fvecs";
-    std::string query_path = "sift/sift_query.fvecs";
-    std::string ground_path = "sift/sift_groundtruth.ivecs";
-    std::string graph = "../../graphs/sift1mhcnng.graph";
-    int K = 100;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testGist1m() {
-    freopen("gist1m.txt","a+",stdout);
-    std::string base_path = "gist/gist_base.fvecs";
-    std::string query_path = "gist/gist_query.fvecs";
-    std::string ground_path = "gist/gist_groundtruth.ivecs";
-    std::string graph = "../../graphs/gist1mhcnng.graph";
-    int K = 100;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testGlove() {
-    freopen("glove.txt","a+",stdout);
-    std::string base_path = "glove/base.fvecs";
-    std::string query_path = "glove/query.fvecs";
-    std::string ground_path = "glove/groundtruth.ivecs";
-    std::string graph = "../../graphs/glovehcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testimageNet() {
-    freopen("imageNet.txt","a+",stdout);
-    std::string base_path = "imageNet/base.fvecs";
-    std::string query_path = "imageNet/query.fvecs";
-    std::string ground_path = "imageNet/groundtruth.ivecs";
-    std::string graph = "../../graphs/imageNethcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testnotre() {
-    freopen("notre.txt","a+",stdout);
-    std::string base_path = "notre/base.fvecs";
-    std::string query_path = "notre/query.fvecs";
-    std::string ground_path = "notre/groundtruth.ivecs";
-    std::string graph = "../../graphs/notrehcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testukbench() {
-    freopen("ukbench.txt","a+",stdout);
-    std::string base_path = "ukbench/base.fvecs";
-    std::string query_path = "ukbench/query.fvecs";
-    std::string ground_path = "ukbench/groundtruth.ivecs";
-    std::string graph = "../../graphs/ukbenchhcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testCrawl() {
-    freopen("crawl.txt","a+",stdout);
-    std::string base_path = "crawl/base.fvecs";
-    std::string query_path = "crawl/query.fvecs";
-    std::string ground_path = "crawl/groundtruth.ivecs";
-    std::string graph = "../../graphs/crawlhcnng.graph";
-    int K = 100;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testAudio() {
-    freopen("audio.txt","a+",stdout);
-    std::string base_path = "audio/audio_base.fvecs";
-    std::string query_path = "audio/audio_query.fvecs";
-    std::string ground_path = "audio/audio_groundtruth.ivecs";
-    std::string graph = "../../graphs/audiohcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testCifar() {
-    freopen("cifar.txt","a+",stdout);
-    std::string base_path = "cifar/base.fvecs";
-    std::string query_path = "cifar/query.fvecs";
-    std::string ground_path = "cifar/groundtruth.ivecs";
-    std::string graph = "../../graphs/cifarhcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testEnron() {
-    freopen("enron.txt","a+",stdout);
-    std::string base_path = "enron/base.fvecs";
-    std::string query_path = "enron/query.fvecs";
-    std::string ground_path = "enron/groundtruth.ivecs";
-    std::string graph = "../../graphs/enronhcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-
-int testmillionSong() {
-    freopen("millionSong.txt","a+",stdout);
-    std::string base_path = "millionSong/base.fvecs";
-    std::string query_path = "millionSong/query.fvecs";
-    std::string ground_path = "millionSong/groundtruth.ivecs";
-    std::string graph = "../../graphs/millionSonghcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testMnist() {
-    freopen("MNIST.txt","a+",stdout);
-    std::string base_path = "MNIST/base.fvecs";
-    std::string query_path = "MNIST/query.fvecs";
-    std::string ground_path = "MNIST/groundtruth.ivecs";
-    std::string graph = "../../graphs/MNISThcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;
-}
-
-
-int testNuswide() {
-    freopen("nuswide.txt","a+",stdout);
-    std::string base_path = "nuswide/base.fvecs";
-    std::string query_path = "nuswide/query.fvecs";
-    std::string ground_path = "nuswide/groundtruth.ivecs";
-    std::string graph = "../../graphs/nuswidehcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-
-int testSun() {
-    freopen("sun.txt","a+",stdout);
-    std::string base_path = "sun/base.fvecs";
-    std::string query_path = "sun/query.fvecs";
-    std::string ground_path = "sun/groundtruth.ivecs";
-    std::string graph = "../../graphs/sunhcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testDeep() {
-    freopen("deep.txt","a+",stdout);
-    std::string base_path = "deep/base.fvecs";
-    std::string query_path = "deep/query.fvecs";
-    std::string ground_path = "deep/groundtruth.ivecs";
-    std::string graph = "../../graphs/deephcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-
-int testTrevi() {
-    freopen("trevi.txt","a+",stdout);
-    std::string base_path = "trevi/base.fvecs";
-    std::string query_path = "trevi/query.fvecs";
-    std::string ground_path = "trevi/groundtruth.ivecs";
-    std::string graph = "../../graphs/trevihcnng.graph";
-    int K = 20;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-
-int testUqv() {
-    freopen("uqv.txt","a+",stdout);
-    std::string base_path = "uqv/base.fvecs";
-    std::string query_path = "uqv/query.fvecs";
-    std::string ground_path = "uqv/groundtruth.ivecs";
-    std::string graph = "../../graphs/uqvhcnng.graph";
-    int K = 100;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-
-int testNyTimes() {
-    freopen("nytimes.txt","a+",stdout);
-    std::string base_path = "nytimes/base.fvecs";
-    std::string query_path = "nytimes/query.fvecs";
-    std::string ground_path = "nytimes/groundtruth.ivecs";
-    std::string graph = "../../graphs/nytimeshcnng.graph";
-    int K = 100;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
-
-
-int testLastFm() {
-    freopen("lastfm.txt","a+",stdout);
-    std::string base_path = "lastfm/base.fvecs";
-    std::string query_path = "lastfm/query.fvecs";
-    std::string ground_path = "lastfm/groundtruth.ivecs";
-    std::string graph = "../../graphs/lastfmhcnng.graph";
-    int K = 100;
-
-    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
-
-    return 0;  
-}
 
 int testGenericHCNNG(string dataset, int K) {
     cout<<(dataset+" test")<<endl;
@@ -514,11 +209,34 @@ int testGenericHCNNG(string dataset, int K) {
     return 0;  
 }
 
+int testGenericHCNNG2(string dataset, int K, int cs) {
+    cout<<(dataset+" test")<<endl;
+    freopen(("../../new_efanna_logs/"+dataset+to_string(cs)+".txt").c_str(),"a+",stdout);
+    std::string base_path = dataset+"/base.fvecs";
+    std::string query_path = dataset+"/query.fvecs";
+    std::string ground_path = dataset+"/groundtruth.ivecs";
+    std::string graph = "../../graphs/"+dataset+".graph";
+    // int minsize_cl=100, int num_cl=20, int nTrees=10, int mLevel=4
+    if(cs==0) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    if(cs==1) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    if(cs==2) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
+    if(cs==3) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 5);
+    if(cs==4) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 5);
+    if(cs==5) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    if(cs==6) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 20, 10);
+    if(cs==7) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 10, 10);
+    if(cs==8) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10, 5);
+    if(cs==9) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10, 10, 2);
+    if(cs==10) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10, 10, 8);
+
+    return 0;  
+}
+
 int main(int argc, char* argv[]) {
 	
-    for (int i=1;i<argc;i+=2) {
+    for (int i=1;i<argc;i+=3) {
         string dataset=argv[i];
-        testGenericHCNNG(dataset, atoi(argv[i+1]));
+        testGenericHCNNG2(dataset, atoi(argv[i+1]), atoi(argv[i+2]));
         // if (strcmp(argv[i],"sift1m") == 0) {
         //         cout<<"Sift1m test"<<endl;
         //         testSift1m();
