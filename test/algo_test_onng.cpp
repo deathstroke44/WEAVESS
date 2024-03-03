@@ -8,34 +8,62 @@ string absolute_path = "/data/kabir/similarity-search/dataset/";
 
 
 
+// void ONNG(std::string base_path, std::string query_path, std::string ground_path,unsigned K = 20, std::string graph = "onng.graph", int numOfIncomingEdges=50, int numOfOutgoingEdges=20) {
+//     std::string graph_file = graph;
+
+//     weavess::Parameters parameters;
+//     parameters.set<unsigned>("NN", K);          // K
+//     parameters.set<unsigned>("ef_construction", 100);        //L
+//     parameters.set<unsigned>("n_threads", 1);
+
+//     parameters.set<unsigned>("numOfOutgoingEdges", numOfOutgoingEdges);
+//     parameters.set<unsigned>("numOfIncomingEdges", numOfIncomingEdges);
+//     std::cout << "Input: " << numOfIncomingEdges << numOfOutgoingEdges << std::endl;
+
+//     auto *builder = new weavess::IndexBuilder(1);
+//     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
+//             -> init(weavess::INIT_ANNG, true)
+//             -> refine(weavess::REFINE_ONNG, true)
+//             -> refine(weavess::REFINE_PANNG, true)
+//             -> save_graph(weavess::INDEX_ONNG, &graph_file[0]);
+
+//     auto *builder2 = new weavess::IndexBuilder(1);
+//     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
+//              -> load_graph(weavess::INDEX_ONNG, &graph_file[0])
+//             -> search(weavess::SEARCH_ENTRY_VPT, weavess::ROUTER_NGT, weavess::TYPE::L_SEARCH_ASCEND, K);
+
+//     std::cout << "Time cost: " << builder->GetBuildTime().count() << std::endl;
+// }
+
 void ONNG(std::string base_path, std::string query_path, std::string ground_path,unsigned K = 20, std::string graph = "onng.graph", int numOfIncomingEdges=50, int numOfOutgoingEdges=20) {
-    std::string graph_file = R"(onng.graph)";
+    std::string graph_file = graph;
 
     weavess::Parameters parameters;
-    parameters.set<unsigned>("NN", 50);          // K
-    parameters.set<unsigned>("ef_construction", 100);        //L
-    parameters.set<unsigned>("n_threads_", 1);
 
-    parameters.set<unsigned>("numOfOutgoingEdges", numOfOutgoingEdges);
-    parameters.set<unsigned>("numOfIncomingEdges", numOfIncomingEdges);
-    parameters.set<unsigned>("numOfQueries", 200);
-    parameters.set<unsigned>("numOfResultantObjects", 20);
-    std::cout << "Input: " << numOfIncomingEdges << numOfOutgoingEdges << std::endl;
+    parameters.set<unsigned>("nTrees", 8);
+    parameters.set<unsigned>("mLevel", 8);
+    parameters.set<unsigned>("S", 100);
+
+    parameters.set<unsigned>("K", K);
+    parameters.set<unsigned>("L", 200);
+    parameters.set<unsigned>("ITER", 12);
+    parameters.set<unsigned>("S", 10);
+    parameters.set<unsigned>("R", 100);
 
     auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
-            -> init(weavess::INIT_ANNG, true)
-            -> refine(weavess::REFINE_ONNG, true)
-            -> refine(weavess::REFINE_PANNG, true)
-            -> load_graph(weavess::INDEX_ONNG, &graph_file[0]);
+            -> init(weavess::INIT_KDT, true)
+            -> refine(weavess::REFINE_EFANNA, true)
+            -> save_graph(weavess::INDEX_EFANNA, &graph[0]);
 
     auto *builder2 = new weavess::IndexBuilder(1);
     builder2 -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
-             -> save_graph(weavess::INDEX_ONNG, &graph_file[0])
-            -> search(weavess::SEARCH_ENTRY_VPT, weavess::ROUTER_NGT, weavess::TYPE::L_SEARCH_SET_RECALL);
+            -> load_graph(weavess::INDEX_EFANNA, &graph[0])
+            -> search(weavess::SEARCH_ENTRY_KDT, weavess::ROUTER_GREEDY, weavess::TYPE::L_SEARCH_ASCEND, K);
 
     std::cout << "Time cost: " << builder->GetBuildTime().count() << std::endl;
 }
+
 
 int testSift1m() {
     freopen("sift1m.txt","a+",stdout);
@@ -46,8 +74,8 @@ int testSift1m() {
     int K = 100;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -62,8 +90,8 @@ int testGist1m() {
     int K = 100;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -78,8 +106,8 @@ int testGlove() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -94,8 +122,8 @@ int testimageNet() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -110,8 +138,8 @@ int testnotre() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -126,8 +154,8 @@ int testukbench() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -142,8 +170,8 @@ int testCrawl() {
     int K = 100;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -158,8 +186,8 @@ int testAudio() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -174,8 +202,8 @@ int testCifar() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -190,8 +218,8 @@ int testEnron() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -207,8 +235,8 @@ int testmillionSong() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -223,8 +251,8 @@ int testMnist() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;
 }
@@ -239,8 +267,8 @@ int testNuswide() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -256,8 +284,8 @@ int testSun() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -272,8 +300,8 @@ int testDeep() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -289,8 +317,8 @@ int testTrevi() {
     int K = 20;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -306,8 +334,8 @@ int testUqv() {
     int K = 100;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -323,8 +351,8 @@ int testNyTimes() {
     int K = 100;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }
@@ -339,8 +367,8 @@ int testLastFm() {
     int K = 100;
 
     ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
-    ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 10);
+    // ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 25, 20);
 
     return 0;  
 }

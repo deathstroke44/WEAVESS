@@ -21,6 +21,8 @@ namespace weavess {
      * @param parameters
      * @return pointer of builder
      */
+
+    
     IndexBuilder *IndexBuilder::load(char *data_file, char *query_file, char *ground_file, Parameters &parameters) {
         auto *a = new ComponentLoad(final_index_);
 
@@ -356,7 +358,7 @@ namespace weavess {
             // unsigned L_st = 5;
             // unsigned L_st2 = 8;
             unsigned L = K;
-            for (unsigned i = 0; i < 20; i++) {
+            for (unsigned i = 0; i < 3; i++) {
                 L += 50;
                 std::cout << "SEARCH_L : " << L << std::endl;
                 if (L < K) {
@@ -426,7 +428,19 @@ namespace weavess {
                     //                }
                     //                std::cout << std::endl;
                 }
+                // FILE * ofp = fopen("result.ivecs", "w");
+                // for (unsigned i = 0; i < final_index_->getGroundLen(); i++)
+                // {
+                //     fwrite(&K,sizeof(int),1,ofp);
+                //     // fwrite(&res[i],sizeof(int),K,ofp);
+                //     for (int s=0;s<20;s++) {
+                //         int ss = (int)res[i][s];
+                //         fwrite(&ss,sizeof(int),1,ofp);
+                //     }
+                //     std::cout<<std::endl;
+                // }
 
+                // fclose(ofp);	
                 float acc = 1 - (float) cnt / (final_index_->getGroundLen() * K);
                 std::cout << K << " NN accuracy: " << acc << std::endl;
                 float recall = (float) cnt1 / (final_index_->getGroundLen() * K);
