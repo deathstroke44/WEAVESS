@@ -199,7 +199,7 @@ int testSift1m() {
     std::string graph = "../../graphs/sift1mhcnng.graph";
     int K = 100;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -215,7 +215,7 @@ int testGist1m() {
     std::string graph = "../../graphs/gist1mhcnng.graph";
     int K = 100;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -231,7 +231,7 @@ int testGlove() {
     std::string graph = "../../graphs/glovehcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -247,7 +247,7 @@ int testimageNet() {
     std::string graph = "../../graphs/imageNethcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -263,7 +263,7 @@ int testnotre() {
     std::string graph = "../../graphs/notrehcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -279,7 +279,7 @@ int testukbench() {
     std::string graph = "../../graphs/ukbenchhcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -295,7 +295,7 @@ int testCrawl() {
     std::string graph = "../../graphs/crawlhcnng.graph";
     int K = 100;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -311,7 +311,7 @@ int testAudio() {
     std::string graph = "../../graphs/audiohcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -327,7 +327,7 @@ int testCifar() {
     std::string graph = "../../graphs/cifarhcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -343,7 +343,7 @@ int testEnron() {
     std::string graph = "../../graphs/enronhcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -360,7 +360,7 @@ int testmillionSong() {
     std::string graph = "../../graphs/millionSonghcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -376,7 +376,7 @@ int testMnist() {
     std::string graph = "../../graphs/MNISThcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -392,7 +392,7 @@ int testNuswide() {
     std::string graph = "../../graphs/nuswidehcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -409,7 +409,7 @@ int testSun() {
     std::string graph = "../../graphs/sunhcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -425,7 +425,7 @@ int testDeep() {
     std::string graph = "../../graphs/deephcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -442,7 +442,7 @@ int testTrevi() {
     std::string graph = "../../graphs/trevihcnng.graph";
     int K = 20;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -459,7 +459,7 @@ int testUqv() {
     std::string graph = "../../graphs/uqvhcnng.graph";
     int K = 100;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -476,7 +476,7 @@ int testNyTimes() {
     std::string graph = "../../graphs/nytimeshcnng.graph";
     int K = 100;
 
-    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
 
@@ -492,6 +492,21 @@ int testLastFm() {
     std::string graph = "../../graphs/lastfmhcnng.graph";
     int K = 100;
 
+    // HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
+    HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
+
+    return 0;  
+}
+
+int testGenericHCNNG(string dataset, int K) {
+    cout<<(dataset+" test")<<endl;
+    freopen(("../../new_efanna_logs/"+dataset+".txt").c_str(),"a+",stdout);
+    std::string base_path = dataset+"/base.fvecs";
+    std::string query_path = dataset+"/query.fvecs";
+    std::string ground_path = dataset+"/groundtruth.ivecs";
+    std::string graph = "../../graphs/"+dataset+".graph";
+
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
     HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10);
@@ -501,83 +516,84 @@ int testLastFm() {
 
 int main(int argc, char* argv[]) {
 	
-    for (int i=0;i<argc;i++) {
-        if (strcmp(argv[i],"sift1m") == 0) {
-                cout<<"Sift1m test"<<endl;
-                testSift1m();
-        }
-        else if (strcmp(argv[i],"gist") == 0) {
-                cout<<"gist test"<<endl;
-                testGist1m();
-        }
-        else if (strcmp(argv[i],"glove") == 0) {
-                cout<<"glove test"<<endl;
-                testGlove();
-        }
-        else if (strcmp(argv[i],"imagenet") == 0) {
-                cout<<"imagenet test"<<endl;
-                testimageNet();
-        }
-        else if (strcmp(argv[i],"notre") == 0) {
-                cout<<"notre test"<<endl;
-                testnotre();
-        }
-        else if (strcmp(argv[i],"ukbench") == 0) {
-                cout<<"ukbench test"<<endl;
-                testukbench();
-        }
-        else if (strcmp(argv[i],"crawl") == 0) {
-                cout<<"crawl test"<<endl;
-                testCrawl();
-        }
-        else if (strcmp(argv[i],"audio") == 0) {
-                cout<<"audio test"<<endl;
-                testAudio();
-        }
-        else if (strcmp(argv[i],"cifer") == 0) {
-                cout<<"cifer test"<<endl;
-                testCifar();
-        }
-        else if (strcmp(argv[i],"enron") == 0) {
-                cout<<"enron test"<<endl;
-                testEnron();
-        }
-        else if (strcmp(argv[i],"millionSong") == 0) {
-                cout<<"millionSong test"<<endl;
-                testmillionSong();
-        }
-        else if (strcmp(argv[i],"MNIST") == 0) {
-                cout<<"MNIST test"<<endl;
-                testMnist();
-        }
-        else if (strcmp(argv[i],"nuswide") == 0) {
-                cout<<"nuswide test"<<endl;
-                testNuswide();
-        }
-        else if (strcmp(argv[i],"sun") == 0) {
-                cout<<"sun test"<<endl;
-                testSun();
-        }
-        else if (strcmp(argv[i],"deep") == 0) {
-                cout<<"deep test"<<endl;
-                testDeep();
-        }
-        else if (strcmp(argv[i],"trevi") == 0) {
-                cout<<"trevi test"<<endl;
-                testTrevi();
-        }
-        else if (strcmp(argv[i],"uqv") == 0) {
-                cout<<"uqv test"<<endl;
-                testUqv();
-        }
-        else if (strcmp(argv[i],"nytimes") == 0) {
-                cout<<"nytimes test"<<endl;
-                testNyTimes();
-        }
-        else if (strcmp(argv[i],"lastfm") == 0) {
-                cout<<"lastfm test"<<endl;
-                testLastFm();
-        }
+    for (int i=0;i<argc;i+=2) {
+        testGenericHCNNG(argv[i], atoi(argv[i]+1));
+        // if (strcmp(argv[i],"sift1m") == 0) {
+        //         cout<<"Sift1m test"<<endl;
+        //         testSift1m();
+        // }
+        // else if (strcmp(argv[i],"gist") == 0) {
+        //         cout<<"gist test"<<endl;
+        //         testGist1m();
+        // }
+        // else if (strcmp(argv[i],"glove") == 0) {
+        //         cout<<"glove test"<<endl;
+        //         testGlove();
+        // }
+        // else if (strcmp(argv[i],"imagenet") == 0) {
+        //         cout<<"imagenet test"<<endl;
+        //         testimageNet();
+        // }
+        // else if (strcmp(argv[i],"notre") == 0) {
+        //         cout<<"notre test"<<endl;
+        //         testnotre();
+        // }
+        // else if (strcmp(argv[i],"ukbench") == 0) {
+        //         cout<<"ukbench test"<<endl;
+        //         testukbench();
+        // }
+        // else if (strcmp(argv[i],"crawl") == 0) {
+        //         cout<<"crawl test"<<endl;
+        //         testCrawl();
+        // }
+        // else if (strcmp(argv[i],"audio") == 0) {
+        //         cout<<"audio test"<<endl;
+        //         testAudio();
+        // }
+        // else if (strcmp(argv[i],"cifer") == 0) {
+        //         cout<<"cifer test"<<endl;
+        //         testCifar();
+        // }
+        // else if (strcmp(argv[i],"enron") == 0) {
+        //         cout<<"enron test"<<endl;
+        //         testEnron();
+        // }
+        // else if (strcmp(argv[i],"millionSong") == 0) {
+        //         cout<<"millionSong test"<<endl;
+        //         testmillionSong();
+        // }
+        // else if (strcmp(argv[i],"MNIST") == 0) {
+        //         cout<<"MNIST test"<<endl;
+        //         testMnist();
+        // }
+        // else if (strcmp(argv[i],"nuswide") == 0) {
+        //         cout<<"nuswide test"<<endl;
+        //         testNuswide();
+        // }
+        // else if (strcmp(argv[i],"sun") == 0) {
+        //         cout<<"sun test"<<endl;
+        //         testSun();
+        // }
+        // else if (strcmp(argv[i],"deep") == 0) {
+        //         cout<<"deep test"<<endl;
+        //         testDeep();
+        // }
+        // else if (strcmp(argv[i],"trevi") == 0) {
+        //         cout<<"trevi test"<<endl;
+        //         testTrevi();
+        // }
+        // else if (strcmp(argv[i],"uqv") == 0) {
+        //         cout<<"uqv test"<<endl;
+        //         testUqv();
+        // }
+        // else if (strcmp(argv[i],"nytimes") == 0) {
+        //         cout<<"nytimes test"<<endl;
+        //         testNyTimes();
+        // }
+        // else if (strcmp(argv[i],"lastfm") == 0) {
+        //         cout<<"lastfm test"<<endl;
+        //         testLastFm();
+        // }
         
     }
 
