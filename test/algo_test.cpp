@@ -215,7 +215,7 @@ int testGenericHCNNG2(string dataset, int K, int cs) {
     std::string base_path = dataset+"/base.fvecs";
     std::string query_path = dataset+"/query.fvecs";
     std::string ground_path = dataset+"/groundtruth.ivecs";
-    std::string graph = "../../graphs/"+dataset+".graph";
+    std::string graph = "../../graphs/"+dataset+to_string(cs)+".graph";
     // int minsize_cl=100, int num_cl=20, int nTrees=10, int mLevel=4
     if(cs==0) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph);
     if(cs==1) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 50, 20);
@@ -228,6 +228,9 @@ int testGenericHCNNG2(string dataset, int K, int cs) {
     if(cs==8) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10, 5);
     if(cs==9) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10, 10, 2);
     if(cs==10) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 10, 10, 8);
+    if(cs==11) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 40);
+    if(cs==12) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 40, 40);
+    if(cs==13) HCNNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, K, graph, 100, 20, 10, 8);
 
     return 0;  
 }
