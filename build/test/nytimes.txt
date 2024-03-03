@@ -1,0 +1,162 @@
+base data len : 290000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+ITER:12 L:200 K:100 S:10 mLevel:8 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 124.464
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 290000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+ITER:12 L:200 K:100 S:10 mLevel:8 R:100 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 150
+search time: 5.1569
+DistCount: 4505829
+HopCount: 1506114
+100 NN accuracy: 0.452827
+100 NN recall: 0.452827
+100 NN map@: 0.184942
+SEARCH_L : 200
+search time: 6.44246
+DistCount: 5034636
+HopCount: 2006029
+100 NN accuracy: 0.45366
+100 NN recall: 0.45366
+100 NN map@: 0.186612
+SEARCH_L : 250
+search time: 8.14902
+DistCount: 6259000
+HopCount: 2513329
+100 NN accuracy: 0.456094
+100 NN recall: 0.456094
+100 NN map@: 0.191815
+__SEARCH FINISH__
+Time cost: 1493.41
+base data len : 290000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+ITER:12 L:200 K:100 S:10 mLevel:8 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 123.437
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 290000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+ITER:12 L:200 K:100 S:10 mLevel:8 R:100 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 150
+search time: 4.85333
+DistCount: 4496829
+HopCount: 1506048
+100 NN accuracy: 0.453297
+100 NN recall: 0.453297
+100 NN map@: 0.185305
+SEARCH_L : 200
+search time: 5.88565
+DistCount: 5028277
+HopCount: 2005992
+100 NN accuracy: 0.454331
+100 NN recall: 0.454331
+100 NN map@: 0.186947
+SEARCH_L : 250
+search time: 7.74882
+DistCount: 6245130
+HopCount: 2512928
+100 NN accuracy: 0.45668
+100 NN recall: 0.45668
+100 NN map@: 0.192145
+__SEARCH FINISH__
+Time cost: 1422.1
+base data len : 290000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+ITER:12 L:200 K:100 S:10 mLevel:8 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 123.659
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 290000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+ITER:12 L:200 K:100 S:10 mLevel:8 R:100 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 150
+search time: 5.17925
+DistCount: 4500571
+HopCount: 1506006
+100 NN accuracy: 0.458102
+100 NN recall: 0.458102
+100 NN map@: 0.187947
+SEARCH_L : 200
+search time: 6.51975
+DistCount: 5029128
+HopCount: 2005804
+100 NN accuracy: 0.459123
+100 NN recall: 0.459123
+100 NN map@: 0.189685
+SEARCH_L : 250
+search time: 8.20932
+DistCount: 6248229
+HopCount: 2513044
+100 NN accuracy: 0.461514
+100 NN recall: 0.461514
+100 NN map@: 0.195555
+__SEARCH FINISH__
+Time cost: 1496.7

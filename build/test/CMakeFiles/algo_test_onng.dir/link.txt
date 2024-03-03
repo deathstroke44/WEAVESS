@@ -1,0 +1,1 @@
+/usr/bin/c++ -m64  -fopenmp -m64 -rdynamic CMakeFiles/algo_test_onng.dir/algo_test_onng.cpp.o -o algo_test_onng  ../src/libWEAVESS.a 
