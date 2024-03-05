@@ -8,3 +8,6 @@ target_link_libraries(algo_test ${PROJECT_NAME})
 
 add_executable(algo_test_onng algo_test_onng.cpp)
 target_link_libraries(algo_test_onng ${PROJECT_NAME})
+
+add_executable(algo_test_dpg algo_test_dpg.cpp)
+target_link_libraries(algo_test_dpg ${PROJECT_NAME})
