@@ -358,8 +358,8 @@ namespace weavess {
             // unsigned L_st = 5;
             // unsigned L_st2 = 8;
             unsigned L = K;
-            for (unsigned i = 0; i < 3; i++) {
-                L += 50;
+            for (unsigned i = 0; i < 6; i++) {
+                
                 std::cout << "SEARCH_L : " << L << std::endl;
                 if (L < K) {
                     std::cout << "search_L cannot be smaller than search_K! " << std::endl;
@@ -474,8 +474,9 @@ namespace weavess {
                 }
                 map_at /= nq;
                 std::cout << K << " NN map@: " << map_at << std::endl;
+                L += 25;
 
-                            }
+        }
         } else if (L_type == L_SEARCH_ASSIGN) {
 
             unsigned L = final_index_->getParam().get<unsigned>("L_search");
