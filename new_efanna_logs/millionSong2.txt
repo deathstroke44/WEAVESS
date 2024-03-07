@@ -1,0 +1,49 @@
+Graph name: ../../graphs/millionSong2.graph
+base data len : 992272
+base data dim : 420
+query data len : 200
+query data dim : 420
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 10062.4
+base data len : 992272
+base data dim : 420
+query data len : 200
+query data dim : 420
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.122514
+DistCount: 108488
+HopCount: 14372
+20 NN accuracy: 0.82825
+20 NN recall: 0.82825
+20 NN map@: 0.699642
+SEARCH_L : 120
+search time: 0.190508
+DistCount: 173693
+HopCount: 24185
+20 NN accuracy: 0.911
+20 NN recall: 0.911
+20 NN map@: 0.822008
+SEARCH_L : 170
+search time: 0.229577
+DistCount: 236892
+HopCount: 34187
+20 NN accuracy: 0.94625
+20 NN recall: 0.94625
+20 NN map@: 0.87186
+__SEARCH FINISH__

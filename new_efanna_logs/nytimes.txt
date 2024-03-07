@@ -58,3 +58,91 @@ ground truth data dim : 100
 K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
 =====================
 __INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 1214.81
+base data len : 290000
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 0.161424
+DistCount: 343297
+HopCount: 17485
+100 NN accuracy: 0.3667
+100 NN recall: 0.3667
+100 NN map@: 0.142673
+SEARCH_L : 200
+search time: 0.18291
+DistCount: 417370
+HopCount: 22736
+100 NN accuracy: 0.3744
+100 NN recall: 0.3744
+100 NN map@: 0.148449
+SEARCH_L : 250
+search time: 0.218486
+DistCount: 492978
+HopCount: 27349
+100 NN accuracy: 0.386
+100 NN recall: 0.386
+100 NN map@: 0.155157
+__SEARCH FINISH__
+Graph name: ../../graphs/nytimes.graph
+base data len : 290000
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 619.513
+base data len : 290000
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 0.100747
+DistCount: 203167
+HopCount: 17186
+100 NN accuracy: 0.3297
+100 NN recall: 0.3297
+100 NN map@: 0.132651
+SEARCH_L : 200
+search time: 0.127887
+DistCount: 261032
+HopCount: 22247
+100 NN accuracy: 0.3596
+100 NN recall: 0.3596
+100 NN map@: 0.145262
+SEARCH_L : 250
+search time: 0.171682
+DistCount: 314258
+HopCount: 26929
+100 NN accuracy: 0.3795
+100 NN recall: 0.3795
+100 NN map@: 0.152056
+__SEARCH FINISH__
+lastfm test

@@ -9,3 +9,140 @@ ground truth data dim : 100
 K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:100 
 =====================
 __INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 17076.4
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 1.59456
+DistCount: 2683399
+HopCount: 151896
+100 NN accuracy: 0.86694
+100 NN recall: 0.86694
+100 NN map@: 0.782665
+SEARCH_L : 200
+search time: 2.16561
+DistCount: 3441243
+HopCount: 201316
+100 NN accuracy: 0.89937
+100 NN recall: 0.89937
+100 NN map@: 0.829057
+SEARCH_L : 250
+search time: 2.61615
+DistCount: 4179978
+HopCount: 251135
+100 NN accuracy: 0.92101
+100 NN recall: 0.92101
+100 NN map@: 0.860955
+__SEARCH FINISH__
+Graph name: ../../graphs/word2vec.graph
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 15538.4
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 1.57663
+DistCount: 2702999
+HopCount: 151832
+100 NN accuracy: 0.86588
+100 NN recall: 0.86588
+100 NN map@: 0.782523
+SEARCH_L : 200
+search time: 2.02326
+DistCount: 3469258
+HopCount: 201512
+100 NN accuracy: 0.89969
+100 NN recall: 0.89969
+100 NN map@: 0.830415
+SEARCH_L : 250
+search time: 2.44685
+DistCount: 4210180
+HopCount: 251199
+100 NN accuracy: 0.92047
+100 NN recall: 0.92047
+100 NN map@: 0.859812
+__SEARCH FINISH__
+Graph name: ../../graphs/word2vec.graph
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 7663.06
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 1.0608
+DistCount: 1646775
+HopCount: 153970
+100 NN accuracy: 0.73838
+100 NN recall: 0.73838
+100 NN map@: 0.602546
+SEARCH_L : 200
+search time: 1.35481
+DistCount: 2117078
+HopCount: 202937
+100 NN accuracy: 0.78659
+100 NN recall: 0.78659
+100 NN map@: 0.664729
+SEARCH_L : 250
+search time: 1.64975
+DistCount: 2582556
+HopCount: 252674
+100 NN accuracy: 0.8189
+100 NN recall: 0.8189
+100 NN map@: 0.708204
+__SEARCH FINISH__
+space1V test

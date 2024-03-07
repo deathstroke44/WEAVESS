@@ -1,0 +1,49 @@
+Graph name: ../../graphs/crawl3.graph
+base data len : 1989995
+base data dim : 300
+query data len : 10000
+query data dim : 300
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 9198.68
+base data len : 1989995
+base data dim : 300
+query data len : 10000
+query data dim : 300
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 9.12992
+DistCount: 9798691
+HopCount: 1576421
+100 NN accuracy: 0.612909
+100 NN recall: 0.612909
+100 NN map@: 0.460511
+SEARCH_L : 200
+search time: 11.4352
+DistCount: 12686682
+HopCount: 2069897
+100 NN accuracy: 0.663336
+100 NN recall: 0.663336
+100 NN map@: 0.517465
+SEARCH_L : 250
+search time: 13.6195
+DistCount: 15567576
+HopCount: 2567750
+100 NN accuracy: 0.698058
+100 NN recall: 0.698058
+100 NN map@: 0.557852
+__SEARCH FINISH__

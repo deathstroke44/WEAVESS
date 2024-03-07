@@ -1,0 +1,50 @@
+Graph name: ../../graphs/MNIST3.graph
+base data len : 69000
+base data dim : 784
+query data len : 200
+query data dim : 784
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 99.931
+base data len : 69000
+base data dim : 784
+query data len : 200
+query data dim : 784
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.0815598
+DistCount: 57060
+HopCount: 14207
+20 NN accuracy: 0.8945
+20 NN recall: 0.8945
+20 NN map@: 0.803348
+SEARCH_L : 120
+search time: 0.131447
+DistCount: 92324
+HopCount: 24190
+20 NN accuracy: 0.94275
+20 NN recall: 0.94275
+20 NN map@: 0.869944
+SEARCH_L : 170
+search time: 0.178378
+DistCount: 125653
+HopCount: 34129
+20 NN accuracy: 0.9585
+20 NN recall: 0.9585
+20 NN map@: 0.890171
+__SEARCH FINISH__
+MNIST test

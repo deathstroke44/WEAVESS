@@ -1,0 +1,49 @@
+Graph name: ../../graphs/glove12.graph
+base data len : 1192514
+base data dim : 100
+query data len : 200
+query data dim : 100
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 640
+merge tree completed
+__INIT FINISH__: 17125
+base data len : 1192514
+base data dim : 100
+query data len : 200
+query data dim : 100
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.214585
+DistCount: 599759
+HopCount: 14784
+20 NN accuracy: 0.79375
+20 NN recall: 0.79375
+20 NN map@: 0.653809
+SEARCH_L : 120
+search time: 0.325205
+DistCount: 946467
+HopCount: 24502
+20 NN accuracy: 0.856
+20 NN recall: 0.856
+20 NN map@: 0.732792
+SEARCH_L : 170
+search time: 0.436615
+DistCount: 1282288
+HopCount: 34397
+20 NN accuracy: 0.8875
+20 NN recall: 0.8875
+20 NN map@: 0.769277
+__SEARCH FINISH__

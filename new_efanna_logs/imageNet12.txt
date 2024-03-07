@@ -1,0 +1,49 @@
+Graph name: ../../graphs/imageNet12.graph
+base data len : 2340373
+base data dim : 150
+query data len : 200
+query data dim : 150
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 640
+merge tree completed
+__INIT FINISH__: 66986.1
+base data len : 2340373
+base data dim : 150
+query data len : 200
+query data dim : 150
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.329563
+DistCount: 324048
+HopCount: 14303
+20 NN accuracy: 0.9065
+20 NN recall: 0.9065
+20 NN map@: 0.808723
+SEARCH_L : 120
+search time: 0.338774
+DistCount: 515420
+HopCount: 24145
+20 NN accuracy: 0.95525
+20 NN recall: 0.95525
+20 NN map@: 0.879267
+SEARCH_L : 170
+search time: 0.457128
+DistCount: 697208
+HopCount: 34076
+20 NN accuracy: 0.97375
+20 NN recall: 0.97375
+20 NN map@: 0.907265
+__SEARCH FINISH__
