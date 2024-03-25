@@ -1,0 +1,14 @@
+Graph name: ../../graphs/ukbench12.graph
+base data len : 1097907
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 640
+merge tree completed

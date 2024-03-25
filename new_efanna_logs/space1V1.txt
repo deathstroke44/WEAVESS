@@ -9,3 +9,62 @@ ground truth data dim : 100
 K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
 =====================
 __INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 12626.8
+base data len : 1000000
+base data dim : 100
+query data len : 100
+query data dim : 100
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.101987
+DistCount: 199469
+HopCount: 10583
+100 NN accuracy: 0.4118
+100 NN recall: 0.4118
+100 NN map@: 0.262516
+SEARCH_L : 125
+search time: 0.129329
+DistCount: 245566
+HopCount: 13079
+100 NN accuracy: 0.4533
+100 NN recall: 0.4533
+100 NN map@: 0.301281
+SEARCH_L : 150
+search time: 0.141187
+DistCount: 289979
+HopCount: 15520
+100 NN accuracy: 0.4786
+100 NN recall: 0.4786
+100 NN map@: 0.32351
+SEARCH_L : 175
+search time: 0.156195
+DistCount: 334837
+HopCount: 17989
+100 NN accuracy: 0.5042
+100 NN recall: 0.5042
+100 NN map@: 0.348678
+SEARCH_L : 200
+search time: 0.173698
+DistCount: 378107
+HopCount: 20383
+100 NN accuracy: 0.533
+100 NN recall: 0.533
+100 NN map@: 0.377641
+SEARCH_L : 225
+search time: 0.189678
+DistCount: 423341
+HopCount: 22902
+100 NN accuracy: 0.5521
+100 NN recall: 0.5521
+100 NN map@: 0.395107
+__SEARCH FINISH__
