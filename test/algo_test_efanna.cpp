@@ -9,13 +9,13 @@ string absolute_path = "/data/kabir/similarity-search/dataset/";
 
 
 
-void ONNG(std::string base_path, std::string query_path, std::string ground_path, std::string graph, unsigned K = 20, unsigned L = 50, int S=10, int R=100) {
+void ONNG(std::string base_path, std::string query_path, std::string ground_path, std::string graph, unsigned K = 20, unsigned L = 50, int S=10, int R=100, int nTrees=8, int mLevel=8) {
     std::string graph_file = graph;
 
     weavess::Parameters parameters;
 
-    parameters.set<unsigned>("nTrees", 8);
-    parameters.set<unsigned>("mLevel", 8);
+    parameters.set<unsigned>("nTrees", nTrees);
+    parameters.set<unsigned>("mLevel", mLevel);
 
     parameters.set<unsigned>("K", K);
     parameters.set<unsigned>("L", L);
@@ -39,6 +39,8 @@ void ONNG(std::string base_path, std::string query_path, std::string ground_path
 
 
 int testGenericDPG(string dataset, int K, int cs) {
+    unsigned K = 20, L = 50;
+    int S=10, R=100, nTrees=8, mLevel=8;
     freopen(("../../original_efanna_logs/"+dataset+to_string(cs)+".txt").c_str(),"a+",stdout);
     cout<<(dataset+" test")<<endl;
     std::string base_path = dataset+"/base.fvecs";
@@ -56,6 +58,21 @@ int testGenericDPG(string dataset, int K, int cs) {
 	}
 	if(cs==3) {
 		ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K);
+	}
+	if(cs==4) {
+		ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, S, R, nTrees, mLevel);
+	}
+	if(cs==5) {
+		ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, S, R, nTrees*2, mLevel);
+	}
+	if(cs==6) {
+		ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, S, R, nTrees, mLevel*2);
+	}
+	if(cs==7) {
+		ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, S+10, R, nTrees, mLevel);
+	}
+	if(cs==8) {
+		ONNG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, S, R+50, nTrees, mLevel);
 	}
 
     return 0;  
