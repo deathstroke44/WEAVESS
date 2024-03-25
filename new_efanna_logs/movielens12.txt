@@ -1,0 +1,70 @@
+Graph name: ../../graphs/movielens12.graph
+base data len : 10677
+base data dim : 150
+query data len : 1000
+query data dim : 150
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 640
+merge tree completed
+__INIT FINISH__: 27.3749
+base data len : 10677
+base data dim : 150
+query data len : 1000
+query data dim : 150
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.281775
+DistCount: 743950
+HopCount: 100045
+100 NN accuracy: 0.98303
+100 NN recall: 0.98303
+100 NN map@: 0.966539
+SEARCH_L : 125
+search time: 0.334359
+DistCount: 882095
+HopCount: 125047
+100 NN accuracy: 0.99078
+100 NN recall: 0.99078
+100 NN map@: 0.977083
+SEARCH_L : 150
+search time: 0.384598
+DistCount: 1013688
+HopCount: 150046
+100 NN accuracy: 0.99477
+100 NN recall: 0.99477
+100 NN map@: 0.983249
+SEARCH_L : 175
+search time: 0.440987
+DistCount: 1138856
+HopCount: 175031
+100 NN accuracy: 0.9969
+100 NN recall: 0.9969
+100 NN map@: 0.986114
+SEARCH_L : 200
+search time: 0.48638
+DistCount: 1259445
+HopCount: 200036
+100 NN accuracy: 0.99793
+100 NN recall: 0.99793
+100 NN map@: 0.987524
+SEARCH_L : 225
+search time: 0.536692
+DistCount: 1376931
+HopCount: 225028
+100 NN accuracy: 0.99867
+100 NN recall: 0.99867
+100 NN map@: 0.988486
+__SEARCH FINISH__
