@@ -39,7 +39,6 @@ void ONNG(std::string base_path, std::string query_path, std::string ground_path
 
 
 int testGenericDPG(string dataset, int K, int cs) {
-    unsigned K = 20, L = 50;
     int S=10, R=100, nTrees=8, mLevel=8;
     freopen(("../../original_efanna_logs/"+dataset+to_string(cs)+".txt").c_str(),"a+",stdout);
     cout<<(dataset+" test")<<endl;
