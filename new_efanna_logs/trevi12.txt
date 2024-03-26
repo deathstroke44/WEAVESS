@@ -54,3 +54,17 @@ HopCount: 19048
 20 NN recall: 0.98075
 20 NN map@: 0.914535
 SEARCH_L : 120
+search time: 1.67859
+DistCount: 359972
+HopCount: 24021
+20 NN accuracy: 0.98725
+20 NN recall: 0.98725
+20 NN map@: 0.927448
+SEARCH_L : 145
+search time: 1.94902
+DistCount: 418328
+HopCount: 29014
+20 NN accuracy: 0.991
+20 NN recall: 0.991
+20 NN map@: 0.934288
+__SEARCH FINISH__

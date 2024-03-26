@@ -1,0 +1,71 @@
+Graph name: ../../graphs/nuswide11.graph
+base data len : 268643
+base data dim : 500
+query data len : 200
+query data dim : 500
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 158
+merge level deeper than tree, max merge deepth is 2
+merge tree completed
+__INIT FINISH__: 2915.33
+base data len : 268643
+base data dim : 500
+query data len : 200
+query data dim : 500
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 20
+search time: 0.129573
+DistCount: 165599
+HopCount: 4768
+20 NN accuracy: 0.64025
+20 NN recall: 0.64025
+20 NN map@: 0.461282
+SEARCH_L : 45
+search time: 0.231219
+DistCount: 303229
+HopCount: 9461
+20 NN accuracy: 0.7925
+20 NN recall: 0.7925
+20 NN map@: 0.645486
+SEARCH_L : 70
+search time: 0.323005
+DistCount: 432484
+HopCount: 14286
+20 NN accuracy: 0.85575
+20 NN recall: 0.85575
+20 NN map@: 0.730854
+SEARCH_L : 95
+search time: 0.415936
+DistCount: 558055
+HopCount: 19229
+20 NN accuracy: 0.8955
+20 NN recall: 0.8955
+20 NN map@: 0.785082
+SEARCH_L : 120
+search time: 0.502399
+DistCount: 676527
+HopCount: 24173
+20 NN accuracy: 0.9185
+20 NN recall: 0.9185
+20 NN map@: 0.817424
+SEARCH_L : 145
+search time: 0.588346
+DistCount: 790674
+HopCount: 29139
+20 NN accuracy: 0.9365
+20 NN recall: 0.9365
+20 NN map@: 0.845277
+__SEARCH FINISH__
