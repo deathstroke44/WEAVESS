@@ -75,6 +75,18 @@ int testGenericDPG(string dataset, int K, int cs) {
     if(cs==11) {
 		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 5, 12);
 	}
+    if(cs==12) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 10, 20, 25);
+	}
+    if(cs==13) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 8, 20, 12);
+	}
+    if(cs==14) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 6, 10, 12);
+	}
+    if(cs==15) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 4, 5, 12);
+	}
 
     return 0;  
 }
