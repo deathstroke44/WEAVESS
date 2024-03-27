@@ -52,15 +52,27 @@ int testGenericDPG(string dataset, int K, int cs) {
 		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K);
 	}
     if(cs==4) {
-		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 20, 25);
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 12, 20, 25);
 	}
     if(cs==5) {
-		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 20, 12);
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 12, 20, 12);
 	}
     if(cs==6) {
-		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 10, 12);
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 12, 10, 12);
 	}
     if(cs==7) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K, 12, 5, 12);
+	}
+    if(cs==8) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 20, 25);
+	}
+    if(cs==9) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 20, 12);
+	}
+    if(cs==10) {
+		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 10, 12);
+	}
+    if(cs==11) {
 		DPG(absolute_path + base_path, absolute_path + query_path, absolute_path + ground_path, graph, K, K + 30, 12, 5, 12);
 	}
 
