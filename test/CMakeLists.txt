@@ -9,5 +9,8 @@ target_link_libraries(algo_test ${PROJECT_NAME})
 add_executable(algo_test_efanna algo_test_efanna.cpp)
 target_link_libraries(algo_test_efanna ${PROJECT_NAME})
 
+add_executable(algo_test_hnsw algo_test_hnsw.cpp)
+target_link_libraries(algo_test_hnsw ${PROJECT_NAME})
+
 add_executable(algo_test_dpg algo_test_dpg.cpp)
 target_link_libraries(algo_test_dpg ${PROJECT_NAME})
