@@ -16,18 +16,14 @@ void HNSW(std::string base_path, std::string query_path, std::string ground_path
     parameters.set<int>("mult", -1);
     auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
-			-> init(weavess::INIT_RANDOM)
-			-> refine(weavess::REFINE_NN_DESCENT, false);
-	std::cout << "Init cost: " << builder->GetBuildTime().count() << std::endl;
-	builder -> refine(weavess::REFINE_DPG, false)
-			-> save_graph(weavess::TYPE::INDEX_DPG,  &graph_file[0]);
+                -> init(weavess::INIT_HNSW)
+                -> save_graph(weavess::TYPE::INDEX_HNSW, &graph_file[0]);
 	std::cout << "Build cost: " << builder->GetBuildTime().count() << std::endl;
 
 	builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
-                -> load_graph(weavess::TYPE::INDEX_DPG,  &graph_file[0])
-                -> search(weavess::TYPE::SEARCH_ENTRY_RAND, weavess::TYPE::ROUTER_GREEDY, weavess::TYPE::L_SEARCH_ASCEND, K);
-
-    
+                -> load_graph(weavess::TYPE::INDEX_HNSW, &graph_file[0])
+                -> search(weavess::TYPE::SEARCH_ENTRY_NONE, weavess::TYPE::ROUTER_HNSW, weavess::TYPE::L_SEARCH_ASCEND, K);
+	builder -> peak_memory_footprint();
 }
 
 int testGenericHNSW(string dataset, int K, int cs) {
