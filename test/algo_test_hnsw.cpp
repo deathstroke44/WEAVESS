@@ -14,6 +14,7 @@ void HNSW(std::string base_path, std::string query_path, std::string ground_path
     parameters.set<unsigned>("max_m0", max_m0);
     parameters.set<unsigned>("ef_construction", ef_construction);
     parameters.set<int>("mult", -1);
+    parameters.set<unsigned>("n_threads", 1);
     auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
                 -> init(weavess::INIT_HNSW)
