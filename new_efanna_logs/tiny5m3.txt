@@ -1,0 +1,70 @@
+Graph name: ../../graphs/tiny5m3.graph
+base data len : 5000000
+base data dim : 384
+query data len : 1000
+query data dim : 384
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 27734.8
+base data len : 5000000
+base data dim : 384
+query data len : 1000
+query data dim : 384
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.972677
+DistCount: 682843
+HopCount: 110504
+100 NN accuracy: 0.24167
+100 NN recall: 0.24167
+100 NN map@: 0.140875
+SEARCH_L : 125
+search time: 1.16958
+DistCount: 843240
+HopCount: 136456
+100 NN accuracy: 0.271
+100 NN recall: 0.271
+100 NN map@: 0.161837
+SEARCH_L : 150
+search time: 1.28293
+DistCount: 1000189
+HopCount: 161853
+100 NN accuracy: 0.29405
+100 NN recall: 0.29405
+100 NN map@: 0.178731
+SEARCH_L : 175
+search time: 1.41207
+DistCount: 1161509
+HopCount: 188329
+100 NN accuracy: 0.31621
+100 NN recall: 0.31621
+100 NN map@: 0.195143
+SEARCH_L : 200
+search time: 1.54311
+DistCount: 1311878
+HopCount: 212663
+100 NN accuracy: 0.33773
+100 NN recall: 0.33773
+100 NN map@: 0.212937
+SEARCH_L : 225
+search time: 1.66446
+DistCount: 1465877
+HopCount: 238051
+100 NN accuracy: 0.35549
+100 NN recall: 0.35549
+100 NN map@: 0.22682
+__SEARCH FINISH__
