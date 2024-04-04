@@ -1,0 +1,72 @@
+enron test
+base data len : 94987
+base data dim : 1369
+query data len : 200
+query data dim : 1369
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 1131.47
+Build cost: 1131.47
+base data len : 94987
+base data dim : 1369
+query data len : 200
+query data dim : 1369
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 20
+search time: 0.253332
+DistCount: 113802
+HopCount: 6606
+20 NN accuracy: 0.84475
+20 NN recall: 0.84475
+20 NN map@: 0.726564
+SEARCH_L : 45
+search time: 0.421904
+DistCount: 186910
+HopCount: 11447
+20 NN accuracy: 0.93025
+20 NN recall: 0.93025
+20 NN map@: 0.843349
+SEARCH_L : 70
+search time: 0.578599
+DistCount: 253846
+HopCount: 16421
+20 NN accuracy: 0.95925
+20 NN recall: 0.95925
+20 NN map@: 0.884857
+SEARCH_L : 95
+search time: 0.727065
+DistCount: 315227
+HopCount: 21384
+20 NN accuracy: 0.97225
+20 NN recall: 0.97225
+20 NN map@: 0.903411
+SEARCH_L : 120
+search time: 0.863307
+DistCount: 372053
+HopCount: 26346
+20 NN accuracy: 0.9815
+20 NN recall: 0.9815
+20 NN map@: 0.918377
+SEARCH_L : 145
+search time: 0.990926
+DistCount: 426326
+HopCount: 31321
+20 NN accuracy: 0.98725
+20 NN recall: 0.98725
+20 NN map@: 0.928663
+__SEARCH FINISH__
+PID: 3509064
+Name:	algo_test_hnsw
+VmPeak:	 2275128 kB
+VmHWM:	 2272064 kB
