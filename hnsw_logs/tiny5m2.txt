@@ -1,0 +1,11 @@
+tiny5m test
+base data len : 5000000
+base data dim : 384
+query data len : 1000
+query data dim : 384
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:200 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__

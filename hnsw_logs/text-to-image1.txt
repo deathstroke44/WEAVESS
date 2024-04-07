@@ -1,0 +1,11 @@
+text-to-image test
+base data len : 1000000
+base data dim : 200
+query data len : 100
+query data dim : 200
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:400 max_m0:60 max_m:50 
+=====================
+__INIT : HNSW__

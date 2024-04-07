@@ -1,0 +1,72 @@
+word2vec test
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:200 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 88320.9
+Build cost: 88320.9
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:200 max_m0:40 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 1.81317
+DistCount: 1872395
+HopCount: 120645
+100 NN accuracy: 0.69205
+100 NN recall: 0.69205
+100 NN map@: 0.552656
+SEARCH_L : 125
+search time: 2.13803
+DistCount: 2202402
+HopCount: 144864
+100 NN accuracy: 0.72151
+100 NN recall: 0.72151
+100 NN map@: 0.587034
+SEARCH_L : 150
+search time: 2.47283
+DistCount: 2530080
+HopCount: 169614
+100 NN accuracy: 0.7443
+100 NN recall: 0.7443
+100 NN map@: 0.614179
+SEARCH_L : 175
+search time: 2.81037
+DistCount: 2851542
+HopCount: 194269
+100 NN accuracy: 0.76197
+100 NN recall: 0.76197
+100 NN map@: 0.636443
+SEARCH_L : 200
+search time: 3.10449
+DistCount: 3164242
+HopCount: 218830
+100 NN accuracy: 0.77546
+100 NN recall: 0.77546
+100 NN map@: 0.653013
+SEARCH_L : 225
+search time: 3.42837
+DistCount: 3478220
+HopCount: 243713
+100 NN accuracy: 0.78756
+100 NN recall: 0.78756
+100 NN map@: 0.668192
+__SEARCH FINISH__
+PID: 3481920
+Name:	algo_test_hnsw
+VmPeak:	 3472768 kB
+VmHWM:	 3469788 kB

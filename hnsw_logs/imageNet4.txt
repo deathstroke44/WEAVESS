@@ -1,0 +1,11 @@
+imageNet test
+base data len : 2340373
+base data dim : 150
+query data len : 200
+query data dim : 150
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:20 
+=====================
+__INIT : HNSW__
