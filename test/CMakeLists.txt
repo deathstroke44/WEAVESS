@@ -14,3 +14,6 @@ target_link_libraries(algo_test_hnsw ${PROJECT_NAME})
 
 add_executable(algo_test_dpg algo_test_dpg.cpp)
 target_link_libraries(algo_test_dpg ${PROJECT_NAME})
+
+add_executable(algo_test_vamana algo_test_vamana.cpp)
+target_link_libraries(algo_test_vamana ${PROJECT_NAME})
