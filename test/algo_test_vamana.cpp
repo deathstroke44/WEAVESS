@@ -15,14 +15,17 @@ void VAMANA(std::string base_path, std::string query_path, std::string ground_pa
     parameters.set<unsigned>("R_refine", R);
     auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
-                -> init(weavess::INIT_HNSW)
-                -> save_graph(weavess::TYPE::INDEX_HNSW, &graph_file[0]);
-	std::cout << "Build cost: " << builder->GetBuildTime().count() << std::endl;
+            -> init(weavess::INIT_RAND);
+    std::cout << "Init cost: " << builder->GetBuildTime().count() << std::endl;
+    builder -> refine(weavess::REFINE_VAMANA, false)
+            -> refine(weavess::REFINE_VAMANA, false)
+            -> save_graph(weavess::TYPE::INDEX_VAMANA, &graph_file[0]);
+    std::cout << "Build cost: " << builder->GetBuildTime().count() << std::endl;
 
 	builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
-                -> load_graph(weavess::TYPE::INDEX_HNSW, &graph_file[0])
-                -> search(weavess::TYPE::SEARCH_ENTRY_NONE, weavess::TYPE::ROUTER_HNSW, weavess::TYPE::L_SEARCH_ASCEND, K);
-	builder -> peak_memory_footprint();
+                -> load_graph(weavess::TYPE::INDEX_VAMANA, &graph_file[0])
+                -> search(weavess::TYPE::SEARCH_ENTRY_CENTROID, weavess::TYPE::ROUTER_GREEDY, weavess::TYPE::L_SEARCH_ASCEND,K);
+    builder -> peak_memory_footprint();
 }
 
 int testGenericVAMANA(string dataset, int K, int cs) {
