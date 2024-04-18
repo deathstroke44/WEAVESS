@@ -1,0 +1,89 @@
+movielens test
+base data len : 10677
+base data dim : 150
+query data len : 1000
+query data dim : 150
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+R_refine:8 L_refine:16 L:8 
+=====================
+__INIT : RAND__
+__INIT FINISH__: 0.0649418
+Init cost: 0.0649418
+__REFINE : VAMANA__
+ep_ 0
+alpha 1
+__CANDIDATE : NSG__
+__PRUNE : VAMANA__
+===================
+__REFINE : FINISH__
+===================
+__REFINE : VAMANA__
+ep_ 0
+alpha 2
+__CANDIDATE : NSG__
+__PRUNE : VAMANA__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 4.15405
+base data len : 10677
+base data dim : 150
+query data len : 1000
+query data dim : 150
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+R_refine:8 L_refine:16 L:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : CENTROID__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.238637
+DistCount: 690682
+HopCount: 103140
+100 NN accuracy: 0.57701
+100 NN recall: 0.57701
+100 NN map@: 0.387629
+SEARCH_L : 125
+search time: 0.291706
+DistCount: 830308
+HopCount: 127586
+100 NN accuracy: 0.63424
+100 NN recall: 0.63424
+100 NN map@: 0.456018
+SEARCH_L : 150
+search time: 0.354486
+DistCount: 964298
+HopCount: 151899
+100 NN accuracy: 0.68143
+100 NN recall: 0.68143
+100 NN map@: 0.514522
+SEARCH_L : 175
+search time: 0.40141
+DistCount: 1093012
+HopCount: 176282
+100 NN accuracy: 0.71843
+100 NN recall: 0.71843
+100 NN map@: 0.562572
+SEARCH_L : 200
+search time: 0.442624
+DistCount: 1220526
+HopCount: 201232
+100 NN accuracy: 0.75022
+100 NN recall: 0.75022
+100 NN map@: 0.604944
+SEARCH_L : 225
+search time: 0.490718
+DistCount: 1342943
+HopCount: 225974
+100 NN accuracy: 0.77676
+100 NN recall: 0.77676
+100 NN map@: 0.641873
+__SEARCH FINISH__
+PID: 4024191
+Name:	algo_test_vaman
+VmPeak:	   25976 kB
+VmHWM:	   23284 kB

@@ -1,0 +1,100 @@
+audio test
+base data len : 53387
+base data dim : 192
+query data len : 200
+query data dim : 192
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+R_refine:8 L_refine:16 L:8 
+=====================
+__INIT : HNSW__
+audio test
+base data len : 53387
+base data dim : 192
+query data len : 200
+query data dim : 192
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+R_refine:8 L_refine:16 L:8 
+=====================
+__INIT : RAND__
+__INIT FINISH__: 0.37975
+Init cost: 0.37975
+__REFINE : VAMANA__
+ep_ 0
+alpha 1
+__CANDIDATE : NSG__
+__PRUNE : VAMANA__
+===================
+__REFINE : FINISH__
+===================
+__REFINE : VAMANA__
+ep_ 0
+alpha 2
+__CANDIDATE : NSG__
+__PRUNE : VAMANA__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 25.8634
+base data len : 53387
+base data dim : 192
+query data len : 200
+query data dim : 192
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+R_refine:8 L_refine:16 L:8 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : CENTROID__
+__ROUTER : GREEDY__
+SEARCH_L : 20
+search time: 0.0224481
+DistCount: 45151
+HopCount: 5969
+20 NN accuracy: 0.0995
+20 NN recall: 0.0995
+20 NN map@: 0.0158943
+SEARCH_L : 45
+search time: 0.0390637
+DistCount: 82678
+HopCount: 11216
+20 NN accuracy: 0.1695
+20 NN recall: 0.1695
+20 NN map@: 0.0431868
+SEARCH_L : 70
+search time: 0.0554065
+DistCount: 116585
+HopCount: 16150
+20 NN accuracy: 0.2295
+20 NN recall: 0.2295
+20 NN map@: 0.0676602
+SEARCH_L : 95
+search time: 0.0749792
+DistCount: 150675
+HopCount: 21311
+20 NN accuracy: 0.2825
+20 NN recall: 0.2825
+20 NN map@: 0.105532
+SEARCH_L : 120
+search time: 0.0907558
+DistCount: 181710
+HopCount: 26147
+20 NN accuracy: 0.32725
+20 NN recall: 0.32725
+20 NN map@: 0.135763
+SEARCH_L : 145
+search time: 0.108215
+DistCount: 210468
+HopCount: 30630
+20 NN accuracy: 0.36025
+20 NN recall: 0.36025
+20 NN map@: 0.163191
+__SEARCH FINISH__
+PID: 4024082
+Name:	algo_test_vaman
+VmPeak:	  105404 kB
+VmHWM:	  102356 kB
