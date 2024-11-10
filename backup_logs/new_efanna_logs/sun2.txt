@@ -1,0 +1,50 @@
+Graph name: ../../graphs/sun2.graph
+base data len : 79106
+base data dim : 512
+query data len : 200
+query data dim : 512
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 175.497
+base data len : 79106
+base data dim : 512
+query data len : 200
+query data dim : 512
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.12672
+DistCount: 136536
+HopCount: 14433
+20 NN accuracy: 0.78625
+20 NN recall: 0.78625
+20 NN map@: 0.631372
+SEARCH_L : 120
+search time: 0.202009
+DistCount: 216830
+HopCount: 24231
+20 NN accuracy: 0.88675
+20 NN recall: 0.88675
+20 NN map@: 0.769846
+SEARCH_L : 170
+search time: 0.278238
+DistCount: 293284
+HopCount: 34150
+20 NN accuracy: 0.937
+20 NN recall: 0.937
+20 NN map@: 0.849654
+__SEARCH FINISH__
+sun test

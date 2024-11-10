@@ -1,0 +1,50 @@
+Graph name: ../../graphs/trevi3.graph
+base data len : 99900
+base data dim : 4096
+query data len : 200
+query data dim : 4096
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 796.621
+base data len : 99900
+base data dim : 4096
+query data len : 200
+query data dim : 4096
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.448449
+DistCount: 79715
+HopCount: 14598
+20 NN accuracy: 0.71775
+20 NN recall: 0.71775
+20 NN map@: 0.545743
+SEARCH_L : 120
+search time: 0.73076
+DistCount: 128533
+HopCount: 24356
+20 NN accuracy: 0.821
+20 NN recall: 0.821
+20 NN map@: 0.671763
+SEARCH_L : 170
+search time: 0.987266
+DistCount: 175694
+HopCount: 34197
+20 NN accuracy: 0.867
+20 NN recall: 0.867
+20 NN map@: 0.731075
+__SEARCH FINISH__
+sun test

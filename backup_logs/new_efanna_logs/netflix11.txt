@@ -1,0 +1,70 @@
+Graph name: ../../graphs/netflix11.graph
+base data len : 17770
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 50.4937
+base data len : 17770
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.388359
+DistCount: 672939
+HopCount: 100083
+100 NN accuracy: 0.98182
+100 NN recall: 0.98182
+100 NN map@: 0.965728
+SEARCH_L : 125
+search time: 0.466056
+DistCount: 802993
+HopCount: 125069
+100 NN accuracy: 0.9909
+100 NN recall: 0.9909
+100 NN map@: 0.977651
+SEARCH_L : 150
+search time: 0.540509
+DistCount: 926769
+HopCount: 150050
+100 NN accuracy: 0.99515
+100 NN recall: 0.99515
+100 NN map@: 0.983299
+SEARCH_L : 175
+search time: 0.61632
+DistCount: 1047679
+HopCount: 175058
+100 NN accuracy: 0.99734
+100 NN recall: 0.99734
+100 NN map@: 0.986297
+SEARCH_L : 200
+search time: 0.687752
+DistCount: 1164171
+HopCount: 200039
+100 NN accuracy: 0.99841
+100 NN recall: 0.99841
+100 NN map@: 0.988049
+SEARCH_L : 225
+search time: 0.758757
+DistCount: 1278090
+HopCount: 225021
+100 NN accuracy: 0.9989
+100 NN recall: 0.9989
+100 NN map@: 0.988676
+__SEARCH FINISH__

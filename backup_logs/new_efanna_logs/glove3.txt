@@ -1,0 +1,70 @@
+Graph name: ../../graphs/glove3.graph
+base data len : 1192514
+base data dim : 100
+query data len : 200
+query data dim : 100
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 1899.58
+base data len : 1192514
+base data dim : 100
+query data len : 200
+query data dim : 100
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 20
+search time: 0.0569743
+DistCount: 44114
+HopCount: 6272
+20 NN accuracy: 0.1415
+20 NN recall: 0.1415
+20 NN map@: 0.0496323
+SEARCH_L : 45
+search time: 0.0803678
+DistCount: 81749
+HopCount: 11656
+20 NN accuracy: 0.2335
+20 NN recall: 0.2335
+20 NN map@: 0.107319
+SEARCH_L : 70
+search time: 0.0901495
+DistCount: 118241
+HopCount: 16999
+20 NN accuracy: 0.2945
+20 NN recall: 0.2945
+20 NN map@: 0.155736
+SEARCH_L : 95
+search time: 0.101653
+DistCount: 151109
+HopCount: 21848
+20 NN accuracy: 0.32225
+20 NN recall: 0.32225
+20 NN map@: 0.179044
+SEARCH_L : 120
+search time: 0.114413
+DistCount: 183215
+HopCount: 26587
+20 NN accuracy: 0.34875
+20 NN recall: 0.34875
+20 NN map@: 0.199615
+SEARCH_L : 145
+search time: 0.125636
+DistCount: 215796
+HopCount: 31568
+20 NN accuracy: 0.37475
+20 NN recall: 0.37475
+20 NN map@: 0.224837
+__SEARCH FINISH__

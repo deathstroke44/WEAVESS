@@ -1,0 +1,49 @@
+Graph name: ../../graphs/deep11.graph
+base data len : 1000000
+base data dim : 256
+query data len : 200
+query data dim : 256
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 30128.3
+base data len : 1000000
+base data dim : 256
+query data len : 200
+query data dim : 256
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.268054
+DistCount: 301412
+HopCount: 14252
+20 NN accuracy: 0.898
+20 NN recall: 0.898
+20 NN map@: 0.800211
+SEARCH_L : 120
+search time: 0.382129
+DistCount: 477649
+HopCount: 24101
+20 NN accuracy: 0.95425
+20 NN recall: 0.95425
+20 NN map@: 0.881517
+SEARCH_L : 170
+search time: 0.501854
+DistCount: 645143
+HopCount: 34058
+20 NN accuracy: 0.971
+20 NN recall: 0.971
+20 NN map@: 0.908742
+__SEARCH FINISH__

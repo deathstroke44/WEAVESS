@@ -1,0 +1,70 @@
+Graph name: ../../graphs/bigann3.graph
+base data len : 1000000
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 3273.1
+base data len : 1000000
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0606668
+DistCount: 50662
+HopCount: 10326
+100 NN accuracy: 0.5161
+100 NN recall: 0.5161
+100 NN map@: 0.365441
+SEARCH_L : 125
+search time: 0.0789396
+DistCount: 62650
+HopCount: 12900
+100 NN accuracy: 0.564
+100 NN recall: 0.564
+100 NN map@: 0.414762
+SEARCH_L : 150
+search time: 0.0860024
+DistCount: 74212
+HopCount: 15409
+100 NN accuracy: 0.6042
+100 NN recall: 0.6042
+100 NN map@: 0.458957
+SEARCH_L : 175
+search time: 0.0927986
+DistCount: 85241
+HopCount: 17881
+100 NN accuracy: 0.6319
+100 NN recall: 0.6319
+100 NN map@: 0.491673
+SEARCH_L : 200
+search time: 0.0980799
+DistCount: 96477
+HopCount: 20352
+100 NN accuracy: 0.6657
+100 NN recall: 0.6657
+100 NN map@: 0.530671
+SEARCH_L : 225
+search time: 0.104206
+DistCount: 107682
+HopCount: 22812
+100 NN accuracy: 0.6867
+100 NN recall: 0.6867
+100 NN map@: 0.557511
+__SEARCH FINISH__

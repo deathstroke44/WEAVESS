@@ -1,0 +1,70 @@
+Graph name: ../../graphs/seismic1m2.graph
+base data len : 1000000
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 7065.46
+base data len : 1000000
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0653271
+DistCount: 95725
+HopCount: 10781
+100 NN accuracy: 0.3589
+100 NN recall: 0.3589
+100 NN map@: 0.265582
+SEARCH_L : 125
+search time: 0.087161
+DistCount: 120384
+HopCount: 13624
+100 NN accuracy: 0.3801
+100 NN recall: 0.3801
+100 NN map@: 0.283981
+SEARCH_L : 150
+search time: 0.0961849
+DistCount: 139759
+HopCount: 16009
+100 NN accuracy: 0.3935
+100 NN recall: 0.3935
+100 NN map@: 0.299264
+SEARCH_L : 175
+search time: 0.108265
+DistCount: 163579
+HopCount: 18825
+100 NN accuracy: 0.4067
+100 NN recall: 0.4067
+100 NN map@: 0.313413
+SEARCH_L : 200
+search time: 0.116073
+DistCount: 181647
+HopCount: 21128
+100 NN accuracy: 0.4207
+100 NN recall: 0.4207
+100 NN map@: 0.328478
+SEARCH_L : 225
+search time: 0.125066
+DistCount: 200112
+HopCount: 23406
+100 NN accuracy: 0.4287
+100 NN recall: 0.4287
+100 NN map@: 0.335029
+__SEARCH FINISH__

@@ -1,0 +1,49 @@
+Graph name: ../../graphs/notre2.graph
+base data len : 332668
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 691.294
+base data len : 332668
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.0482337
+DistCount: 95382
+HopCount: 14371
+20 NN accuracy: 0.8975
+20 NN recall: 0.8975
+20 NN map@: 0.805609
+SEARCH_L : 120
+search time: 0.0791419
+DistCount: 156973
+HopCount: 24232
+20 NN accuracy: 0.9385
+20 NN recall: 0.9385
+20 NN map@: 0.859056
+SEARCH_L : 170
+search time: 0.10476
+DistCount: 218729
+HopCount: 34261
+20 NN accuracy: 0.954
+20 NN recall: 0.954
+20 NN map@: 0.880261
+__SEARCH FINISH__

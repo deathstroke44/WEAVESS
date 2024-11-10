@@ -1,0 +1,49 @@
+Graph name: ../../graphs/ukbench3.graph
+base data len : 1097907
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 1997.76
+base data len : 1097907
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.0804853
+DistCount: 67666
+HopCount: 14728
+20 NN accuracy: 0.665
+20 NN recall: 0.665
+20 NN map@: 0.503093
+SEARCH_L : 120
+search time: 0.116743
+DistCount: 110405
+HopCount: 24651
+20 NN accuracy: 0.7555
+20 NN recall: 0.7555
+20 NN map@: 0.616049
+SEARCH_L : 170
+search time: 0.13527
+DistCount: 151438
+HopCount: 34483
+20 NN accuracy: 0.79725
+20 NN recall: 0.79725
+20 NN map@: 0.666799
+__SEARCH FINISH__

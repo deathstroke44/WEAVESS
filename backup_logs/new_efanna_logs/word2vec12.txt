@@ -1,0 +1,70 @@
+Graph name: ../../graphs/word2vec12.graph
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 640
+merge tree completed
+__INIT FINISH__: 35456.7
+base data len : 1000000
+base data dim : 300
+query data len : 1000
+query data dim : 300
+ground truth data len : 1000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 1.80703
+DistCount: 3053779
+HopCount: 101445
+100 NN accuracy: 0.90001
+100 NN recall: 0.90001
+100 NN map@: 0.836552
+SEARCH_L : 125
+search time: 2.23517
+DistCount: 3678977
+HopCount: 126055
+100 NN accuracy: 0.92368
+100 NN recall: 0.92368
+100 NN map@: 0.870683
+SEARCH_L : 150
+search time: 2.52583
+DistCount: 4288655
+HopCount: 150884
+100 NN accuracy: 0.9392
+100 NN recall: 0.9392
+100 NN map@: 0.89323
+SEARCH_L : 175
+search time: 2.83838
+DistCount: 4882705
+HopCount: 175687
+100 NN accuracy: 0.95015
+100 NN recall: 0.95015
+100 NN map@: 0.909707
+SEARCH_L : 200
+search time: 3.1408
+DistCount: 5468969
+HopCount: 200605
+100 NN accuracy: 0.95869
+100 NN recall: 0.95869
+100 NN map@: 0.922898
+SEARCH_L : 225
+search time: 3.48754
+DistCount: 6041364
+HopCount: 225549
+100 NN accuracy: 0.96461
+100 NN recall: 0.96461
+100 NN map@: 0.93173
+__SEARCH FINISH__

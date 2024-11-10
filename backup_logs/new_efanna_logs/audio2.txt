@@ -1,0 +1,50 @@
+Graph name: ../../graphs/audio2.graph
+base data len : 53387
+base data dim : 192
+query data len : 200
+query data dim : 192
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 85.6099
+base data len : 53387
+base data dim : 192
+query data len : 200
+query data dim : 192
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 70
+search time: 0.0442316
+DistCount: 79697
+HopCount: 14092
+20 NN accuracy: 0.93075
+20 NN recall: 0.93075
+20 NN map@: 0.849377
+SEARCH_L : 120
+search time: 0.0698182
+DistCount: 127587
+HopCount: 24112
+20 NN accuracy: 0.96825
+20 NN recall: 0.96825
+20 NN map@: 0.901233
+SEARCH_L : 170
+search time: 0.0941711
+DistCount: 172663
+HopCount: 34083
+20 NN accuracy: 0.978
+20 NN recall: 0.978
+20 NN map@: 0.915076
+__SEARCH FINISH__
+audio test

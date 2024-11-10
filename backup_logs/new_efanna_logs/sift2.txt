@@ -1,0 +1,49 @@
+Graph name: ../../graphs/sift2.graph
+base data len : 1000000
+base data dim : 128
+query data len : 10000
+query data dim : 128
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 6465.09
+base data len : 1000000
+base data dim : 128
+query data len : 10000
+query data dim : 128
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 150
+search time: 5.86609
+DistCount: 10784264
+HopCount: 1514259
+100 NN accuracy: 0.758783
+100 NN recall: 0.758783
+100 NN map@: 0.647894
+SEARCH_L : 200
+search time: 7.5515
+DistCount: 14029994
+HopCount: 2010918
+100 NN accuracy: 0.813923
+100 NN recall: 0.813923
+100 NN map@: 0.719963
+SEARCH_L : 250
+search time: 9.06376
+DistCount: 17202439
+HopCount: 2509446
+100 NN accuracy: 0.848567
+100 NN recall: 0.848567
+100 NN map@: 0.766725
+__SEARCH FINISH__

@@ -1,0 +1,71 @@
+Graph name: ../../graphs/enron12.graph
+base data len : 94987
+base data dim : 1369
+query data len : 200
+query data dim : 1369
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 630
+merge level deeper than tree, max merge deepth is 1
+merge tree completed
+__INIT FINISH__: 1965.13
+base data len : 94987
+base data dim : 1369
+query data len : 200
+query data dim : 1369
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 20
+search time: 0.189729
+DistCount: 88272
+HopCount: 4311
+20 NN accuracy: 0.8275
+20 NN recall: 0.8275
+20 NN map@: 0.696003
+SEARCH_L : 45
+search time: 0.353089
+DistCount: 168624
+HopCount: 9126
+20 NN accuracy: 0.9365
+20 NN recall: 0.9365
+20 NN map@: 0.845405
+SEARCH_L : 70
+search time: 0.513399
+DistCount: 242830
+HopCount: 14081
+20 NN accuracy: 0.969
+20 NN recall: 0.969
+20 NN map@: 0.896788
+SEARCH_L : 95
+search time: 0.644691
+DistCount: 311107
+HopCount: 19072
+20 NN accuracy: 0.982
+20 NN recall: 0.982
+20 NN map@: 0.918642
+SEARCH_L : 120
+search time: 0.775688
+DistCount: 374482
+HopCount: 24033
+20 NN accuracy: 0.98675
+20 NN recall: 0.98675
+20 NN map@: 0.925587
+SEARCH_L : 145
+search time: 0.896937
+DistCount: 434439
+HopCount: 29022
+20 NN accuracy: 0.99025
+20 NN recall: 0.99025
+20 NN map@: 0.932263
+__SEARCH FINISH__
