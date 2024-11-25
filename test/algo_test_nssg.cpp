@@ -18,7 +18,8 @@ void NSSG(std::string base_path, std::string query_path, std::string ground_path
 
     parameters.set<unsigned>("L_refine", L_refine);
     parameters.set<unsigned>("R_refine", R_refine);
-    parameters.set<unsigned>("C_refine", C);
+    parameters.set<float>("A", 60);
+    parameters.set<unsigned>("n_try", 10);
     auto *builder = new weavess::IndexBuilder(1);
     builder -> load(&base_path[0], &query_path[0], &ground_path[0], parameters)
             -> init(weavess::INIT_RANDOM)
