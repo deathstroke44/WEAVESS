@@ -1,0 +1,24 @@
+deep test
+	Command being timed: "./algo_test deep 20 6"
+	User time (seconds): 8651.41
+	System time (seconds): 16.42
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24:28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2951988
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5460964
+	Voluntary context switches: 1
+	Involuntary context switches: 8499
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 451376
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

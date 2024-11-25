@@ -12,7 +12,7 @@ __INIT : HCNNG__
 build tree completed
 merge node list size: 160
 merge tree completed
-__INIT FINISH__: 8240.08
+__INIT FINISH__: 8338.78
 base data len : 1000000
 base data dim : 256
 query data len : 10000
@@ -26,45 +26,45 @@ __SEARCH__100
 __SEARCH ENTRY : KDT__
 __ROUTER : GUIDED__
 SEARCH_L : 100
-search time: 4.15836
-DistCount: 4715738
-HopCount: 1042774
-100 NN accuracy: 0.758366
-100 NN recall: 0.758366
-100 NN map@: 0.623254
+search time: 4.16896
+DistCount: 4718404
+HopCount: 1046188
+100 NN accuracy: 0.757432
+100 NN recall: 0.757432
+100 NN map@: 0.622218
 SEARCH_L : 125
-search time: 4.92636
-DistCount: 5781131
-HopCount: 1289453
-100 NN accuracy: 0.793569
-100 NN recall: 0.793569
-100 NN map@: 0.666684
+search time: 4.94573
+DistCount: 5779786
+HopCount: 1290578
+100 NN accuracy: 0.793424
+100 NN recall: 0.793424
+100 NN map@: 0.666344
 SEARCH_L : 150
-search time: 5.66135
-DistCount: 6828492
-HopCount: 1538677
-100 NN accuracy: 0.817638
-100 NN recall: 0.817638
-100 NN map@: 0.696628
+search time: 5.75369
+DistCount: 6823361
+HopCount: 1539398
+100 NN accuracy: 0.817748
+100 NN recall: 0.817748
+100 NN map@: 0.697198
 SEARCH_L : 175
-search time: 6.44879
-DistCount: 7853828
-HopCount: 1787755
-100 NN accuracy: 0.834774
-100 NN recall: 0.834774
-100 NN map@: 0.718821
+search time: 6.50769
+DistCount: 7847614
+HopCount: 1789170
+100 NN accuracy: 0.835768
+100 NN recall: 0.835768
+100 NN map@: 0.720546
 SEARCH_L : 200
-search time: 7.15769
-DistCount: 8835478
-HopCount: 2031480
-100 NN accuracy: 0.855191
-100 NN recall: 0.855191
-100 NN map@: 0.745697
+search time: 7.23298
+DistCount: 8828424
+HopCount: 2033939
+100 NN accuracy: 0.855802
+100 NN recall: 0.855802
+100 NN map@: 0.74721
 SEARCH_L : 225
-search time: 7.91992
-DistCount: 9827905
-HopCount: 2281104
-100 NN accuracy: 0.866575
-100 NN recall: 0.866575
-100 NN map@: 0.76019
+search time: 8.03758
+DistCount: 9818683
+HopCount: 2282609
+100 NN accuracy: 0.867423
+100 NN recall: 0.867423
+100 NN map@: 0.762271
 __SEARCH FINISH__

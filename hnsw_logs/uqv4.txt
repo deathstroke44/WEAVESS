@@ -9,8 +9,8 @@ ground truth data dim : 100
 n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:20 
 =====================
 __INIT : HNSW__
-__INIT FINISH__: 117961
-Build cost: 117961
+__INIT FINISH__: 114975
+Build cost: 114975
 base data len : 1000000
 base data dim : 256
 query data len : 10000
@@ -24,49 +24,49 @@ __SEARCH__100
 __SEARCH ENTRY : NONE__
 __ROUTER : HNSW__
 SEARCH_L : 100
-search time: 11.6911
+search time: 10.1098
 DistCount: 12800509
 HopCount: 1139423
 100 NN accuracy: 0.965285
 100 NN recall: 0.965285
 100 NN map@: 0.890606
 SEARCH_L : 125
-search time: 15.111
+search time: 12.1075
 DistCount: 15264474
 HopCount: 1391462
 100 NN accuracy: 0.968869
 100 NN recall: 0.968869
 100 NN map@: 0.894928
 SEARCH_L : 150
-search time: 16.2672
+search time: 14.0983
 DistCount: 17584815
 HopCount: 1643185
 100 NN accuracy: 0.970333
 100 NN recall: 0.970333
 100 NN map@: 0.89658
 SEARCH_L : 175
-search time: 18.3856
+search time: 15.9712
 DistCount: 19779746
 HopCount: 1894781
 100 NN accuracy: 0.9714
 100 NN recall: 0.9714
 100 NN map@: 0.899269
 SEARCH_L : 200
-search time: 20.4381
+search time: 17.8029
 DistCount: 21843791
 HopCount: 2142010
 100 NN accuracy: 0.972105
 100 NN recall: 0.972105
 100 NN map@: 0.900105
 SEARCH_L : 225
-search time: 24.5472
+search time: 19.5275
 DistCount: 23837031
 HopCount: 2390812
 100 NN accuracy: 0.97258
 100 NN recall: 0.97258
 100 NN map@: 0.900498
 __SEARCH FINISH__
-PID: 3519596
+PID: 3033328
 Name:	algo_test_hnsw
-VmPeak:	 3418056 kB
-VmHWM:	 3415036 kB
+VmPeak:	 3417152 kB
+VmHWM:	 3414276 kB

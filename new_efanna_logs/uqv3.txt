@@ -12,7 +12,7 @@ __INIT : HCNNG__
 build tree completed
 merge node list size: 160
 merge tree completed
-__INIT FINISH__: 4214.38
+__INIT FINISH__: 4239.5
 base data len : 1000000
 base data dim : 256
 query data len : 10000
@@ -26,45 +26,45 @@ __SEARCH__100
 __SEARCH ENTRY : KDT__
 __ROUTER : GUIDED__
 SEARCH_L : 100
-search time: 3.36144
-DistCount: 3693924
-HopCount: 1069127
-100 NN accuracy: 0.612758
-100 NN recall: 0.612758
-100 NN map@: 0.456276
+search time: 3.69836
+DistCount: 3715909
+HopCount: 1072210
+100 NN accuracy: 0.612336
+100 NN recall: 0.612336
+100 NN map@: 0.453869
 SEARCH_L : 125
-search time: 3.99961
-DistCount: 4536644
-HopCount: 1319596
-100 NN accuracy: 0.653074
-100 NN recall: 0.653074
-100 NN map@: 0.500686
+search time: 4.34741
+DistCount: 4549713
+HopCount: 1319972
+100 NN accuracy: 0.654948
+100 NN recall: 0.654948
+100 NN map@: 0.501273
 SEARCH_L : 150
-search time: 4.59892
-DistCount: 5361336
-HopCount: 1569821
-100 NN accuracy: 0.683539
-100 NN recall: 0.683539
-100 NN map@: 0.534225
+search time: 5.06925
+DistCount: 5376797
+HopCount: 1571559
+100 NN accuracy: 0.685125
+100 NN recall: 0.685125
+100 NN map@: 0.5345
 SEARCH_L : 175
-search time: 5.23073
-DistCount: 6174468
-HopCount: 1820859
-100 NN accuracy: 0.706544
-100 NN recall: 0.706544
-100 NN map@: 0.560775
+search time: 5.70409
+DistCount: 6187933
+HopCount: 1820846
+100 NN accuracy: 0.706988
+100 NN recall: 0.706988
+100 NN map@: 0.560118
 SEARCH_L : 200
-search time: 5.80418
-DistCount: 6932433
-HopCount: 2054893
-100 NN accuracy: 0.738098
-100 NN recall: 0.738098
-100 NN map@: 0.598986
+search time: 6.31244
+DistCount: 6960586
+HopCount: 2058027
+100 NN accuracy: 0.739079
+100 NN recall: 0.739079
+100 NN map@: 0.599256
 SEARCH_L : 225
-search time: 6.46002
-DistCount: 7736946
-HopCount: 2307570
-100 NN accuracy: 0.753279
-100 NN recall: 0.753279
-100 NN map@: 0.617415
+search time: 6.98887
+DistCount: 7760235
+HopCount: 2308808
+100 NN accuracy: 0.755021
+100 NN recall: 0.755021
+100 NN map@: 0.617966
 __SEARCH FINISH__

@@ -12,7 +12,7 @@ __INIT : KDT__
 build tree completed
 merge node list size: 2048
 merge tree completed
-__INIT FINISH__: 552.621
+__INIT FINISH__: 541.956
 __REFINE : EFANNA__
 __PRUNE : NAIVE__
 ===================
@@ -31,46 +31,46 @@ __SEARCH__20
 __SEARCH ENTRY : KDT__
 __ROUTER : GREEDY__
 SEARCH_L : 20
-search time: 0.0936207
+search time: 0.105585
 DistCount: 61176
 HopCount: 4698
 20 NN accuracy: 0.39775
 20 NN recall: 0.39775
 20 NN map@: 0.228236
 SEARCH_L : 45
-search time: 0.157819
+search time: 0.178001
 DistCount: 111189
 HopCount: 9699
 20 NN accuracy: 0.50425
 20 NN recall: 0.50425
 20 NN map@: 0.323508
 SEARCH_L : 70
-search time: 0.174589
+search time: 0.202898
 DistCount: 155787
 HopCount: 14558
 20 NN accuracy: 0.5695
 20 NN recall: 0.5695
 20 NN map@: 0.390327
 SEARCH_L : 95
-search time: 0.191432
+search time: 0.226465
 DistCount: 198799
 HopCount: 19580
 20 NN accuracy: 0.61775
 20 NN recall: 0.61775
 20 NN map@: 0.438036
 SEARCH_L : 120
-search time: 0.215737
+search time: 0.247079
 DistCount: 239772
 HopCount: 24543
 20 NN accuracy: 0.6495
 20 NN recall: 0.6495
 20 NN map@: 0.46821
 SEARCH_L : 145
-search time: 0.239663
+search time: 0.270529
 DistCount: 280417
 HopCount: 29642
 20 NN accuracy: 0.67025
 20 NN recall: 0.67025
 20 NN map@: 0.493615
 __SEARCH FINISH__
-Time cost: 6556.26
+Time cost: 6818.65

@@ -9,8 +9,8 @@ ground truth data dim : 100
 R_refine:32 L_refine:64 L:32 
 =====================
 __INIT : RAND__
-__INIT FINISH__: 28.3015
-Init cost: 28.3015
+__INIT FINISH__: 25.4251
+Init cost: 25.4251
 __REFINE : VAMANA__
 ep_ 0
 alpha 1
@@ -27,7 +27,7 @@ __PRUNE : VAMANA__
 ===================
 __REFINE : FINISH__
 ===================
-Build cost: 9339.87
+Build cost: 9203.36
 base data len : 1000000
 base data dim : 128
 query data len : 10000
@@ -41,49 +41,49 @@ __SEARCH__100
 __SEARCH ENTRY : CENTROID__
 __ROUTER : GREEDY__
 SEARCH_L : 100
-search time: 10.6512
+search time: 10.7521
 DistCount: 27418870
 HopCount: 1062663
 100 NN accuracy: 0.638434
 100 NN recall: 0.638434
 100 NN map@: 0.469316
 SEARCH_L : 125
-search time: 12.8598
+search time: 12.9124
 DistCount: 32753679
 HopCount: 1304269
 100 NN accuracy: 0.688153
 100 NN recall: 0.688153
 100 NN map@: 0.531958
 SEARCH_L : 150
-search time: 19.4766
+search time: 15.0156
 DistCount: 37954406
 HopCount: 1547484
 100 NN accuracy: 0.727592
 100 NN recall: 0.727592
 100 NN map@: 0.583675
 SEARCH_L : 175
-search time: 20.447
+search time: 17.0516
 DistCount: 43055236
 HopCount: 1792960
 100 NN accuracy: 0.759833
 100 NN recall: 0.759833
 100 NN map@: 0.627392
 SEARCH_L : 200
-search time: 25.9209
+search time: 19.0992
 DistCount: 48026234
 HopCount: 2038824
 100 NN accuracy: 0.786446
 100 NN recall: 0.786446
 100 NN map@: 0.664179
 SEARCH_L : 225
-search time: 29.3946
+search time: 21.1156
 DistCount: 52891056
 HopCount: 2284946
 100 NN accuracy: 0.808399
 100 NN recall: 0.808399
 100 NN map@: 0.695103
 __SEARCH FINISH__
-PID: 4035092
+PID: 3035416
 Name:	algo_test_vaman
-VmPeak:	 2008088 kB
-VmHWM:	 2005280 kB
+VmPeak:	 2008084 kB
+VmHWM:	 2005264 kB

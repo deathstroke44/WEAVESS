@@ -9,8 +9,8 @@ ground truth data dim : 100
 n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
 =====================
 __INIT : HNSW__
-__INIT FINISH__: 15015.6
-Build cost: 15015.6
+__INIT FINISH__: 15339.2
+Build cost: 15339.2
 base data len : 1000000
 base data dim : 256
 query data len : 10000
@@ -24,49 +24,49 @@ __SEARCH__100
 __SEARCH ENTRY : NONE__
 __ROUTER : HNSW__
 SEARCH_L : 100
-search time: 10.109
-DistCount: 10791315
-HopCount: 1167248
-100 NN accuracy: 0.958837
-100 NN recall: 0.958837
-100 NN map@: 0.878859
+search time: 11.0067
+DistCount: 10719871
+HopCount: 1159579
+100 NN accuracy: 0.957564
+100 NN recall: 0.957564
+100 NN map@: 0.877072
 SEARCH_L : 125
-search time: 12.1031
-DistCount: 12882815
-HopCount: 1416329
-100 NN accuracy: 0.964764
-100 NN recall: 0.964764
-100 NN map@: 0.886308
+search time: 13.2155
+DistCount: 12813940
+HopCount: 1408430
+100 NN accuracy: 0.964246
+100 NN recall: 0.964246
+100 NN map@: 0.887006
 SEARCH_L : 150
-search time: 14.0937
-DistCount: 14857051
-HopCount: 1665324
-100 NN accuracy: 0.967675
-100 NN recall: 0.967675
-100 NN map@: 0.891172
+search time: 15.5059
+DistCount: 14806047
+HopCount: 1657306
+100 NN accuracy: 0.967063
+100 NN recall: 0.967063
+100 NN map@: 0.890807
 SEARCH_L : 175
-search time: 15.9338
-DistCount: 16717496
-HopCount: 1914952
-100 NN accuracy: 0.970047
-100 NN recall: 0.970047
-100 NN map@: 0.894999
+search time: 17.5561
+DistCount: 16671819
+HopCount: 1907266
+100 NN accuracy: 0.9694
+100 NN recall: 0.9694
+100 NN map@: 0.895216
 SEARCH_L : 200
-search time: 17.7328
-DistCount: 18490726
-HopCount: 2164812
-100 NN accuracy: 0.971103
-100 NN recall: 0.971103
-100 NN map@: 0.896379
+search time: 19.566
+DistCount: 18444524
+HopCount: 2156236
+100 NN accuracy: 0.970647
+100 NN recall: 0.970647
+100 NN map@: 0.896609
 SEARCH_L : 225
-search time: 19.4713
-DistCount: 20215381
-HopCount: 2414743
-100 NN accuracy: 0.971729
-100 NN recall: 0.971729
-100 NN map@: 0.898087
+search time: 21.5733
+DistCount: 20171503
+HopCount: 2405571
+100 NN accuracy: 0.971515
+100 NN recall: 0.971515
+100 NN map@: 0.897893
 __SEARCH FINISH__
-PID: 3519596
+PID: 3033326
 Name:	algo_test_hnsw
-VmPeak:	 6443628 kB
-VmHWM:	 6440336 kB
+VmPeak:	 3100208 kB
+VmHWM:	 3097644 kB

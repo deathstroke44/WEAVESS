@@ -12,7 +12,7 @@ __INIT : HCNNG__
 build tree completed
 merge node list size: 160
 merge tree completed
-__INIT FINISH__: 31393.1
+__INIT FINISH__: 31318
 base data len : 1000000
 base data dim : 256
 query data len : 10000
@@ -26,45 +26,45 @@ __SEARCH__100
 __SEARCH ENTRY : KDT__
 __ROUTER : GUIDED__
 SEARCH_L : 100
-search time: 5.46873
-DistCount: 7630076
-HopCount: 1018909
-100 NN accuracy: 0.905528
-100 NN recall: 0.905528
-100 NN map@: 0.811201
+search time: 5.045
+DistCount: 7646278
+HopCount: 1018618
+100 NN accuracy: 0.90616
+100 NN recall: 0.90616
+100 NN map@: 0.813173
 SEARCH_L : 125
-search time: 6.52125
-DistCount: 9330940
-HopCount: 1267261
-100 NN accuracy: 0.924426
-100 NN recall: 0.924426
-100 NN map@: 0.836642
+search time: 6.05794
+DistCount: 9351490
+HopCount: 1267057
+100 NN accuracy: 0.925461
+100 NN recall: 0.925461
+100 NN map@: 0.838293
 SEARCH_L : 150
-search time: 7.60492
-DistCount: 10965293
-HopCount: 1516481
-100 NN accuracy: 0.934866
-100 NN recall: 0.934866
-100 NN map@: 0.850764
+search time: 7.06514
+DistCount: 10994456
+HopCount: 1516585
+100 NN accuracy: 0.935753
+100 NN recall: 0.935753
+100 NN map@: 0.852235
 SEARCH_L : 175
-search time: 8.64925
-DistCount: 12538446
-HopCount: 1766376
-100 NN accuracy: 0.941809
-100 NN recall: 0.941809
-100 NN map@: 0.860082
+search time: 8.05496
+DistCount: 12571723
+HopCount: 1767249
+100 NN accuracy: 0.942691
+100 NN recall: 0.942691
+100 NN map@: 0.861755
 SEARCH_L : 200
-search time: 9.31288
-DistCount: 14030416
-HopCount: 2011758
-100 NN accuracy: 0.947608
-100 NN recall: 0.947608
-100 NN map@: 0.868193
+search time: 8.93221
+DistCount: 14078339
+HopCount: 2014556
+100 NN accuracy: 0.948637
+100 NN recall: 0.948637
+100 NN map@: 0.869847
 SEARCH_L : 225
-search time: 10.208
-DistCount: 15522263
-HopCount: 2262030
-100 NN accuracy: 0.951446
-100 NN recall: 0.951446
-100 NN map@: 0.87345
+search time: 9.94337
+DistCount: 15566118
+HopCount: 2263692
+100 NN accuracy: 0.952191
+100 NN recall: 0.952191
+100 NN map@: 0.874528
 __SEARCH FINISH__

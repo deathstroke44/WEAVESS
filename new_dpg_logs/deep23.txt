@@ -76,3 +76,81 @@ HopCount: 30959
 20 NN recall: 0.55725
 20 NN map@: 0.35702
 __SEARCH FINISH__
+deep test
+base data len : 1000000
+base data dim : 256
+query data len : 200
+query data dim : 256
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+R:100 n_threads:1 S:10 ITER:4 L:20 K:20 
+=====================
+__INIT : RANDOM__
+__INIT FINISH__: 7.08851
+__REFINE : KGRAPH__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+Init cost: 344.685
+__REFINE : DPG__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 450.662
+base data len : 1000000
+base data dim : 256
+query data len : 200
+query data dim : 256
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+R:100 n_threads:1 S:10 ITER:4 L:20 K:20 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : RAND__
+__ROUTER : GREEDY__
+SEARCH_L : 20
+search time: 0.121772
+DistCount: 152086
+HopCount: 6090
+20 NN accuracy: 0.18775
+20 NN recall: 0.18775
+20 NN map@: 0.0510065
+SEARCH_L : 45
+search time: 0.220793
+DistCount: 274117
+HopCount: 11416
+20 NN accuracy: 0.30125
+20 NN recall: 0.30125
+20 NN map@: 0.115002
+SEARCH_L : 70
+search time: 0.27413
+DistCount: 380873
+HopCount: 16247
+20 NN accuracy: 0.38725
+20 NN recall: 0.38725
+20 NN map@: 0.186624
+SEARCH_L : 95
+search time: 0.341086
+DistCount: 484614
+HopCount: 21172
+20 NN accuracy: 0.45275
+20 NN recall: 0.45275
+20 NN map@: 0.248805
+SEARCH_L : 120
+search time: 0.411333
+DistCount: 583658
+HopCount: 25995
+20 NN accuracy: 0.51025
+20 NN recall: 0.51025
+20 NN map@: 0.303589
+SEARCH_L : 145
+search time: 0.461155
+DistCount: 680458
+HopCount: 30959
+20 NN accuracy: 0.55725
+20 NN recall: 0.55725
+20 NN map@: 0.35702
+__SEARCH FINISH__

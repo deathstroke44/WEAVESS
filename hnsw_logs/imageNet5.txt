@@ -9,8 +9,8 @@ ground truth data dim : 20
 n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
 =====================
 __INIT : HNSW__
-__INIT FINISH__: 160958
-Build cost: 160958
+__INIT FINISH__: 165607
+Build cost: 165607
 base data len : 2340373
 base data dim : 150
 query data len : 200
@@ -24,49 +24,49 @@ __SEARCH__20
 __SEARCH ENTRY : NONE__
 __ROUTER : HNSW__
 SEARCH_L : 20
-search time: 0.166245
-DistCount: 161742
-HopCount: 7782
-20 NN accuracy: 0.65475
-20 NN recall: 0.65475
-20 NN map@: 0.48775
+search time: 0.205507
+DistCount: 160393
+HopCount: 7608
+20 NN accuracy: 0.6555
+20 NN recall: 0.6555
+20 NN map@: 0.495891
 SEARCH_L : 45
-search time: 0.257957
-DistCount: 269095
-HopCount: 12565
-20 NN accuracy: 0.819
-20 NN recall: 0.819
-20 NN map@: 0.694442
+search time: 0.310873
+DistCount: 267507
+HopCount: 12352
+20 NN accuracy: 0.815
+20 NN recall: 0.815
+20 NN map@: 0.69265
 SEARCH_L : 70
-search time: 0.354152
-DistCount: 372460
-HopCount: 17409
-20 NN accuracy: 0.88225
-20 NN recall: 0.88225
-20 NN map@: 0.776552
+search time: 0.395354
+DistCount: 371655
+HopCount: 17234
+20 NN accuracy: 0.88275
+20 NN recall: 0.88275
+20 NN map@: 0.777321
 SEARCH_L : 95
-search time: 0.418342
-DistCount: 472985
-HopCount: 22356
-20 NN accuracy: 0.917
-20 NN recall: 0.917
-20 NN map@: 0.828974
+search time: 0.473073
+DistCount: 472537
+HopCount: 22172
+20 NN accuracy: 0.9165
+20 NN recall: 0.9165
+20 NN map@: 0.828217
 SEARCH_L : 120
-search time: 0.464637
-DistCount: 570536
-HopCount: 27291
-20 NN accuracy: 0.93975
-20 NN recall: 0.93975
-20 NN map@: 0.860708
+search time: 0.555811
+DistCount: 569556
+HopCount: 27097
+20 NN accuracy: 0.93875
+20 NN recall: 0.93875
+20 NN map@: 0.858968
 SEARCH_L : 145
-search time: 0.547232
-DistCount: 664275
-HopCount: 32243
-20 NN accuracy: 0.9495
-20 NN recall: 0.9495
-20 NN map@: 0.8736
+search time: 0.638007
+DistCount: 664240
+HopCount: 32080
+20 NN accuracy: 0.949
+20 NN recall: 0.949
+20 NN map@: 0.872636
 __SEARCH FINISH__
-PID: 3518470
+PID: 3033299
 Name:	algo_test_hnsw
-VmPeak:	11215704 kB
-VmHWM:	11212448 kB
+VmPeak:	 5280804 kB
+VmHWM:	 5278052 kB

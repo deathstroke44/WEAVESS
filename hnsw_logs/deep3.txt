@@ -9,8 +9,8 @@ ground truth data dim : 20
 n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
 =====================
 __INIT : HNSW__
-__INIT FINISH__: 24178.5
-Build cost: 24178.5
+__INIT FINISH__: 25539.7
+Build cost: 25539.7
 base data len : 1000000
 base data dim : 256
 query data len : 200
@@ -24,49 +24,49 @@ __SEARCH__20
 __SEARCH ENTRY : NONE__
 __ROUTER : HNSW__
 SEARCH_L : 20
-search time: 0.134441
-DistCount: 123600
-HopCount: 7596
-20 NN accuracy: 0.6675
-20 NN recall: 0.6675
-20 NN map@: 0.506056
+search time: 0.132373
+DistCount: 124350
+HopCount: 7603
+20 NN accuracy: 0.667
+20 NN recall: 0.667
+20 NN map@: 0.511961
 SEARCH_L : 45
-search time: 0.215713
-DistCount: 203488
-HopCount: 12375
-20 NN accuracy: 0.807
-20 NN recall: 0.807
-20 NN map@: 0.683422
+search time: 0.213643
+DistCount: 204505
+HopCount: 12401
+20 NN accuracy: 0.80925
+20 NN recall: 0.80925
+20 NN map@: 0.688442
 SEARCH_L : 70
-search time: 0.288116
-DistCount: 279076
-HopCount: 17264
+search time: 0.280826
+DistCount: 280293
+HopCount: 17311
 20 NN accuracy: 0.87825
 20 NN recall: 0.87825
-20 NN map@: 0.774945
+20 NN map@: 0.775345
 SEARCH_L : 95
-search time: 0.34764
-DistCount: 350314
-HopCount: 22212
-20 NN accuracy: 0.90725
-20 NN recall: 0.90725
-20 NN map@: 0.813376
+search time: 0.344768
+DistCount: 350855
+HopCount: 22227
+20 NN accuracy: 0.9065
+20 NN recall: 0.9065
+20 NN map@: 0.811198
 SEARCH_L : 120
-search time: 0.41183
-DistCount: 418896
-HopCount: 27120
-20 NN accuracy: 0.92725
-20 NN recall: 0.92725
-20 NN map@: 0.842767
+search time: 0.407541
+DistCount: 419753
+HopCount: 27141
+20 NN accuracy: 0.92775
+20 NN recall: 0.92775
+20 NN map@: 0.842308
 SEARCH_L : 145
-search time: 0.474255
-DistCount: 485582
-HopCount: 32083
-20 NN accuracy: 0.94075
-20 NN recall: 0.94075
-20 NN map@: 0.861958
+search time: 0.468698
+DistCount: 486710
+HopCount: 32117
+20 NN accuracy: 0.9405
+20 NN recall: 0.9405
+20 NN map@: 0.861172
 __SEARCH FINISH__
-PID: 3481861
+PID: 3033331
 Name:	algo_test_hnsw
-VmPeak:	 5965232 kB
-VmHWM:	 5962160 kB
+VmPeak:	 3013948 kB
+VmHWM:	 3011016 kB

@@ -12,7 +12,7 @@ __INIT : HCNNG__
 build tree completed
 merge node list size: 160
 merge tree completed
-__INIT FINISH__: 22782.8
+__INIT FINISH__: 26370.2
 base data len : 1000000
 base data dim : 128
 query data len : 10000
@@ -26,46 +26,45 @@ __SEARCH__100
 __SEARCH ENTRY : KDT__
 __ROUTER : GUIDED__
 SEARCH_L : 100
-search time: 6.30442
-DistCount: 15677131
-HopCount: 1003911
-100 NN accuracy: 0.890882
-100 NN recall: 0.890882
-100 NN map@: 0.832268
+search time: 7.31131
+DistCount: 15656060
+HopCount: 1003852
+100 NN accuracy: 0.890192
+100 NN recall: 0.890192
+100 NN map@: 0.831736
 SEARCH_L : 125
-search time: 7.51408
-DistCount: 19070056
-HopCount: 1253040
-100 NN accuracy: 0.920193
-100 NN recall: 0.920193
-100 NN map@: 0.873598
+search time: 8.77122
+DistCount: 19046596
+HopCount: 1253283
+100 NN accuracy: 0.920434
+100 NN recall: 0.920434
+100 NN map@: 0.874111
 SEARCH_L : 150
-search time: 8.71576
-DistCount: 22366295
-HopCount: 1502620
-100 NN accuracy: 0.939667
-100 NN recall: 0.939667
-100 NN map@: 0.901437
+search time: 10.1681
+DistCount: 22328311
+HopCount: 1502639
+100 NN accuracy: 0.939843
+100 NN recall: 0.939843
+100 NN map@: 0.901891
 SEARCH_L : 175
-search time: 9.85116
-DistCount: 25569836
-HopCount: 1752298
-100 NN accuracy: 0.953027
-100 NN recall: 0.953027
-100 NN map@: 0.920709
+search time: 11.538
+DistCount: 25533064
+HopCount: 1752409
+100 NN accuracy: 0.953076
+100 NN recall: 0.953076
+100 NN map@: 0.920945
 SEARCH_L : 200
-search time: 11.0776
-DistCount: 28706942
-HopCount: 2002003
-100 NN accuracy: 0.963161
-100 NN recall: 0.963161
-100 NN map@: 0.935464
+search time: 12.9161
+DistCount: 28660990
+HopCount: 2001874
+100 NN accuracy: 0.963148
+100 NN recall: 0.963148
+100 NN map@: 0.935582
 SEARCH_L : 225
-search time: 12.2387
-DistCount: 31776929
-HopCount: 2251875
-100 NN accuracy: 0.970206
-100 NN recall: 0.970206
-100 NN map@: 0.945777
+search time: 14.2133
+DistCount: 31727025
+HopCount: 2251853
+100 NN accuracy: 0.970139
+100 NN recall: 0.970139
+100 NN map@: 0.945695
 __SEARCH FINISH__
-sift test

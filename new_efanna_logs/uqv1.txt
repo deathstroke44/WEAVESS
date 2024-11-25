@@ -1,0 +1,70 @@
+Graph name: ../../graphs/uqv1.graph
+base data len : 1000000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 16642.5
+base data len : 1000000
+base data dim : 256
+query data len : 10000
+query data dim : 256
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 4.62804
+DistCount: 5979897
+HopCount: 1027160
+100 NN accuracy: 0.848854
+100 NN recall: 0.848854
+100 NN map@: 0.737634
+SEARCH_L : 125
+search time: 5.54999
+DistCount: 7333051
+HopCount: 1276118
+100 NN accuracy: 0.876934
+100 NN recall: 0.876934
+100 NN map@: 0.774376
+SEARCH_L : 150
+search time: 6.45406
+DistCount: 8644257
+HopCount: 1524670
+100 NN accuracy: 0.893861
+100 NN recall: 0.893861
+100 NN map@: 0.796759
+SEARCH_L : 175
+search time: 7.33005
+DistCount: 9922549
+HopCount: 1776104
+100 NN accuracy: 0.905917
+100 NN recall: 0.905917
+100 NN map@: 0.812719
+SEARCH_L : 200
+search time: 8.15324
+DistCount: 11122778
+HopCount: 2019420
+100 NN accuracy: 0.916969
+100 NN recall: 0.916969
+100 NN map@: 0.827827
+SEARCH_L : 225
+search time: 9.02804
+DistCount: 12336637
+HopCount: 2269707
+100 NN accuracy: 0.924276
+100 NN recall: 0.924276
+100 NN map@: 0.837756
+__SEARCH FINISH__

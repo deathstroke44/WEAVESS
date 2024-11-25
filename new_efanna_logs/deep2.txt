@@ -12,7 +12,7 @@ __INIT : HCNNG__
 build tree completed
 merge node list size: 160
 merge tree completed
-__INIT FINISH__: 8444.48
+__INIT FINISH__: 8629.12
 base data len : 1000000
 base data dim : 256
 query data len : 200
@@ -25,25 +25,46 @@ K:20 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100
 __SEARCH__20
 __SEARCH ENTRY : KDT__
 __ROUTER : GUIDED__
+SEARCH_L : 20
+search time: 0.0716499
+DistCount: 49205
+HopCount: 5308
+20 NN accuracy: 0.4205
+20 NN recall: 0.4205
+20 NN map@: 0.251005
+SEARCH_L : 45
+search time: 0.109589
+DistCount: 91340
+HopCount: 10042
+20 NN accuracy: 0.5885
+20 NN recall: 0.5885
+20 NN map@: 0.414564
 SEARCH_L : 70
-search time: 0.126892
-DistCount: 131902
-HopCount: 14807
-20 NN accuracy: 0.66525
-20 NN recall: 0.66525
-20 NN map@: 0.495284
+search time: 0.131704
+DistCount: 131648
+HopCount: 14789
+20 NN accuracy: 0.6795
+20 NN recall: 0.6795
+20 NN map@: 0.514876
+SEARCH_L : 95
+search time: 0.15836
+DistCount: 172515
+HopCount: 19774
+20 NN accuracy: 0.73875
+20 NN recall: 0.73875
+20 NN map@: 0.589039
 SEARCH_L : 120
-search time: 0.189141
-DistCount: 210584
-HopCount: 24450
-20 NN accuracy: 0.7735
-20 NN recall: 0.7735
-20 NN map@: 0.624703
-SEARCH_L : 170
-search time: 0.237968
-DistCount: 289199
-HopCount: 34477
-20 NN accuracy: 0.82775
-20 NN recall: 0.82775
-20 NN map@: 0.697809
+search time: 0.1847
+DistCount: 211809
+HopCount: 24654
+20 NN accuracy: 0.788
+20 NN recall: 0.788
+20 NN map@: 0.654301
+SEARCH_L : 145
+search time: 0.208815
+DistCount: 249861
+HopCount: 29461
+20 NN accuracy: 0.813
+20 NN recall: 0.813
+20 NN map@: 0.688142
 __SEARCH FINISH__

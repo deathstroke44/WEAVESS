@@ -9,8 +9,8 @@ ground truth data dim : 20
 n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
 =====================
 __INIT : HNSW__
-__INIT FINISH__: 20373.2
-Build cost: 20373.2
+__INIT FINISH__: 20370
+Build cost: 20370
 base data len : 1000000
 base data dim : 256
 query data len : 200
@@ -24,49 +24,49 @@ __SEARCH__20
 __SEARCH ENTRY : NONE__
 __ROUTER : HNSW__
 SEARCH_L : 20
-search time: 0.137315
-DistCount: 129137
-HopCount: 7547
-20 NN accuracy: 0.6705
-20 NN recall: 0.6705
-20 NN map@: 0.51184
+search time: 0.139228
+DistCount: 129641
+HopCount: 7564
+20 NN accuracy: 0.6735
+20 NN recall: 0.6735
+20 NN map@: 0.516997
 SEARCH_L : 45
-search time: 0.224764
-DistCount: 213144
-HopCount: 12356
-20 NN accuracy: 0.81075
-20 NN recall: 0.81075
-20 NN map@: 0.686833
+search time: 0.220011
+DistCount: 214007
+HopCount: 12367
+20 NN accuracy: 0.81125
+20 NN recall: 0.81125
+20 NN map@: 0.68968
 SEARCH_L : 70
-search time: 0.296656
-DistCount: 292562
-HopCount: 17261
-20 NN accuracy: 0.88275
-20 NN recall: 0.88275
-20 NN map@: 0.780303
+search time: 0.286725
+DistCount: 293895
+HopCount: 17300
+20 NN accuracy: 0.88175
+20 NN recall: 0.88175
+20 NN map@: 0.779505
 SEARCH_L : 95
-search time: 0.362374
-DistCount: 366514
-HopCount: 22182
-20 NN accuracy: 0.91175
-20 NN recall: 0.91175
-20 NN map@: 0.817211
+search time: 0.351855
+DistCount: 367365
+HopCount: 22207
+20 NN accuracy: 0.91125
+20 NN recall: 0.91125
+20 NN map@: 0.815804
 SEARCH_L : 120
-search time: 0.426595
-DistCount: 438282
-HopCount: 27102
-20 NN accuracy: 0.92975
-20 NN recall: 0.92975
-20 NN map@: 0.845482
+search time: 0.414716
+DistCount: 439807
+HopCount: 27143
+20 NN accuracy: 0.931
+20 NN recall: 0.931
+20 NN map@: 0.846002
 SEARCH_L : 145
-search time: 0.491549
-DistCount: 507749
-HopCount: 32082
-20 NN accuracy: 0.94375
-20 NN recall: 0.94375
-20 NN map@: 0.865083
+search time: 0.477436
+DistCount: 509118
+HopCount: 32119
+20 NN accuracy: 0.9445
+20 NN recall: 0.9445
+20 NN map@: 0.865748
 __SEARCH FINISH__
-PID: 3509063
+PID: 3033333
 Name:	algo_test_hnsw
-VmPeak:	 6397448 kB
-VmHWM:	 6394072 kB
+VmPeak:	 3073000 kB
+VmHWM:	 3070552 kB

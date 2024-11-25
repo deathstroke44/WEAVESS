@@ -1,0 +1,70 @@
+Graph name: ../../graphs/ukbench4.graph
+base data len : 1097907
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 1999.43
+base data len : 1097907
+base data dim : 128
+query data len : 200
+query data dim : 128
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+K:20 mLevel:4 nTrees:10 num_cl:5 minsize_cl:50 
+=====================
+__SEARCH__20
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 20
+search time: 0.0570956
+DistCount: 22454
+HopCount: 4756
+20 NN accuracy: 0.406
+20 NN recall: 0.406
+20 NN map@: 0.250983
+SEARCH_L : 45
+search time: 0.0806615
+DistCount: 45506
+HopCount: 9801
+20 NN accuracy: 0.58125
+20 NN recall: 0.58125
+20 NN map@: 0.414313
+SEARCH_L : 70
+search time: 0.0923027
+DistCount: 66602
+HopCount: 14550
+20 NN accuracy: 0.65975
+20 NN recall: 0.65975
+20 NN map@: 0.50562
+SEARCH_L : 95
+search time: 0.102775
+DistCount: 88913
+HopCount: 19729
+20 NN accuracy: 0.7095
+20 NN recall: 0.7095
+20 NN map@: 0.563856
+SEARCH_L : 120
+search time: 0.115056
+DistCount: 109364
+HopCount: 24449
+20 NN accuracy: 0.74875
+20 NN recall: 0.74875
+20 NN map@: 0.606389
+SEARCH_L : 145
+search time: 0.126481
+DistCount: 130962
+HopCount: 29616
+20 NN accuracy: 0.7725
+20 NN recall: 0.7725
+20 NN map@: 0.636858
+__SEARCH FINISH__
