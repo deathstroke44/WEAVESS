@@ -23,3 +23,6 @@ target_link_libraries(algo_test_nsg ${PROJECT_NAME})
 
 add_executable(algo_test_nssg algo_test_nssg.cpp)
 target_link_libraries(algo_test_nssg ${PROJECT_NAME})
+
+add_executable(algo_test_fanng algo_test_fanng.cpp)
+target_link_libraries(algo_test_fanng ${PROJECT_NAME})
