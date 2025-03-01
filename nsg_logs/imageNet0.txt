@@ -82,3 +82,14 @@ HopCount: 29771
 20 NN recall: 0.888
 20 NN map@: 0.785812
 __SEARCH FINISH__
+imageNet test
+base data len : 2340373
+base data dim : 150
+query data len : 200
+query data dim : 150
+ground truth data len : 200
+ground truth data dim : 20
+=====================
+R:25 L:100 K:20 
+=====================
+__INIT : FANNG__

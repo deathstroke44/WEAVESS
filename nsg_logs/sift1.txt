@@ -1,0 +1,14 @@
+sift test
+base data len : 1000000
+base data dim : 128
+query data len : 10000
+query data dim : 128
+ground truth data len : 10000
+ground truth data dim : 100
+=====================
+R:50 L:100 K:100 
+=====================
+__INIT : FANNG__
+__INIT FINISH__: 273294
+Init cost: 273294
+__REFINE : FANNG__

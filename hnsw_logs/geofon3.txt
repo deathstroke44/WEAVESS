@@ -1,0 +1,72 @@
+geofon test
+base data len : 275174
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 1774.19
+Build cost: 1774.19
+base data len : 275174
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.0702165
+DistCount: 97600
+HopCount: 11493
+100 NN accuracy: 0.9935
+100 NN recall: 0.9935
+100 NN map@: 0.980987
+SEARCH_L : 125
+search time: 0.0839299
+DistCount: 112143
+HopCount: 13989
+100 NN accuracy: 0.9963
+100 NN recall: 0.9963
+100 NN map@: 0.984662
+SEARCH_L : 150
+search time: 0.0961694
+DistCount: 125841
+HopCount: 16487
+100 NN accuracy: 0.9974
+100 NN recall: 0.9974
+100 NN map@: 0.98646
+SEARCH_L : 175
+search time: 0.109701
+DistCount: 138845
+HopCount: 18987
+100 NN accuracy: 0.9985
+100 NN recall: 0.9985
+100 NN map@: 0.988076
+SEARCH_L : 200
+search time: 0.117531
+DistCount: 151424
+HopCount: 21485
+100 NN accuracy: 0.9989
+100 NN recall: 0.9989
+100 NN map@: 0.98853
+SEARCH_L : 225
+search time: 0.128203
+DistCount: 163760
+HopCount: 23985
+100 NN accuracy: 0.999
+100 NN recall: 0.999
+100 NN map@: 0.988643
+__SEARCH FINISH__
+PID: 1140588
+Name:	algo_test_hnsw
+VmPeak:	  559888 kB
+VmHWM:	  557368 kB
