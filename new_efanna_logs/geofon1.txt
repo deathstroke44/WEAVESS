@@ -1,0 +1,70 @@
+Graph name: ../../graphs/geofon1.graph
+base data len : 275174
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 1004.11
+base data len : 275174
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0452297
+DistCount: 59159
+HopCount: 10013
+100 NN accuracy: 0.9344
+100 NN recall: 0.9344
+100 NN map@: 0.899594
+SEARCH_L : 125
+search time: 0.0554519
+DistCount: 71066
+HopCount: 12516
+100 NN accuracy: 0.9542
+100 NN recall: 0.9542
+100 NN map@: 0.926905
+SEARCH_L : 150
+search time: 0.0620142
+DistCount: 82760
+HopCount: 15031
+100 NN accuracy: 0.9665
+100 NN recall: 0.9665
+100 NN map@: 0.944249
+SEARCH_L : 175
+search time: 0.0704584
+DistCount: 93969
+HopCount: 17522
+100 NN accuracy: 0.9729
+100 NN recall: 0.9729
+100 NN map@: 0.95229
+SEARCH_L : 200
+search time: 0.0772278
+DistCount: 104943
+HopCount: 20016
+100 NN accuracy: 0.9792
+100 NN recall: 0.9792
+100 NN map@: 0.960621
+SEARCH_L : 225
+search time: 0.085952
+DistCount: 115818
+HopCount: 22520
+100 NN accuracy: 0.9822
+100 NN recall: 0.9822
+100 NN map@: 0.965303
+__SEARCH FINISH__

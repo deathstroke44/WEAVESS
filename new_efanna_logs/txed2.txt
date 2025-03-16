@@ -1,0 +1,71 @@
+Graph name: ../../graphs/txed2.graph
+base data len : 519589
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 156
+merge level deeper than tree, max merge deepth is 2
+merge tree completed
+__INIT FINISH__: 2269.61
+base data len : 519589
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0824088
+DistCount: 115279
+HopCount: 10856
+100 NN accuracy: 0.4353
+100 NN recall: 0.4353
+100 NN map@: 0.284625
+SEARCH_L : 125
+search time: 0.107383
+DistCount: 141107
+HopCount: 13384
+100 NN accuracy: 0.4716
+100 NN recall: 0.4716
+100 NN map@: 0.316642
+SEARCH_L : 150
+search time: 0.121821
+DistCount: 164578
+HopCount: 15776
+100 NN accuracy: 0.4982
+100 NN recall: 0.4982
+100 NN map@: 0.342308
+SEARCH_L : 175
+search time: 0.137731
+DistCount: 190377
+HopCount: 18351
+100 NN accuracy: 0.5227
+100 NN recall: 0.5227
+100 NN map@: 0.365993
+SEARCH_L : 200
+search time: 0.153312
+DistCount: 215006
+HopCount: 20842
+100 NN accuracy: 0.5474
+100 NN recall: 0.5474
+100 NN map@: 0.390593
+SEARCH_L : 225
+search time: 0.169259
+DistCount: 240396
+HopCount: 23414
+100 NN accuracy: 0.5665
+100 NN recall: 0.5665
+100 NN map@: 0.408909
+__SEARCH FINISH__

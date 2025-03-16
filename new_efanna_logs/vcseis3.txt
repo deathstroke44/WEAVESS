@@ -1,0 +1,71 @@
+Graph name: ../../graphs/vcseis3.graph
+base data len : 160178
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 124
+merge level deeper than tree, max merge deepth is 0
+merge tree completed
+__INIT FINISH__: 228.232
+base data len : 160178
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0367977
+DistCount: 49662
+HopCount: 10448
+100 NN accuracy: 0.5115
+100 NN recall: 0.5115
+100 NN map@: 0.418119
+SEARCH_L : 125
+search time: 0.0453907
+DistCount: 60590
+HopCount: 12920
+100 NN accuracy: 0.5352
+100 NN recall: 0.5352
+100 NN map@: 0.442613
+SEARCH_L : 150
+search time: 0.052767
+DistCount: 71051
+HopCount: 15429
+100 NN accuracy: 0.55
+100 NN recall: 0.55
+100 NN map@: 0.457009
+SEARCH_L : 175
+search time: 0.0597419
+DistCount: 81613
+HopCount: 17989
+100 NN accuracy: 0.5673
+100 NN recall: 0.5673
+100 NN map@: 0.47222
+SEARCH_L : 200
+search time: 0.0671699
+DistCount: 92257
+HopCount: 20406
+100 NN accuracy: 0.5807
+100 NN recall: 0.5807
+100 NN map@: 0.490303
+SEARCH_L : 225
+search time: 0.07376
+DistCount: 102150
+HopCount: 22880
+100 NN accuracy: 0.5865
+100 NN recall: 0.5865
+100 NN map@: 0.495525
+__SEARCH FINISH__

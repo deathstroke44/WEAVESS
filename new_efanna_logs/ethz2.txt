@@ -1,0 +1,71 @@
+Graph name: ../../graphs/ethz2.graph
+base data len : 36643
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 148
+merge level deeper than tree, max merge deepth is 2
+merge tree completed
+__INIT FINISH__: 47.7832
+base data len : 36643
+base data dim : 256
+query data len : 100
+query data dim : 256
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0294261
+DistCount: 44521
+HopCount: 10103
+100 NN accuracy: 0.8871
+100 NN recall: 0.8871
+100 NN map@: 0.833641
+SEARCH_L : 125
+search time: 0.0360968
+DistCount: 53514
+HopCount: 12564
+100 NN accuracy: 0.9183
+100 NN recall: 0.9183
+100 NN map@: 0.870581
+SEARCH_L : 150
+search time: 0.0414383
+DistCount: 62042
+HopCount: 15040
+100 NN accuracy: 0.9366
+100 NN recall: 0.9366
+100 NN map@: 0.895038
+SEARCH_L : 175
+search time: 0.0471428
+DistCount: 70914
+HopCount: 17570
+100 NN accuracy: 0.9491
+100 NN recall: 0.9491
+100 NN map@: 0.912643
+SEARCH_L : 200
+search time: 0.0545642
+DistCount: 79298
+HopCount: 20057
+100 NN accuracy: 0.956
+100 NN recall: 0.956
+100 NN map@: 0.92262
+SEARCH_L : 225
+search time: 0.0597401
+DistCount: 87531
+HopCount: 22538
+100 NN accuracy: 0.9611
+100 NN recall: 0.9611
+100 NN map@: 0.92994
+__SEARCH FINISH__

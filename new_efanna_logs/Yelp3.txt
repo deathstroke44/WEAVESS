@@ -1,0 +1,70 @@
+Graph name: ../../graphs/Yelp3.graph
+base data len : 77079
+base data dim : 50
+query data len : 100
+query data dim : 50
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 33.3367
+base data len : 77079
+base data dim : 50
+query data len : 100
+query data dim : 50
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0199964
+DistCount: 48499
+HopCount: 11605
+100 NN accuracy: 0.3683
+100 NN recall: 0.3683
+100 NN map@: 0.227069
+SEARCH_L : 125
+search time: 0.0218231
+DistCount: 60176
+HopCount: 14601
+100 NN accuracy: 0.4502
+100 NN recall: 0.4502
+100 NN map@: 0.296063
+SEARCH_L : 150
+search time: 0.0254007
+DistCount: 68935
+HopCount: 16827
+100 NN accuracy: 0.492
+100 NN recall: 0.492
+100 NN map@: 0.337466
+SEARCH_L : 175
+search time: 0.030382
+DistCount: 78518
+HopCount: 19444
+100 NN accuracy: 0.5422
+100 NN recall: 0.5422
+100 NN map@: 0.384774
+SEARCH_L : 200
+search time: 0.0323301
+DistCount: 87469
+HopCount: 21827
+100 NN accuracy: 0.5684
+100 NN recall: 0.5684
+100 NN map@: 0.411969
+SEARCH_L : 225
+search time: 0.0349961
+DistCount: 97600
+HopCount: 24555
+100 NN accuracy: 0.5988
+100 NN recall: 0.5988
+100 NN map@: 0.443418
+__SEARCH FINISH__

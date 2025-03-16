@@ -1,0 +1,70 @@
+Graph name: ../../graphs/Music11.graph
+base data len : 1000000
+base data dim : 100
+query data len : 100
+query data dim : 100
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 25364.1
+base data len : 1000000
+base data dim : 100
+query data len : 100
+query data dim : 100
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.127992
+DistCount: 227096
+HopCount: 11886
+100 NN accuracy: 0.4593
+100 NN recall: 0.4593
+100 NN map@: 0.30812
+SEARCH_L : 125
+search time: 0.139863
+DistCount: 268355
+HopCount: 14336
+100 NN accuracy: 0.5065
+100 NN recall: 0.5065
+100 NN map@: 0.352975
+SEARCH_L : 150
+search time: 0.153734
+DistCount: 312771
+HopCount: 17026
+100 NN accuracy: 0.5573
+100 NN recall: 0.5573
+100 NN map@: 0.406485
+SEARCH_L : 175
+search time: 0.170793
+DistCount: 354828
+HopCount: 19735
+100 NN accuracy: 0.5899
+100 NN recall: 0.5899
+100 NN map@: 0.436912
+SEARCH_L : 200
+search time: 0.285709
+DistCount: 390342
+HopCount: 22136
+100 NN accuracy: 0.6011
+100 NN recall: 0.6011
+100 NN map@: 0.448143
+SEARCH_L : 225
+search time: 0.221392
+DistCount: 432378
+HopCount: 24978
+100 NN accuracy: 0.6262
+100 NN recall: 0.6262
+100 NN map@: 0.475395
+__SEARCH FINISH__
