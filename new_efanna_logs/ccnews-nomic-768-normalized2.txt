@@ -1,0 +1,70 @@
+Graph name: ../../graphs/ccnews-nomic-768-normalized2.graph
+base data len : 495328
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 4227.1
+base data len : 495328
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.12564
+DistCount: 76865
+HopCount: 10231
+100 NN accuracy: 0.7713
+100 NN recall: 0.7713
+100 NN map@: 0.674393
+SEARCH_L : 125
+search time: 0.15553
+DistCount: 93908
+HopCount: 12716
+100 NN accuracy: 0.8076
+100 NN recall: 0.8076
+100 NN map@: 0.717728
+SEARCH_L : 150
+search time: 0.177158
+DistCount: 110289
+HopCount: 15161
+100 NN accuracy: 0.8348
+100 NN recall: 0.8348
+100 NN map@: 0.75325
+SEARCH_L : 175
+search time: 0.202664
+DistCount: 126731
+HopCount: 17664
+100 NN accuracy: 0.8565
+100 NN recall: 0.8565
+100 NN map@: 0.782573
+SEARCH_L : 200
+search time: 0.224204
+DistCount: 143075
+HopCount: 20190
+100 NN accuracy: 0.8729
+100 NN recall: 0.8729
+100 NN map@: 0.803929
+SEARCH_L : 225
+search time: 0.24822
+DistCount: 158455
+HopCount: 22625
+100 NN accuracy: 0.8845
+100 NN recall: 0.8845
+100 NN map@: 0.818847
+__SEARCH FINISH__

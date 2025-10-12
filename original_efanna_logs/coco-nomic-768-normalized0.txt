@@ -1,0 +1,76 @@
+coco-nomic-768-normalized test
+base data len : 282360
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:130 K:100 mLevel:8 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 240.724
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 282360
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:130 K:100 mLevel:8 R:100 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.355216
+DistCount: 265111
+HopCount: 10665
+100 NN accuracy: 0.9006
+100 NN recall: 0.9006
+100 NN map@: 0.816154
+SEARCH_L : 125
+search time: 0.390074
+DistCount: 286261
+HopCount: 12871
+100 NN accuracy: 0.9114
+100 NN recall: 0.9114
+100 NN map@: 0.834059
+SEARCH_L : 150
+search time: 0.437581
+DistCount: 320192
+HopCount: 15327
+100 NN accuracy: 0.9131
+100 NN recall: 0.9131
+100 NN map@: 0.843442
+SEARCH_L : 175
+search time: 0.482896
+DistCount: 352489
+HopCount: 17833
+100 NN accuracy: 0.9219
+100 NN recall: 0.9219
+100 NN map@: 0.858654
+SEARCH_L : 200
+search time: 0.523452
+DistCount: 381692
+HopCount: 20347
+100 NN accuracy: 0.9284
+100 NN recall: 0.9284
+100 NN map@: 0.869822
+SEARCH_L : 225
+search time: 0.564454
+DistCount: 409629
+HopCount: 22890
+100 NN accuracy: 0.9437
+100 NN recall: 0.9437
+100 NN map@: 0.888936
+__SEARCH FINISH__
+Time cost: 7011.73

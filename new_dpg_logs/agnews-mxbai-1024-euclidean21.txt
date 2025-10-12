@@ -1,0 +1,78 @@
+agnews-mxbai-1024-euclidean test
+base data len : 769382
+base data dim : 1024
+query data len : 100
+query data dim : 1024
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:20 ITER:4 L:100 K:100 
+=====================
+__INIT : RANDOM__
+__INIT FINISH__: 31.479
+__REFINE : KGRAPH__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+Init cost: 2073.49
+__REFINE : DPG__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 7434.47
+base data len : 769382
+base data dim : 1024
+query data len : 100
+query data dim : 1024
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:20 ITER:4 L:100 K:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : RAND__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 1.26647
+DistCount: 759603
+HopCount: 10208
+100 NN accuracy: 0.9619
+100 NN recall: 0.9619
+100 NN map@: 0.926281
+SEARCH_L : 125
+search time: 1.51425
+DistCount: 896321
+HopCount: 12696
+100 NN accuracy: 0.9735
+100 NN recall: 0.9735
+100 NN map@: 0.9444
+SEARCH_L : 150
+search time: 1.71952
+DistCount: 1025443
+HopCount: 15162
+100 NN accuracy: 0.9807
+100 NN recall: 0.9807
+100 NN map@: 0.955831
+SEARCH_L : 175
+search time: 1.9984
+DistCount: 1178644
+HopCount: 17652
+100 NN accuracy: 0.9854
+100 NN recall: 0.9854
+100 NN map@: 0.96313
+SEARCH_L : 200
+search time: 2.1943
+DistCount: 1303021
+HopCount: 20154
+100 NN accuracy: 0.9888
+100 NN recall: 0.9888
+100 NN map@: 0.970131
+SEARCH_L : 225
+search time: 2.37297
+DistCount: 1417353
+HopCount: 22630
+100 NN accuracy: 0.9907
+100 NN recall: 0.9907
+100 NN map@: 0.97295
+__SEARCH FINISH__

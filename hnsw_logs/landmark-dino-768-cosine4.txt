@@ -1,0 +1,72 @@
+landmark-dino-768-cosine test
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:20 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 81483.5
+Build cost: 81483.5
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:20 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.373052
+DistCount: 220218
+HopCount: 11286
+100 NN accuracy: 0.9528
+100 NN recall: 0.9528
+100 NN map@: 0.921897
+SEARCH_L : 125
+search time: 0.444824
+DistCount: 258431
+HopCount: 13768
+100 NN accuracy: 0.9657
+100 NN recall: 0.9657
+100 NN map@: 0.939233
+SEARCH_L : 150
+search time: 0.508689
+DistCount: 295167
+HopCount: 16260
+100 NN accuracy: 0.9724
+100 NN recall: 0.9724
+100 NN map@: 0.949363
+SEARCH_L : 175
+search time: 0.564544
+DistCount: 330196
+HopCount: 18747
+100 NN accuracy: 0.9788
+100 NN recall: 0.9788
+100 NN map@: 0.958259
+SEARCH_L : 200
+search time: 0.626473
+DistCount: 364779
+HopCount: 21254
+100 NN accuracy: 0.983
+100 NN recall: 0.983
+100 NN map@: 0.96445
+SEARCH_L : 225
+search time: 0.679721
+DistCount: 397684
+HopCount: 23754
+100 NN accuracy: 0.9872
+100 NN recall: 0.9872
+100 NN map@: 0.970757
+__SEARCH FINISH__
+PID: 2882769
+Name:	algo_test_hnsw
+VmPeak:	 5632252 kB
+VmHWM:	 5629304 kB

@@ -1,0 +1,72 @@
+landmark-nomic-768-normalized test
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 16034.8
+Build cost: 16034.8
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.228695
+DistCount: 127075
+HopCount: 11605
+100 NN accuracy: 0.9743
+100 NN recall: 0.9743
+100 NN map@: 0.955324
+SEARCH_L : 125
+search time: 0.276754
+DistCount: 148153
+HopCount: 14094
+100 NN accuracy: 0.9827
+100 NN recall: 0.9827
+100 NN map@: 0.966217
+SEARCH_L : 150
+search time: 0.313676
+DistCount: 168801
+HopCount: 16588
+100 NN accuracy: 0.9887
+100 NN recall: 0.9887
+100 NN map@: 0.974461
+SEARCH_L : 175
+search time: 0.348405
+DistCount: 188564
+HopCount: 19091
+100 NN accuracy: 0.9915
+100 NN recall: 0.9915
+100 NN map@: 0.978061
+SEARCH_L : 200
+search time: 0.383632
+DistCount: 208018
+HopCount: 21590
+100 NN accuracy: 0.9938
+100 NN recall: 0.9938
+100 NN map@: 0.98131
+SEARCH_L : 225
+search time: 0.415541
+DistCount: 226766
+HopCount: 24082
+100 NN accuracy: 0.995
+100 NN recall: 0.995
+100 NN map@: 0.982711
+__SEARCH FINISH__
+PID: 2882752
+Name:	algo_test_hnsw
+VmPeak:	 5335108 kB
+VmHWM:	 5332236 kB

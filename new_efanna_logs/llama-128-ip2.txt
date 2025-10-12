@@ -1,0 +1,70 @@
+Graph name: ../../graphs/llama-128-ip2.graph
+base data len : 256921
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 969.125
+base data len : 256921
+base data dim : 128
+query data len : 100
+query data dim : 128
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.0248984
+DistCount: 34752
+HopCount: 10287
+100 NN accuracy: 0.9091
+100 NN recall: 0.9091
+100 NN map@: 0.85844
+SEARCH_L : 125
+search time: 0.031395
+DistCount: 40876
+HopCount: 12739
+100 NN accuracy: 0.9365
+100 NN recall: 0.9365
+100 NN map@: 0.897964
+SEARCH_L : 150
+search time: 0.0351867
+DistCount: 47976
+HopCount: 15185
+100 NN accuracy: 0.9605
+100 NN recall: 0.9605
+100 NN map@: 0.934324
+SEARCH_L : 175
+search time: 0.03967
+DistCount: 55242
+HopCount: 17672
+100 NN accuracy: 0.979
+100 NN recall: 0.979
+100 NN map@: 0.961501
+SEARCH_L : 200
+search time: 0.0431188
+DistCount: 61767
+HopCount: 20093
+100 NN accuracy: 0.9864
+100 NN recall: 0.9864
+100 NN map@: 0.977798
+SEARCH_L : 225
+search time: 0.0469842
+DistCount: 68204
+HopCount: 22588
+100 NN accuracy: 0.991
+100 NN recall: 0.991
+100 NN map@: 0.98572
+__SEARCH FINISH__

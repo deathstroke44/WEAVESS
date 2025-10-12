@@ -1,0 +1,70 @@
+Graph name: ../../graphs/Meier2019JGR2.graph
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 9056.39
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.179658
+DistCount: 211690
+HopCount: 31100
+100 NN accuracy: 0.732
+100 NN recall: 0.732
+100 NN map@: 0.626374
+SEARCH_L : 125
+search time: 0.226856
+DistCount: 255143
+HopCount: 38463
+100 NN accuracy: 0.759867
+100 NN recall: 0.759867
+100 NN map@: 0.663534
+SEARCH_L : 150
+search time: 0.262751
+DistCount: 299202
+HopCount: 45940
+100 NN accuracy: 0.7827
+100 NN recall: 0.7827
+100 NN map@: 0.690979
+SEARCH_L : 175
+search time: 0.289832
+DistCount: 342039
+HopCount: 53457
+100 NN accuracy: 0.798
+100 NN recall: 0.798
+100 NN map@: 0.708773
+SEARCH_L : 200
+search time: 0.319861
+DistCount: 385405
+HopCount: 61094
+100 NN accuracy: 0.809833
+100 NN recall: 0.809833
+100 NN map@: 0.72381
+SEARCH_L : 225
+search time: 0.348792
+DistCount: 426759
+HopCount: 68458
+100 NN accuracy: 0.819533
+100 NN recall: 0.819533
+100 NN map@: 0.736367
+__SEARCH FINISH__

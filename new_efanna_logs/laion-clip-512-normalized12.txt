@@ -1,0 +1,70 @@
+Graph name: ../../graphs/laion-clip-512-normalized12.graph
+base data len : 1000000
+base data dim : 512
+query data len : 100
+query data dim : 512
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 640
+merge tree completed
+__INIT FINISH__: 49026.7
+base data len : 1000000
+base data dim : 512
+query data len : 100
+query data dim : 512
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:40 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.222748
+DistCount: 204380
+HopCount: 10733
+100 NN accuracy: 0.7915
+100 NN recall: 0.7915
+100 NN map@: 0.688782
+SEARCH_L : 125
+search time: 0.295753
+DistCount: 245338
+HopCount: 13216
+100 NN accuracy: 0.8249
+100 NN recall: 0.8249
+100 NN map@: 0.73323
+SEARCH_L : 150
+search time: 0.320046
+DistCount: 287928
+HopCount: 15831
+100 NN accuracy: 0.8511
+100 NN recall: 0.8511
+100 NN map@: 0.768406
+SEARCH_L : 175
+search time: 0.355172
+DistCount: 324821
+HopCount: 18195
+100 NN accuracy: 0.8664
+100 NN recall: 0.8664
+100 NN map@: 0.789425
+SEARCH_L : 200
+search time: 0.396878
+DistCount: 362650
+HopCount: 20647
+100 NN accuracy: 0.8778
+100 NN recall: 0.8778
+100 NN map@: 0.805291
+SEARCH_L : 225
+search time: 0.432177
+DistCount: 402508
+HopCount: 23258
+100 NN accuracy: 0.8918
+100 NN recall: 0.8918
+100 NN map@: 0.824659
+__SEARCH FINISH__

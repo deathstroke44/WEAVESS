@@ -1,0 +1,70 @@
+Graph name: ../../graphs/coco-nomic-768-normalized11.graph
+base data len : 282360
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 5192.97
+base data len : 282360
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.223554
+DistCount: 165125
+HopCount: 10591
+100 NN accuracy: 0.8751
+100 NN recall: 0.8751
+100 NN map@: 0.788528
+SEARCH_L : 125
+search time: 0.267499
+DistCount: 194249
+HopCount: 13005
+100 NN accuracy: 0.9032
+100 NN recall: 0.9032
+100 NN map@: 0.831257
+SEARCH_L : 150
+search time: 0.300255
+DistCount: 221226
+HopCount: 15416
+100 NN accuracy: 0.9246
+100 NN recall: 0.9246
+100 NN map@: 0.86655
+SEARCH_L : 175
+search time: 0.33822
+DistCount: 249003
+HopCount: 17929
+100 NN accuracy: 0.939
+100 NN recall: 0.939
+100 NN map@: 0.889552
+SEARCH_L : 200
+search time: 0.387638
+DistCount: 276728
+HopCount: 20476
+100 NN accuracy: 0.9488
+100 NN recall: 0.9488
+100 NN map@: 0.904339
+SEARCH_L : 225
+search time: 0.41899
+DistCount: 302740
+HopCount: 22989
+100 NN accuracy: 0.9593
+100 NN recall: 0.9593
+100 NN map@: 0.922637
+__SEARCH FINISH__

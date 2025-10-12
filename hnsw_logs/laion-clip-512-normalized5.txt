@@ -1,0 +1,72 @@
+laion-clip-512-normalized test
+base data len : 1000000
+base data dim : 512
+query data len : 100
+query data dim : 512
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 23718.2
+Build cost: 23718.2
+base data len : 1000000
+base data dim : 512
+query data len : 100
+query data dim : 512
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:50 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.24412
+DistCount: 165712
+HopCount: 11995
+100 NN accuracy: 0.7703
+100 NN recall: 0.7703
+100 NN map@: 0.662517
+SEARCH_L : 125
+search time: 0.295478
+DistCount: 195609
+HopCount: 14481
+100 NN accuracy: 0.8007
+100 NN recall: 0.8007
+100 NN map@: 0.700282
+SEARCH_L : 150
+search time: 0.337375
+DistCount: 224368
+HopCount: 16982
+100 NN accuracy: 0.8269
+100 NN recall: 0.8269
+100 NN map@: 0.734706
+SEARCH_L : 175
+search time: 0.377947
+DistCount: 254140
+HopCount: 19618
+100 NN accuracy: 0.8526
+100 NN recall: 0.8526
+100 NN map@: 0.769851
+SEARCH_L : 200
+search time: 0.416925
+DistCount: 282851
+HopCount: 22090
+100 NN accuracy: 0.8676
+100 NN recall: 0.8676
+100 NN map@: 0.789293
+SEARCH_L : 225
+search time: 0.453949
+DistCount: 310007
+HopCount: 24569
+100 NN accuracy: 0.8799
+100 NN recall: 0.8799
+100 NN map@: 0.807579
+__SEARCH FINISH__
+PID: 2882802
+Name:	algo_test_hnsw
+VmPeak:	 5074708 kB
+VmHWM:	 5071840 kB

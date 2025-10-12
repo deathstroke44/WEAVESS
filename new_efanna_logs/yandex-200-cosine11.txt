@@ -1,0 +1,70 @@
+Graph name: ../../graphs/yandex-200-cosine11.graph
+base data len : 1000000
+base data dim : 200
+query data len : 100
+query data dim : 200
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 31090.2
+base data len : 1000000
+base data dim : 200
+query data len : 100
+query data dim : 200
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.129023
+DistCount: 202471
+HopCount: 10399
+100 NN accuracy: 0.816
+100 NN recall: 0.816
+100 NN map@: 0.718836
+SEARCH_L : 125
+search time: 0.170585
+DistCount: 245492
+HopCount: 12919
+100 NN accuracy: 0.8521
+100 NN recall: 0.8521
+100 NN map@: 0.765697
+SEARCH_L : 150
+search time: 0.19309
+DistCount: 286828
+HopCount: 15460
+100 NN accuracy: 0.8752
+100 NN recall: 0.8752
+100 NN map@: 0.79502
+SEARCH_L : 175
+search time: 0.213115
+DistCount: 325588
+HopCount: 17932
+100 NN accuracy: 0.8901
+100 NN recall: 0.8901
+100 NN map@: 0.816908
+SEARCH_L : 200
+search time: 0.230885
+DistCount: 363244
+HopCount: 20362
+100 NN accuracy: 0.9018
+100 NN recall: 0.9018
+100 NN map@: 0.833689
+SEARCH_L : 225
+search time: 0.252398
+DistCount: 400271
+HopCount: 22851
+100 NN accuracy: 0.9136
+100 NN recall: 0.9136
+100 NN map@: 0.850296
+__SEARCH FINISH__

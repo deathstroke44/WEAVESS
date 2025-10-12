@@ -1,0 +1,76 @@
+simplewiki-openai-3072-normalized test
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:130 K:100 mLevel:8 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 613.261
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:130 K:100 mLevel:8 R:100 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 1.32216
+DistCount: 307865
+HopCount: 10026
+100 NN accuracy: 0.9752
+100 NN recall: 0.9752
+100 NN map@: 0.949892
+SEARCH_L : 125
+search time: 1.56517
+DistCount: 367846
+HopCount: 12527
+100 NN accuracy: 0.9795
+100 NN recall: 0.9795
+100 NN map@: 0.956991
+SEARCH_L : 150
+search time: 1.82851
+DistCount: 425674
+HopCount: 15020
+100 NN accuracy: 0.9845
+100 NN recall: 0.9845
+100 NN map@: 0.965951
+SEARCH_L : 175
+search time: 2.05853
+DistCount: 481105
+HopCount: 17506
+100 NN accuracy: 0.9867
+100 NN recall: 0.9867
+100 NN map@: 0.968764
+SEARCH_L : 200
+search time: 2.28015
+DistCount: 534805
+HopCount: 20005
+100 NN accuracy: 0.9879
+100 NN recall: 0.9879
+100 NN map@: 0.970512
+SEARCH_L : 225
+search time: 2.50237
+DistCount: 587913
+HopCount: 22506
+100 NN accuracy: 0.99
+100 NN recall: 0.99
+100 NN map@: 0.973708
+__SEARCH FINISH__
+Time cost: 14244.7

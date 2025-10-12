@@ -1,0 +1,76 @@
+landmark-dino-768-cosine test
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:30 ITER:12 L:100 K:100 mLevel:8 R:200 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 690.798
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:30 ITER:12 L:100 K:100 mLevel:8 R:200 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.346785
+DistCount: 294229
+HopCount: 10033
+100 NN accuracy: 0.9644
+100 NN recall: 0.9644
+100 NN map@: 0.93294
+SEARCH_L : 125
+search time: 0.437685
+DistCount: 344164
+HopCount: 12520
+100 NN accuracy: 0.9724
+100 NN recall: 0.9724
+100 NN map@: 0.944536
+SEARCH_L : 150
+search time: 0.477992
+DistCount: 391243
+HopCount: 15020
+100 NN accuracy: 0.9768
+100 NN recall: 0.9768
+100 NN map@: 0.951092
+SEARCH_L : 175
+search time: 0.519699
+DistCount: 433697
+HopCount: 17512
+100 NN accuracy: 0.9797
+100 NN recall: 0.9797
+100 NN map@: 0.95547
+SEARCH_L : 200
+search time: 0.58451
+DistCount: 476163
+HopCount: 20010
+100 NN accuracy: 0.9831
+100 NN recall: 0.9831
+100 NN map@: 0.96103
+SEARCH_L : 225
+search time: 0.617
+DistCount: 515549
+HopCount: 22508
+100 NN accuracy: 0.9849
+100 NN recall: 0.9849
+100 NN map@: 0.963917
+__SEARCH FINISH__
+Time cost: 19692.5

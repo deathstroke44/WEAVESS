@@ -1,0 +1,89 @@
+simplewiki-openai-3072-normalized test
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R_refine:16 L_refine:8 L:16 
+=====================
+__INIT : RAND__
+__INIT FINISH__: 19.7163
+Init cost: 19.7163
+__REFINE : VAMANA__
+ep_ 0
+alpha 1
+__CANDIDATE : NSG__
+__PRUNE : VAMANA__
+===================
+__REFINE : FINISH__
+===================
+__REFINE : VAMANA__
+ep_ 0
+alpha 2
+__CANDIDATE : NSG__
+__PRUNE : VAMANA__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 3903.34
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R_refine:16 L_refine:8 L:16 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : CENTROID__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.66066
+DistCount: 155526
+HopCount: 11821
+100 NN accuracy: 0.111
+100 NN recall: 0.111
+100 NN map@: 0.0155385
+SEARCH_L : 125
+search time: 0.790895
+DistCount: 185488
+HopCount: 14320
+100 NN accuracy: 0.1324
+100 NN recall: 0.1324
+100 NN map@: 0.0206898
+SEARCH_L : 150
+search time: 0.91759
+DistCount: 212537
+HopCount: 16646
+100 NN accuracy: 0.1498
+100 NN recall: 0.1498
+100 NN map@: 0.0278784
+SEARCH_L : 175
+search time: 1.0342
+DistCount: 242884
+HopCount: 19289
+100 NN accuracy: 0.1671
+100 NN recall: 0.1671
+100 NN map@: 0.0333076
+SEARCH_L : 200
+search time: 1.14052
+DistCount: 267862
+HopCount: 21561
+100 NN accuracy: 0.1826
+100 NN recall: 0.1826
+100 NN map@: 0.0404437
+SEARCH_L : 225
+search time: 1.27312
+DistCount: 297193
+HopCount: 24188
+100 NN accuracy: 0.1995
+100 NN recall: 0.1995
+100 NN map@: 0.0465726
+__SEARCH FINISH__
+PID: 2883627
+Name:	algo_test_vaman
+VmPeak:	 6399692 kB
+VmHWM:	 6397236 kB

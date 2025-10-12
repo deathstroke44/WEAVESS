@@ -1,0 +1,78 @@
+landmark-dino-768-cosine test
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:20 ITER:12 L:130 K:100 
+=====================
+__INIT : RANDOM__
+__INIT FINISH__: 24.0139
+__REFINE : KGRAPH__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+Init cost: 21525
+__REFINE : DPG__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 25319.3
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:20 ITER:12 L:130 K:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : RAND__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.608053
+DistCount: 450757
+HopCount: 10208
+100 NN accuracy: 0.9903
+100 NN recall: 0.9903
+100 NN map@: 0.97628
+SEARCH_L : 125
+search time: 0.715151
+DistCount: 520005
+HopCount: 12680
+100 NN accuracy: 0.9928
+100 NN recall: 0.9928
+100 NN map@: 0.979666
+SEARCH_L : 150
+search time: 0.808196
+DistCount: 589063
+HopCount: 15190
+100 NN accuracy: 0.996
+100 NN recall: 0.996
+100 NN map@: 0.984056
+SEARCH_L : 175
+search time: 0.908489
+DistCount: 650692
+HopCount: 17659
+100 NN accuracy: 0.9971
+100 NN recall: 0.9971
+100 NN map@: 0.985772
+SEARCH_L : 200
+search time: 0.979057
+DistCount: 713449
+HopCount: 20163
+100 NN accuracy: 0.9979
+100 NN recall: 0.9979
+100 NN map@: 0.986962
+SEARCH_L : 225
+search time: 1.05909
+DistCount: 771132
+HopCount: 22652
+100 NN accuracy: 0.9987
+100 NN recall: 0.9987
+100 NN map@: 0.98823
+__SEARCH FINISH__

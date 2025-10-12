@@ -1,0 +1,78 @@
+codesearchnet-jina-768-cosine test
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:20 ITER:12 L:130 K:100 
+=====================
+__INIT : RANDOM__
+__INIT FINISH__: 33.0953
+__REFINE : KGRAPH__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+Init cost: 27031.1
+__REFINE : DPG__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 32228.6
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:20 ITER:12 L:130 K:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : RAND__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.543095
+DistCount: 423832
+HopCount: 10440
+100 NN accuracy: 0.9842
+100 NN recall: 0.9842
+100 NN map@: 0.966507
+SEARCH_L : 125
+search time: 0.622223
+DistCount: 501103
+HopCount: 12856
+100 NN accuracy: 0.9787
+100 NN recall: 0.9787
+100 NN map@: 0.962527
+SEARCH_L : 150
+search time: 0.713695
+DistCount: 577639
+HopCount: 15272
+100 NN accuracy: 0.9915
+100 NN recall: 0.9915
+100 NN map@: 0.977066
+SEARCH_L : 175
+search time: 0.826949
+DistCount: 654459
+HopCount: 17888
+100 NN accuracy: 0.9923
+100 NN recall: 0.9923
+100 NN map@: 0.978313
+SEARCH_L : 200
+search time: 0.92881
+DistCount: 735808
+HopCount: 20401
+100 NN accuracy: 0.9943
+100 NN recall: 0.9943
+100 NN map@: 0.980912
+SEARCH_L : 225
+search time: 0.989377
+DistCount: 809059
+HopCount: 22743
+100 NN accuracy: 0.9955
+100 NN recall: 0.9955
+100 NN map@: 0.982731
+__SEARCH FINISH__

@@ -1,0 +1,70 @@
+Graph name: ../../graphs/OBST20243.graph
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 4532.68
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.192453
+DistCount: 202124
+HopCount: 33546
+100 NN accuracy: 0.3199
+100 NN recall: 0.3199
+100 NN map@: 0.218983
+SEARCH_L : 125
+search time: 0.234972
+DistCount: 245376
+HopCount: 41075
+100 NN accuracy: 0.348
+100 NN recall: 0.348
+100 NN map@: 0.247348
+SEARCH_L : 150
+search time: 0.262735
+DistCount: 288541
+HopCount: 48702
+100 NN accuracy: 0.3669
+100 NN recall: 0.3669
+100 NN map@: 0.267421
+SEARCH_L : 175
+search time: 0.295718
+DistCount: 336130
+HopCount: 57360
+100 NN accuracy: 0.397167
+100 NN recall: 0.397167
+100 NN map@: 0.294046
+SEARCH_L : 200
+search time: 0.3651
+DistCount: 383992
+HopCount: 66078
+100 NN accuracy: 0.4112
+100 NN recall: 0.4112
+100 NN map@: 0.311026
+SEARCH_L : 225
+search time: 0.380482
+DistCount: 425960
+HopCount: 73757
+100 NN accuracy: 0.4291
+100 NN recall: 0.4291
+100 NN map@: 0.328672
+__SEARCH FINISH__

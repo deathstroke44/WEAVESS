@@ -1,0 +1,15 @@
+ISC_EHB_DepthPhases test
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:100 K:100 mLevel:16 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 462222
+merge level deeper than tree, max merge deepth is 12
+merge tree completed

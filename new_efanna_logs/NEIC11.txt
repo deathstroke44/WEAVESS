@@ -1,0 +1,70 @@
+Graph name: ../../graphs/NEIC11.graph
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 37612.2
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.362943
+DistCount: 446512
+HopCount: 31045
+100 NN accuracy: 0.767233
+100 NN recall: 0.767233
+100 NN map@: 0.681865
+SEARCH_L : 125
+search time: 0.439717
+DistCount: 537228
+HopCount: 38703
+100 NN accuracy: 0.7971
+100 NN recall: 0.7971
+100 NN map@: 0.718544
+SEARCH_L : 150
+search time: 0.741976
+DistCount: 621096
+HopCount: 46145
+100 NN accuracy: 0.812833
+100 NN recall: 0.812833
+100 NN map@: 0.740106
+SEARCH_L : 175
+search time: 0.889776
+DistCount: 708737
+HopCount: 53945
+100 NN accuracy: 0.829167
+100 NN recall: 0.829167
+100 NN map@: 0.758268
+SEARCH_L : 200
+search time: 0.619695
+DistCount: 788037
+HopCount: 61367
+100 NN accuracy: 0.8422
+100 NN recall: 0.8422
+100 NN map@: 0.773267
+SEARCH_L : 225
+search time: 0.689372
+DistCount: 865412
+HopCount: 68822
+100 NN accuracy: 0.852033
+100 NN recall: 0.852033
+100 NN map@: 0.786052
+__SEARCH FINISH__

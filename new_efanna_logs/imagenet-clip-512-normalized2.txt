@@ -1,0 +1,70 @@
+Graph name: ../../graphs/imagenet-clip-512-normalized2.graph
+base data len : 1000000
+base data dim : 512
+query data len : 100
+query data dim : 512
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 12417.9
+base data len : 1000000
+base data dim : 512
+query data len : 100
+query data dim : 512
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.10931
+DistCount: 73973
+HopCount: 10105
+100 NN accuracy: 0.7913
+100 NN recall: 0.7913
+100 NN map@: 0.701513
+SEARCH_L : 125
+search time: 0.137607
+DistCount: 90024
+HopCount: 12587
+100 NN accuracy: 0.8268
+100 NN recall: 0.8268
+100 NN map@: 0.748536
+SEARCH_L : 150
+search time: 0.154039
+DistCount: 105669
+HopCount: 15083
+100 NN accuracy: 0.8539
+100 NN recall: 0.8539
+100 NN map@: 0.786255
+SEARCH_L : 175
+search time: 0.168528
+DistCount: 120895
+HopCount: 17548
+100 NN accuracy: 0.8722
+100 NN recall: 0.8722
+100 NN map@: 0.811819
+SEARCH_L : 200
+search time: 0.187234
+DistCount: 136224
+HopCount: 20051
+100 NN accuracy: 0.8856
+100 NN recall: 0.8856
+100 NN map@: 0.829787
+SEARCH_L : 225
+search time: 0.208509
+DistCount: 151375
+HopCount: 22558
+100 NN accuracy: 0.8977
+100 NN recall: 0.8977
+100 NN map@: 0.845568
+__SEARCH FINISH__

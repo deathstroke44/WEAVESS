@@ -1,0 +1,70 @@
+Graph name: ../../graphs/ISC_EHB_DepthPhases1.graph
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 17670.6
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.192597
+DistCount: 202015
+HopCount: 30259
+100 NN accuracy: 0.841567
+100 NN recall: 0.841567
+100 NN map@: 0.758121
+SEARCH_L : 125
+search time: 0.240915
+DistCount: 243750
+HopCount: 37694
+100 NN accuracy: 0.8739
+100 NN recall: 0.8739
+100 NN map@: 0.800886
+SEARCH_L : 150
+search time: 0.269923
+DistCount: 283858
+HopCount: 45151
+100 NN accuracy: 0.896933
+100 NN recall: 0.896933
+100 NN map@: 0.83256
+SEARCH_L : 175
+search time: 0.300575
+DistCount: 323139
+HopCount: 52651
+100 NN accuracy: 0.911733
+100 NN recall: 0.911733
+100 NN map@: 0.852114
+SEARCH_L : 200
+search time: 0.328261
+DistCount: 362183
+HopCount: 60197
+100 NN accuracy: 0.926867
+100 NN recall: 0.926867
+100 NN map@: 0.874779
+SEARCH_L : 225
+search time: 0.358501
+DistCount: 400050
+HopCount: 67623
+100 NN accuracy: 0.935367
+100 NN recall: 0.935367
+100 NN map@: 0.886488
+__SEARCH FINISH__

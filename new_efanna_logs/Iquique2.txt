@@ -1,0 +1,70 @@
+Graph name: ../../graphs/Iquique2.graph
+base data len : 578853
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 2891.34
+base data len : 578853
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.214642
+DistCount: 282894
+HopCount: 32936
+100 NN accuracy: 0.4308
+100 NN recall: 0.4308
+100 NN map@: 0.287849
+SEARCH_L : 125
+search time: 0.26935
+DistCount: 342841
+HopCount: 40471
+100 NN accuracy: 0.466
+100 NN recall: 0.466
+100 NN map@: 0.322945
+SEARCH_L : 150
+search time: 0.306801
+DistCount: 399440
+HopCount: 47542
+100 NN accuracy: 0.4914
+100 NN recall: 0.4914
+100 NN map@: 0.348919
+SEARCH_L : 175
+search time: 0.354162
+DistCount: 457243
+HopCount: 55041
+100 NN accuracy: 0.514433
+100 NN recall: 0.514433
+100 NN map@: 0.373131
+SEARCH_L : 200
+search time: 0.392525
+DistCount: 514441
+HopCount: 62328
+100 NN accuracy: 0.534667
+100 NN recall: 0.534667
+100 NN map@: 0.393624
+SEARCH_L : 225
+search time: 0.433563
+DistCount: 570046
+HopCount: 69588
+100 NN accuracy: 0.550633
+100 NN recall: 0.550633
+100 NN map@: 0.409965
+__SEARCH FINISH__

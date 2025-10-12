@@ -1,0 +1,72 @@
+celeba-resnet-2048-cosine test
+base data len : 201599
+base data dim : 2048
+query data len : 100
+query data dim : 2048
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:20 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 10920.1
+Build cost: 10920.1
+base data len : 201599
+base data dim : 2048
+query data len : 100
+query data dim : 2048
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:20 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.695758
+DistCount: 215912
+HopCount: 11092
+100 NN accuracy: 0.9692
+100 NN recall: 0.9692
+100 NN map@: 0.945045
+SEARCH_L : 125
+search time: 0.823158
+DistCount: 253446
+HopCount: 13591
+100 NN accuracy: 0.981
+100 NN recall: 0.981
+100 NN map@: 0.961362
+SEARCH_L : 150
+search time: 0.946645
+DistCount: 288888
+HopCount: 16090
+100 NN accuracy: 0.9851
+100 NN recall: 0.9851
+100 NN map@: 0.966981
+SEARCH_L : 175
+search time: 1.05126
+DistCount: 322211
+HopCount: 18588
+100 NN accuracy: 0.9888
+100 NN recall: 0.9888
+100 NN map@: 0.97288
+SEARCH_L : 200
+search time: 1.15744
+DistCount: 354739
+HopCount: 21086
+100 NN accuracy: 0.9912
+100 NN recall: 0.9912
+100 NN map@: 0.976859
+SEARCH_L : 225
+search time: 1.26318
+DistCount: 386426
+HopCount: 23591
+100 NN accuracy: 0.9933
+100 NN recall: 0.9933
+100 NN map@: 0.979796
+__SEARCH FINISH__
+PID: 2882771
+Name:	algo_test_hnsw
+VmPeak:	 3518100 kB
+VmHWM:	 3515552 kB

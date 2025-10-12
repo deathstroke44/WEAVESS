@@ -1,0 +1,70 @@
+Graph name: ../../graphs/arxiv-nomic-768-normalized2.graph
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 16142.7
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:10 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.144745
+DistCount: 79164
+HopCount: 10191
+100 NN accuracy: 0.7571
+100 NN recall: 0.7571
+100 NN map@: 0.658418
+SEARCH_L : 125
+search time: 0.182973
+DistCount: 96872
+HopCount: 12656
+100 NN accuracy: 0.7947
+100 NN recall: 0.7947
+100 NN map@: 0.704547
+SEARCH_L : 150
+search time: 0.209028
+DistCount: 114718
+HopCount: 15159
+100 NN accuracy: 0.8224
+100 NN recall: 0.8224
+100 NN map@: 0.740679
+SEARCH_L : 175
+search time: 0.231155
+DistCount: 131904
+HopCount: 17617
+100 NN accuracy: 0.8432
+100 NN recall: 0.8432
+100 NN map@: 0.767954
+SEARCH_L : 200
+search time: 0.258625
+DistCount: 149083
+HopCount: 20094
+100 NN accuracy: 0.8625
+100 NN recall: 0.8625
+100 NN map@: 0.792703
+SEARCH_L : 225
+search time: 0.283035
+DistCount: 166131
+HopCount: 22586
+100 NN accuracy: 0.877
+100 NN recall: 0.877
+100 NN map@: 0.811056
+__SEARCH FINISH__

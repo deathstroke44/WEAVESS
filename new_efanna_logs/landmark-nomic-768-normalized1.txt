@@ -1,0 +1,70 @@
+Graph name: ../../graphs/landmark-nomic-768-normalized1.graph
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 18301
+base data len : 760757
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.144336
+DistCount: 89521
+HopCount: 10039
+100 NN accuracy: 0.9399
+100 NN recall: 0.9399
+100 NN map@: 0.906238
+SEARCH_L : 125
+search time: 0.184456
+DistCount: 108110
+HopCount: 12513
+100 NN accuracy: 0.9595
+100 NN recall: 0.9595
+100 NN map@: 0.93304
+SEARCH_L : 150
+search time: 0.210313
+DistCount: 126556
+HopCount: 15014
+100 NN accuracy: 0.9703
+100 NN recall: 0.9703
+100 NN map@: 0.948741
+SEARCH_L : 175
+search time: 0.235075
+DistCount: 144477
+HopCount: 17514
+100 NN accuracy: 0.9777
+100 NN recall: 0.9777
+100 NN map@: 0.958613
+SEARCH_L : 200
+search time: 0.262006
+DistCount: 162054
+HopCount: 20019
+100 NN accuracy: 0.9821
+100 NN recall: 0.9821
+100 NN map@: 0.964311
+SEARCH_L : 225
+search time: 0.293992
+DistCount: 179390
+HopCount: 22512
+100 NN accuracy: 0.9864
+100 NN recall: 0.9864
+100 NN map@: 0.970805
+__SEARCH FINISH__

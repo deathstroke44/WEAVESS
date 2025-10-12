@@ -1,0 +1,70 @@
+Graph name: ../../graphs/simplewiki-openai-3072-normalized3.graph
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 3813.11
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.237604
+DistCount: 50960
+HopCount: 10354
+100 NN accuracy: 0.5701
+100 NN recall: 0.5701
+100 NN map@: 0.420928
+SEARCH_L : 125
+search time: 0.310883
+DistCount: 62611
+HopCount: 12879
+100 NN accuracy: 0.6203
+100 NN recall: 0.6203
+100 NN map@: 0.477712
+SEARCH_L : 150
+search time: 0.344838
+DistCount: 73418
+HopCount: 15263
+100 NN accuracy: 0.6503
+100 NN recall: 0.6503
+100 NN map@: 0.509934
+SEARCH_L : 175
+search time: 0.396024
+DistCount: 84545
+HopCount: 17744
+100 NN accuracy: 0.676
+100 NN recall: 0.676
+100 NN map@: 0.542467
+SEARCH_L : 200
+search time: 0.454793
+DistCount: 95367
+HopCount: 20225
+100 NN accuracy: 0.7023
+100 NN recall: 0.7023
+100 NN map@: 0.573002
+SEARCH_L : 225
+search time: 0.494306
+DistCount: 106164
+HopCount: 22709
+100 NN accuracy: 0.7208
+100 NN recall: 0.7208
+100 NN map@: 0.595585
+__SEARCH FINISH__

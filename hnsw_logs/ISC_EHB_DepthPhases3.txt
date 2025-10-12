@@ -1,0 +1,72 @@
+ISC_EHB_DepthPhases test
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 32780.3
+Build cost: 32780.3
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.393245
+DistCount: 355072
+HopCount: 34587
+100 NN accuracy: 0.925533
+100 NN recall: 0.925533
+100 NN map@: 0.876704
+SEARCH_L : 125
+search time: 0.477842
+DistCount: 408707
+HopCount: 42021
+100 NN accuracy: 0.9356
+100 NN recall: 0.9356
+100 NN map@: 0.890795
+SEARCH_L : 150
+search time: 0.527715
+DistCount: 459674
+HopCount: 49522
+100 NN accuracy: 0.942433
+100 NN recall: 0.942433
+100 NN map@: 0.899863
+SEARCH_L : 175
+search time: 0.585609
+DistCount: 508731
+HopCount: 57032
+100 NN accuracy: 0.9476
+100 NN recall: 0.9476
+100 NN map@: 0.906907
+SEARCH_L : 200
+search time: 0.647313
+DistCount: 556628
+HopCount: 64550
+100 NN accuracy: 0.951833
+100 NN recall: 0.951833
+100 NN map@: 0.912834
+SEARCH_L : 225
+search time: 0.701091
+DistCount: 602593
+HopCount: 72023
+100 NN accuracy: 0.956133
+100 NN recall: 0.956133
+100 NN map@: 0.919288
+__SEARCH FINISH__
+PID: 3854717
+Name:	algo_test_hnsw
+VmPeak:	 3030440 kB
+VmHWM:	 3027752 kB

@@ -1,0 +1,70 @@
+Graph name: ../../graphs/codesearchnet-jina-768-cosine3.graph
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 8300.97
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:5 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.112087
+DistCount: 56359
+HopCount: 10714
+100 NN accuracy: 0.5438
+100 NN recall: 0.5438
+100 NN map@: 0.399613
+SEARCH_L : 125
+search time: 0.141854
+DistCount: 67959
+HopCount: 13046
+100 NN accuracy: 0.5837
+100 NN recall: 0.5837
+100 NN map@: 0.440143
+SEARCH_L : 150
+search time: 0.159038
+DistCount: 80364
+HopCount: 15534
+100 NN accuracy: 0.6145
+100 NN recall: 0.6145
+100 NN map@: 0.474781
+SEARCH_L : 175
+search time: 0.178449
+DistCount: 92807
+HopCount: 18094
+100 NN accuracy: 0.6431
+100 NN recall: 0.6431
+100 NN map@: 0.507068
+SEARCH_L : 200
+search time: 0.195899
+DistCount: 104254
+HopCount: 20458
+100 NN accuracy: 0.6644
+100 NN recall: 0.6644
+100 NN map@: 0.533038
+SEARCH_L : 225
+search time: 0.213561
+DistCount: 116892
+HopCount: 23048
+100 NN accuracy: 0.6853
+100 NN recall: 0.6853
+100 NN map@: 0.554558
+__SEARCH FINISH__

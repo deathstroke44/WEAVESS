@@ -1,0 +1,72 @@
+Iquique test
+base data len : 578853
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 12659.2
+Build cost: 12659.2
+base data len : 578853
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:300 max_m0:40 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.585853
+DistCount: 561011
+HopCount: 35970
+100 NN accuracy: 0.6779
+100 NN recall: 0.6779
+100 NN map@: 0.561031
+SEARCH_L : 125
+search time: 0.693317
+DistCount: 663093
+HopCount: 43374
+100 NN accuracy: 0.707067
+100 NN recall: 0.707067
+100 NN map@: 0.594275
+SEARCH_L : 150
+search time: 0.815559
+DistCount: 762495
+HopCount: 50883
+100 NN accuracy: 0.7287
+100 NN recall: 0.7287
+100 NN map@: 0.619935
+SEARCH_L : 175
+search time: 0.92866
+DistCount: 860773
+HopCount: 58519
+100 NN accuracy: 0.7477
+100 NN recall: 0.7477
+100 NN map@: 0.641831
+SEARCH_L : 200
+search time: 1.03586
+DistCount: 953310
+HopCount: 65907
+100 NN accuracy: 0.763233
+100 NN recall: 0.763233
+100 NN map@: 0.661043
+SEARCH_L : 225
+search time: 1.11751
+DistCount: 1045045
+HopCount: 73266
+100 NN accuracy: 0.7756
+100 NN recall: 0.7756
+100 NN map@: 0.676359
+__SEARCH FINISH__
+PID: 3854718
+Name:	algo_test_hnsw
+VmPeak:	 1757184 kB
+VmHWM:	 1754576 kB

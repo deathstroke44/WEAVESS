@@ -1,0 +1,76 @@
+agnews-mxbai-1024-euclidean test
+base data len : 769382
+base data dim : 1024
+query data len : 100
+query data dim : 1024
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:130 K:100 mLevel:8 R:100 nTrees:8 
+=====================
+__INIT : KDT__
+build tree completed
+merge node list size: 2048
+merge tree completed
+__INIT FINISH__: 855.479
+__REFINE : EFANNA__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+base data len : 769382
+base data dim : 1024
+query data len : 100
+query data dim : 1024
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+S:10 ITER:12 L:130 K:100 mLevel:8 R:100 nTrees:8 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 0.466765
+DistCount: 269159
+HopCount: 10026
+100 NN accuracy: 0.9848
+100 NN recall: 0.9848
+100 NN map@: 0.965491
+SEARCH_L : 125
+search time: 0.573865
+DistCount: 323767
+HopCount: 12519
+100 NN accuracy: 0.9889
+100 NN recall: 0.9889
+100 NN map@: 0.9734
+SEARCH_L : 150
+search time: 0.679852
+DistCount: 377350
+HopCount: 15021
+100 NN accuracy: 0.9915
+100 NN recall: 0.9915
+100 NN map@: 0.977099
+SEARCH_L : 175
+search time: 0.755415
+DistCount: 430805
+HopCount: 17510
+100 NN accuracy: 0.9934
+100 NN recall: 0.9934
+100 NN map@: 0.980178
+SEARCH_L : 200
+search time: 0.845812
+DistCount: 479879
+HopCount: 20005
+100 NN accuracy: 0.9944
+100 NN recall: 0.9944
+100 NN map@: 0.981406
+SEARCH_L : 225
+search time: 0.930662
+DistCount: 531582
+HopCount: 22505
+100 NN accuracy: 0.9951
+100 NN recall: 0.9951
+100 NN map@: 0.982561
+__SEARCH FINISH__
+Time cost: 18898.1

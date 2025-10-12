@@ -1,0 +1,72 @@
+gooaq-distilroberta-768-normalized test
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:200 max_m0:40 max_m:10 
+=====================
+__INIT : HNSW__
+__INIT FINISH__: 24163.5
+Build cost: 24163.5
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+n_threads:1 mult:-1 ef_construction:200 max_m0:40 max_m:10 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : NONE__
+__ROUTER : HNSW__
+SEARCH_L : 100
+search time: 0.273724
+DistCount: 135770
+HopCount: 11846
+100 NN accuracy: 0.9599
+100 NN recall: 0.9599
+100 NN map@: 0.935105
+SEARCH_L : 125
+search time: 0.314455
+DistCount: 159719
+HopCount: 14334
+100 NN accuracy: 0.9692
+100 NN recall: 0.9692
+100 NN map@: 0.946978
+SEARCH_L : 150
+search time: 0.359969
+DistCount: 183799
+HopCount: 16816
+100 NN accuracy: 0.976
+100 NN recall: 0.976
+100 NN map@: 0.956011
+SEARCH_L : 175
+search time: 0.398682
+DistCount: 207275
+HopCount: 19318
+100 NN accuracy: 0.9816
+100 NN recall: 0.9816
+100 NN map@: 0.963293
+SEARCH_L : 200
+search time: 0.442005
+DistCount: 229991
+HopCount: 21822
+100 NN accuracy: 0.985
+100 NN recall: 0.985
+100 NN map@: 0.968774
+SEARCH_L : 225
+search time: 0.491768
+DistCount: 252588
+HopCount: 24311
+100 NN accuracy: 0.9872
+100 NN recall: 0.9872
+100 NN map@: 0.971743
+__SEARCH FINISH__
+PID: 2882735
+Name:	algo_test_hnsw
+VmPeak:	 7008980 kB
+VmHWM:	 7006064 kB

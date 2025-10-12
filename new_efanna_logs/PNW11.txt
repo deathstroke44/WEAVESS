@@ -1,0 +1,70 @@
+Graph name: ../../graphs/PNW11.graph
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 33404.1
+base data len : 1000000
+base data dim : 256
+query data len : 300
+query data dim : 256
+ground truth data len : 300
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.782536
+DistCount: 1550263
+HopCount: 30337
+100 NN accuracy: 0.207833
+100 NN recall: 0.207833
+100 NN map@: 0.175465
+SEARCH_L : 125
+search time: 1.00405
+DistCount: 1941333
+HopCount: 37766
+100 NN accuracy: 0.215633
+100 NN recall: 0.215633
+100 NN map@: 0.185753
+SEARCH_L : 150
+search time: 1.25166
+DistCount: 2352227
+HopCount: 45170
+100 NN accuracy: 0.2237
+100 NN recall: 0.2237
+100 NN map@: 0.195664
+SEARCH_L : 175
+search time: 1.45324
+DistCount: 2688284
+HopCount: 52592
+100 NN accuracy: 0.223
+100 NN recall: 0.223
+100 NN map@: 0.197345
+SEARCH_L : 200
+search time: 1.62938
+DistCount: 3078388
+HopCount: 60195
+100 NN accuracy: 0.2351
+100 NN recall: 0.2351
+100 NN map@: 0.209182
+SEARCH_L : 225
+search time: 2.22741
+DistCount: 3388185
+HopCount: 67571
+100 NN accuracy: 0.235833
+100 NN recall: 0.235833
+100 NN map@: 0.211833
+__SEARCH FINISH__

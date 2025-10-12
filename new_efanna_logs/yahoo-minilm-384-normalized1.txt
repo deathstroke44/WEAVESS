@@ -1,0 +1,70 @@
+Graph name: ../../graphs/yahoo-minilm-384-normalized1.graph
+base data len : 677305
+base data dim : 384
+query data len : 100
+query data dim : 384
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 10097.3
+base data len : 677305
+base data dim : 384
+query data len : 100
+query data dim : 384
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:20 minsize_cl:50 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.134015
+DistCount: 137690
+HopCount: 10144
+100 NN accuracy: 0.8548
+100 NN recall: 0.8548
+100 NN map@: 0.787044
+SEARCH_L : 125
+search time: 0.169853
+DistCount: 166508
+HopCount: 12592
+100 NN accuracy: 0.8845
+100 NN recall: 0.8845
+100 NN map@: 0.826028
+SEARCH_L : 150
+search time: 0.194459
+DistCount: 195244
+HopCount: 15101
+100 NN accuracy: 0.9066
+100 NN recall: 0.9066
+100 NN map@: 0.857565
+SEARCH_L : 175
+search time: 0.2175
+DistCount: 223104
+HopCount: 17574
+100 NN accuracy: 0.9206
+100 NN recall: 0.9206
+100 NN map@: 0.875216
+SEARCH_L : 200
+search time: 0.240766
+DistCount: 250726
+HopCount: 20056
+100 NN accuracy: 0.93
+100 NN recall: 0.93
+100 NN map@: 0.888368
+SEARCH_L : 225
+search time: 0.270837
+DistCount: 278312
+HopCount: 22576
+100 NN accuracy: 0.9404
+100 NN recall: 0.9404
+100 NN map@: 0.902904
+__SEARCH FINISH__

@@ -1,0 +1,78 @@
+simplewiki-openai-3072-normalized test
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:10 ITER:4 L:100 K:100 
+=====================
+__INIT : RANDOM__
+__INIT FINISH__: 14.9615
+__REFINE : KGRAPH__
+__PRUNE : NAIVE__
+===================
+__REFINE : FINISH__
+===================
+Init cost: 436.654
+__REFINE : DPG__
+===================
+__REFINE : FINISH__
+===================
+Build cost: 5689.33
+base data len : 260372
+base data dim : 3072
+query data len : 100
+query data dim : 3072
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+R:50 n_threads:1 S:10 ITER:4 L:100 K:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : RAND__
+__ROUTER : GREEDY__
+SEARCH_L : 100
+search time: 2.75366
+DistCount: 634632
+HopCount: 10410
+100 NN accuracy: 0.663
+100 NN recall: 0.663
+100 NN map@: 0.479847
+SEARCH_L : 125
+search time: 3.28132
+DistCount: 755486
+HopCount: 12826
+100 NN accuracy: 0.7095
+100 NN recall: 0.7095
+100 NN map@: 0.538974
+SEARCH_L : 150
+search time: 3.79695
+DistCount: 873325
+HopCount: 15314
+100 NN accuracy: 0.7471
+100 NN recall: 0.7471
+100 NN map@: 0.589387
+SEARCH_L : 175
+search time: 4.29564
+DistCount: 986422
+HopCount: 17763
+100 NN accuracy: 0.7757
+100 NN recall: 0.7757
+100 NN map@: 0.626674
+SEARCH_L : 200
+search time: 4.78688
+DistCount: 1093577
+HopCount: 20234
+100 NN accuracy: 0.8008
+100 NN recall: 0.8008
+100 NN map@: 0.664584
+SEARCH_L : 225
+search time: 5.24418
+DistCount: 1200579
+HopCount: 22702
+100 NN accuracy: 0.8197
+100 NN recall: 0.8197
+100 NN map@: 0.690657
+__SEARCH FINISH__

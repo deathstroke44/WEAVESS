@@ -1,0 +1,70 @@
+Graph name: ../../graphs/gooaq-distilroberta-768-normalized11.graph
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__INIT : HCNNG__
+build tree completed
+merge node list size: 160
+merge tree completed
+__INIT FINISH__: 64304.7
+base data len : 1000000
+base data dim : 768
+query data len : 100
+query data dim : 768
+ground truth data len : 100
+ground truth data dim : 100
+=====================
+K:100 mLevel:4 nTrees:10 num_cl:40 minsize_cl:100 
+=====================
+__SEARCH__100
+__SEARCH ENTRY : KDT__
+__ROUTER : GUIDED__
+SEARCH_L : 100
+search time: 0.24289
+DistCount: 193188
+HopCount: 10082
+100 NN accuracy: 0.9607
+100 NN recall: 0.9607
+100 NN map@: 0.936093
+SEARCH_L : 125
+search time: 0.304299
+DistCount: 232734
+HopCount: 12561
+100 NN accuracy: 0.9708
+100 NN recall: 0.9708
+100 NN map@: 0.949061
+SEARCH_L : 150
+search time: 0.352654
+DistCount: 272594
+HopCount: 15038
+100 NN accuracy: 0.9771
+100 NN recall: 0.9771
+100 NN map@: 0.957078
+SEARCH_L : 175
+search time: 0.401074
+DistCount: 312010
+HopCount: 17528
+100 NN accuracy: 0.9812
+100 NN recall: 0.9812
+100 NN map@: 0.963019
+SEARCH_L : 200
+search time: 0.446546
+DistCount: 350280
+HopCount: 20027
+100 NN accuracy: 0.9849
+100 NN recall: 0.9849
+100 NN map@: 0.967962
+SEARCH_L : 225
+search time: 0.508709
+DistCount: 388637
+HopCount: 22529
+100 NN accuracy: 0.9878
+100 NN recall: 0.9878
+100 NN map@: 0.971873
+__SEARCH FINISH__
